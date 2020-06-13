@@ -284,8 +284,8 @@
       <Data key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba" value="button" />
       <Data key="81243abc-556a-458f-87e0-7bdef5bb0b90" value="led_yellow" />
       <Data key="1425177d-0d0e-4468-8bcc-e638e5509a9b" value="Rx_1" />
-      <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="ADC_in" />
-      <Data key="e0f654b1-8881-4d4d-9162-2f8523edb89a" value="DAC_out" />
+      <Data key="77715107-f8d5-47e5-a629-0fb83101ac6b" value="Pin_ADC_in" />
+      <Data key="e0f654b1-8881-4d4d-9162-2f8523edb89a" value="Pin_DAC_out" />
       <Data key="e851a3b9-efb8-48be-bbb8-b303b216c393" value="led_red" />
       <Data key="ed092b9b-d398-4703-be89-cebf998501f6" value="Tx_1" />
     </Group>
@@ -3391,7 +3391,7 @@
     </Group>
     <Group key="8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba">
       <Group key="0">
-        <Data key="Port Format" value="2,2" />
+        <Data key="Port Format" value="2,4" />
       </Group>
     </Group>
     <Group key="81243abc-556a-458f-87e0-7bdef5bb0b90">

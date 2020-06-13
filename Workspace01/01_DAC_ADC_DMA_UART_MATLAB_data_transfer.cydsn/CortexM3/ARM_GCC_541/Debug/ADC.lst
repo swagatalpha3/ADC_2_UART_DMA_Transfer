@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
   29:Generated_Source\PSoC5/ADC.c **** 
   30:Generated_Source\PSoC5/ADC.c **** 
   31:Generated_Source\PSoC5/ADC.c **** /***************************************
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 2
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 2
 
 
   32:Generated_Source\PSoC5/ADC.c **** * Global data allocation
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
   86:Generated_Source\PSoC5/ADC.c **** *
   87:Generated_Source\PSoC5/ADC.c **** * Return:
   88:Generated_Source\PSoC5/ADC.c **** *  None
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 3
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 3
 
 
   89:Generated_Source\PSoC5/ADC.c **** *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  143:Generated_Source\PSoC5/ADC.c ****                                           ADC_CFG2);
  144:Generated_Source\PSoC5/ADC.c ****     #endif /* ADC_DEFAULT_NUM_CONFIGS > 1 */
  145:Generated_Source\PSoC5/ADC.c ****     #if(ADC_DEFAULT_NUM_CONFIGS > 2)
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 4
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 4
 
 
  146:Generated_Source\PSoC5/ADC.c ****         ADC_GainCompensation(ADC_CFG3_INPUT_RANGE,
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  200:Generated_Source\PSoC5/ADC.c ****     ADC_STBY_PWRMGR_DEC_REG |= ADC_STBY_PWR_DEC_EN;
  201:Generated_Source\PSoC5/ADC.c ****     ADC_STBY_PWRMGR_DSM_REG |= ADC_STBY_PWR_DSM_EN;
  202:Generated_Source\PSoC5/ADC.c **** 
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 5
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 5
 
 
  203:Generated_Source\PSoC5/ADC.c ****     /* Disable PRES, Enable power to VCMBUF0, REFBUF0 and REFBUF1, enable PRES */
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  257:Generated_Source\PSoC5/ADC.c ****              (ADC_CFG3_REFERENCE != ADC_EXT_REF_ON_P32))) ||
  258:Generated_Source\PSoC5/ADC.c ****              ((config == 4u) &&
  259:Generated_Source\PSoC5/ADC.c ****               (ADC_CFG4_INPUT_RANGE == ADC_IR_VSSA_TO_2VREF) &&
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 6
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 6
 
 
  260:Generated_Source\PSoC5/ADC.c ****              ((ADC_CFG4_REFERENCE != ADC_EXT_REF_ON_P03) &&
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  314:Generated_Source\PSoC5/ADC.c **** *  Subsequent calls of the Start function only enable the ADC and turn
  315:Generated_Source\PSoC5/ADC.c **** *  on the power. If multiple configurations are selected, it will
  316:Generated_Source\PSoC5/ADC.c **** *  configure the ADC for configuration 1 by default, unless the
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 7
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 7
 
 
  317:Generated_Source\PSoC5/ADC.c **** *  ADC_SelectConfiguration( ) function has been called to change
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  371:Generated_Source\PSoC5/ADC.c **** 
  372:Generated_Source\PSoC5/ADC.c ****     /* Stop conversions */
  373:Generated_Source\PSoC5/ADC.c ****     ADC_DEC_CR_REG &= (uint8)~ADC_DEC_START_CONV;
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 8
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 8
 
 
  374:Generated_Source\PSoC5/ADC.c ****     ADC_DEC_SR_REG |=  ADC_DEC_INTR_CLEAR;
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  428:Generated_Source\PSoC5/ADC.c **** *  gain:  Two bit value to select a gain of 1, 2, 4, or 8.
  429:Generated_Source\PSoC5/ADC.c **** *
  430:Generated_Source\PSoC5/ADC.c **** * Return:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 9
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 9
 
 
  431:Generated_Source\PSoC5/ADC.c **** *  None
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  485:Generated_Source\PSoC5/ADC.c **** *  Calculates a new GCOR value and writes it into the GCOR register. 
  486:Generated_Source\PSoC5/ADC.c **** *  The GCOR value is a 16-bit value that represents a gain of 0 to 2. 
  487:Generated_Source\PSoC5/ADC.c **** *  The ADC result is multiplied by this value before it is placed in the ADC 
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 10
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 10
 
 
  488:Generated_Source\PSoC5/ADC.c **** *  output registers. The numerical format for the GCOR value is:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  542:Generated_Source\PSoC5/ADC.c **** *
  543:Generated_Source\PSoC5/ADC.c **** * Summary:
  544:Generated_Source\PSoC5/ADC.c **** *  This API returns the current GCOR register value, normalized based on the
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 11
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 11
 
 
  545:Generated_Source\PSoC5/ADC.c **** *  GVAL register settings.
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  599:Generated_Source\PSoC5/ADC.c **** * Function Name: ADC_StopConvert
  600:Generated_Source\PSoC5/ADC.c **** ********************************************************************************
  601:Generated_Source\PSoC5/ADC.c **** *
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 12
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 12
 
 
  602:Generated_Source\PSoC5/ADC.c **** * Summary:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  656:Generated_Source\PSoC5/ADC.c ****         *   resolution above 16 bit
  657:Generated_Source\PSoC5/ADC.c ****         */
  658:Generated_Source\PSoC5/ADC.c ****         if(ADC_stopConversion != 0u)
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 13
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 13
 
 
  659:Generated_Source\PSoC5/ADC.c ****         {
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  713:Generated_Source\PSoC5/ADC.c ****     }
  714:Generated_Source\PSoC5/ADC.c ****     else /*No action required for other coherency */
  715:Generated_Source\PSoC5/ADC.c ****     {
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 14
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 14
 
 
  716:Generated_Source\PSoC5/ADC.c ****     }
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  770:Generated_Source\PSoC5/ADC.c ****             result = (CY_GET_REG16(ADC_DEC_SAMP_16B_PTR));
  771:Generated_Source\PSoC5/ADC.c ****         #else
  772:Generated_Source\PSoC5/ADC.c ****             result = ADC_DEC_SAMP_REG;
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 15
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 15
 
 
  773:Generated_Source\PSoC5/ADC.c ****             result |=  (uint16)((uint16)ADC_DEC_SAMPM_REG << 8u);
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  827:Generated_Source\PSoC5/ADC.c ****                 result |= 0xFF00u;
  828:Generated_Source\PSoC5/ADC.c ****             }
  829:Generated_Source\PSoC5/ADC.c ****             result = (result << 8u) | ADC_DEC_SAMPM_REG;
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 16
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 16
 
 
  830:Generated_Source\PSoC5/ADC.c ****             result = (result << 8u) | ADC_DEC_SAMP_REG;
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  884:Generated_Source\PSoC5/ADC.c **** *  given reading before calculating the voltage conversion.
  885:Generated_Source\PSoC5/ADC.c **** *
  886:Generated_Source\PSoC5/ADC.c **** * Parameters:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 17
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 17
 
 
  887:Generated_Source\PSoC5/ADC.c **** *  int32:  This value is a measured value when the inputs are shorted or 
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  941:Generated_Source\PSoC5/ADC.c **** }
  942:Generated_Source\PSoC5/ADC.c **** 
  943:Generated_Source\PSoC5/ADC.c **** 
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 18
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 18
 
 
  944:Generated_Source\PSoC5/ADC.c **** /*******************************************************************************
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  998:Generated_Source\PSoC5/ADC.c **** 
  999:Generated_Source\PSoC5/ADC.c ****     mVolts = (int16)(( adcCounts * ADC_1MV_COUNTS ) / ADC_CountsPerVolt) ;
 1000:Generated_Source\PSoC5/ADC.c **** 
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 19
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 19
 
 
 1001:Generated_Source\PSoC5/ADC.c ****     return(mVolts);
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1055:Generated_Source\PSoC5/ADC.c ****     #endif /* ADC_CFG2_DEC_DIV */
 1056:Generated_Source\PSoC5/ADC.c **** 
 1057:Generated_Source\PSoC5/ADC.c ****     /* Subtract ADC offset */
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 20
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 20
 
 
 1058:Generated_Source\PSoC5/ADC.c ****     adcCounts -= ADC_Offset;
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1112:Generated_Source\PSoC5/ADC.c ****         #if(ADC_CFG2_DEC_DIV != 0)
 1113:Generated_Source\PSoC5/ADC.c ****             adcCounts /= ADC_CFG2_DEC_DIV;
 1114:Generated_Source\PSoC5/ADC.c ****         #endif /* ADC_CFG2_DEC_DIV */
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 21
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 21
 
 
 1115:Generated_Source\PSoC5/ADC.c ****     }
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1169:Generated_Source\PSoC5/ADC.c ****         #if( (ADC_CFG1_RESOLUTION == ADC__BITS_16) || \
 1170:Generated_Source\PSoC5/ADC.c ****              (ADC_CFG2_RESOLUTION == ADC__BITS_16) || \
 1171:Generated_Source\PSoC5/ADC.c ****              (ADC_CFG3_RESOLUTION == ADC__BITS_16) || \
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 22
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 22
 
 
 1172:Generated_Source\PSoC5/ADC.c ****              (ADC_CFG4_RESOLUTION == ADC__BITS_16) )
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1226:Generated_Source\PSoC5/ADC.c **** 
 1227:Generated_Source\PSoC5/ADC.c **** /*******************************************************************************
 1228:Generated_Source\PSoC5/ADC.c **** * Function Name: ADC_InitConfig(uint8 config)
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 23
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 23
 
 
 1229:Generated_Source\PSoC5/ADC.c **** ********************************************************************************
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1283:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_BUF2_REG    = ADC_CFG1_DSM_BUF2;
 1284:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_BUF3_REG    = ADC_CFG1_DSM_BUF3;
 1285:Generated_Source\PSoC5/ADC.c **** 
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 24
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 24
 
 
 1286:Generated_Source\PSoC5/ADC.c ****         /* To select either Vssa or Vref to -ve input of DSM depending on
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1340:Generated_Source\PSoC5/ADC.c ****             ADC_DSM_CR11_REG    = ADC_CFG2_DSM_CR11;
 1341:Generated_Source\PSoC5/ADC.c ****             ADC_DSM_CR12_REG    = ADC_CFG2_DSM_CR12;
 1342:Generated_Source\PSoC5/ADC.c ****             ADC_DSM_CR14_REG    = ADC_CFG2_DSM_CR14;
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 25
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 25
 
 
 1343:Generated_Source\PSoC5/ADC.c ****             ADC_DSM_CR15_REG    = ADC_CFG2_DSM_CR15;
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1397:Generated_Source\PSoC5/ADC.c ****             ADC_DEC_SHIFT1_REG  = ADC_CFG3_DEC_SHIFT1;
 1398:Generated_Source\PSoC5/ADC.c ****             ADC_DEC_SHIFT2_REG  = ADC_CFG3_DEC_SHIFT2;
 1399:Generated_Source\PSoC5/ADC.c ****             ADC_DEC_DR2_REG     = ADC_CFG3_DEC_DR2;
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 26
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 26
 
 
 1400:Generated_Source\PSoC5/ADC.c ****             ADC_DEC_DR2H_REG    = ADC_CFG3_DEC_DR2H;
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1454:Generated_Source\PSoC5/ADC.c **** 
 1455:Generated_Source\PSoC5/ADC.c ****             #if(ADC_IRQ_REMOVE == 0u)
 1456:Generated_Source\PSoC5/ADC.c ****                 /* Set interrupt vector */
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 27
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 27
 
 
 1457:Generated_Source\PSoC5/ADC.c ****                 (void)CyIntSetVector(ADC_INTC_NUMBER, &ADC_ISR3);
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1511:Generated_Source\PSoC5/ADC.c ****             #if(ADC_CFG4_RESOLUTION > 16 && \
 1512:Generated_Source\PSoC5/ADC.c ****                 ADC_CFG4_CONV_MODE == ADC_MODE_SINGLE_SAMPLE)
 1513:Generated_Source\PSoC5/ADC.c ****                 ADC_stopConversion = 1u;
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 28
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 28
 
 
 1514:Generated_Source\PSoC5/ADC.c ****             #endif /* Single sample with resolution above 16 bits */
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1568:Generated_Source\PSoC5/ADC.c **** 		*/
 1569:Generated_Source\PSoC5/ADC.c ****         if(ADC_initVar == 0u)
 1570:Generated_Source\PSoC5/ADC.c ****         {
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 29
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 29
 
 
 1571:Generated_Source\PSoC5/ADC.c ****             ADC_started = 1u;
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1625:Generated_Source\PSoC5/ADC.c **** static void ADC_GainCompensation(uint8 inputRange, uint16 idealDecGain, uint16 idealOddDecGain,
 1626:Generated_Source\PSoC5/ADC.c ****                               uint8 resolution, uint8 config) 
 1627:Generated_Source\PSoC5/ADC.c **** {
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 30
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 30
 
 
   27              		.loc 1 1627 0
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
   66              	.LVL2:
   67 0028 22E0     		b	.L3
   68              	.LVL3:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 31
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 31
 
 
   69              	.L9:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1666:Generated_Source\PSoC5/ADC.c ****                     flash = ADC_DEC_TRIM_VREF_4_DIFF_16_20;
  100              		.loc 1 1666 0
  101 004a 1F48     		ldr	r0, .L18+16
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 32
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 32
 
 
  102 004c 0078     		ldrb	r0, [r0]	@ zero_extendqisi2
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  135              		.loc 1 1687 0
  136 006e 0020     		movs	r0, #0
  137              	.L3:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 33
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 33
 
 
  138              	.LVL18:
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  175 009a 0F49     		ldr	r1, .L18+32
  176 009c 01EB8303 		add	r3, r1, r3, lsl #2
  177 00a0 0F21     		movs	r1, #15
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 34
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 34
 
 
  178 00a2 9970     		strb	r1, [r3, #2]
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1720:Generated_Source\PSoC5/ADC.c **** ******************************************************************************
 1721:Generated_Source\PSoC5/ADC.c **** *
 1722:Generated_Source\PSoC5/ADC.c **** * Summary:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 35
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 35
 
 
 1723:Generated_Source\PSoC5/ADC.c **** *  This API sets the DSM_REF0 register. This is written for internal use.
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  250 0022 0320     		movs	r0, #3
  251 0024 FFF7FEFF 		bl	CyDelayUs
  252              	.LVL38:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 36
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 36
 
 
 1744:Generated_Source\PSoC5/ADC.c ****     /* Enable the press circuit */
@@ -2145,12 +2145,12 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1249:Generated_Source\PSoC5/ADC.c **** 
  288              		.loc 1 1249 0
  289 0000 0022     		movs	r2, #0
- 290 0002 324B     		ldr	r3, .L28
+ 290 0002 314B     		ldr	r3, .L28
  291 0004 1A71     		strb	r2, [r3, #4]
 1251:Generated_Source\PSoC5/ADC.c ****     {
  292              		.loc 1 1251 0
  293 0006 0128     		cmp	r0, #1
- 294 0008 5FD1     		bne	.L27
+ 294 0008 5DD1     		bne	.L27
 1248:Generated_Source\PSoC5/ADC.c ****     ADC_stopConversion = 0u;
  295              		.loc 1 1248 0
  296 000a 70B5     		push	{r4, r5, r6, lr}
@@ -2158,14 +2158,14 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  298              		.cfi_offset 4, -16
  299              		.cfi_offset 5, -12
  300              		.cfi_offset 6, -8
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 37
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 37
 
 
  301              		.cfi_offset 14, -4
 1254:Generated_Source\PSoC5/ADC.c ****         ADC_DEC_SHIFT1_REG  = ADC_CFG1_DEC_SHIFT1;
  302              		.loc 1 1254 0
  303 000c 3822     		movs	r2, #56
- 304 000e 304B     		ldr	r3, .L28+4
+ 304 000e 2F4B     		ldr	r3, .L28+4
  305 0010 1A70     		strb	r2, [r3]
 1255:Generated_Source\PSoC5/ADC.c ****         ADC_DEC_SHIFT2_REG  = ADC_CFG1_DEC_SHIFT2;
  306              		.loc 1 1255 0
@@ -2215,138 +2215,138 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  341 0046 1A70     		strb	r2, [r3]
 1266:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_CR6_REG     = ADC_CFG1_DSM_CR6;
  342              		.loc 1 1266 0
- 343 0048 0A22     		movs	r2, #10
- 344 004a 0133     		adds	r3, r3, #1
- 345 004c 1A70     		strb	r2, [r3]
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 38
+ 343 0048 0A23     		movs	r3, #10
+ 344 004a 214A     		ldr	r2, .L28+8
+ 345 004c 1370     		strb	r3, [r2]
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 38
 
 
 1267:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_CR7_REG     = ADC_CFG1_DSM_CR7;
  346              		.loc 1 1267 0
- 347 004e 2C22     		movs	r2, #44
- 348 0050 0133     		adds	r3, r3, #1
- 349 0052 1A70     		strb	r2, [r3]
+ 347 004e 2C21     		movs	r1, #44
+ 348 0050 0132     		adds	r2, r2, #1
+ 349 0052 1170     		strb	r1, [r2]
 1268:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_CR10_REG    = ADC_CFG1_DSM_CR10;
  350              		.loc 1 1268 0
- 351 0054 0133     		adds	r3, r3, #1
- 352 0056 1C70     		strb	r4, [r3]
+ 351 0054 0132     		adds	r2, r2, #1
+ 352 0056 1470     		strb	r4, [r2]
 1269:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_CR11_REG    = ADC_CFG1_DSM_CR11;
  353              		.loc 1 1269 0
- 354 0058 4422     		movs	r2, #68
- 355 005a 0333     		adds	r3, r3, #3
- 356 005c 1A70     		strb	r2, [r3]
+ 354 0058 4421     		movs	r1, #68
+ 355 005a 0332     		adds	r2, r2, #3
+ 356 005c 1170     		strb	r1, [r2]
 1270:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_CR12_REG    = ADC_CFG1_DSM_CR12;
  357              		.loc 1 1270 0
- 358 005e 4822     		movs	r2, #72
- 359 0060 0133     		adds	r3, r3, #1
- 360 0062 1A70     		strb	r2, [r3]
+ 358 005e 4821     		movs	r1, #72
+ 359 0060 0132     		adds	r2, r2, #1
+ 360 0062 1170     		strb	r1, [r2]
 1271:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_CR14_REG    = ADC_CFG1_DSM_CR14;
  361              		.loc 1 1271 0
- 362 0064 0133     		adds	r3, r3, #1
- 363 0066 1D70     		strb	r5, [r3]
+ 362 0064 0132     		adds	r2, r2, #1
+ 363 0066 1570     		strb	r5, [r2]
 1272:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_CR15_REG    = ADC_CFG1_DSM_CR15;
  364              		.loc 1 1272 0
- 365 0068 0233     		adds	r3, r3, #2
- 366 006a 1D70     		strb	r5, [r3]
+ 365 0068 0232     		adds	r2, r2, #2
+ 366 006a 1470     		strb	r4, [r2]
 1273:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_CR16_REG    = ADC_CFG1_DSM_CR16;
  367              		.loc 1 1273 0
- 368 006c 1122     		movs	r2, #17
- 369 006e 0133     		adds	r3, r3, #1
- 370 0070 1A70     		strb	r2, [r3]
+ 368 006c 0132     		adds	r2, r2, #1
+ 369 006e 1470     		strb	r4, [r2]
 1274:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_CR17_REG    = ADC_CFG1_DSM_CR17;
- 371              		.loc 1 1274 0
- 372 0072 1922     		movs	r2, #25
- 373 0074 0133     		adds	r3, r3, #1
- 374 0076 1A70     		strb	r2, [r3]
+ 370              		.loc 1 1274 0
+ 371 0070 0132     		adds	r2, r2, #1
+ 372 0072 1370     		strb	r3, [r2]
 1275:Generated_Source\PSoC5/ADC.c ****         /* Set DSM_REF0_REG by disabling and enabling the PRESS circuit */
- 375              		.loc 1 1275 0
- 376 0078 9722     		movs	r2, #151
- 377 007a 0133     		adds	r3, r3, #1
- 378 007c 1A70     		strb	r2, [r3]
+ 373              		.loc 1 1275 0
+ 374 0074 4322     		movs	r2, #67
+ 375 0076 174B     		ldr	r3, .L28+12
+ 376 0078 1A70     		strb	r2, [r3]
 1277:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_REF2_REG    = ADC_CFG1_DSM_REF2;
- 379              		.loc 1 1277 0
- 380 007e 5220     		movs	r0, #82
- 381              	.LVL42:
- 382 0080 FFF7FEFF 		bl	ADC_SetDSMRef0Reg
- 383              	.LVL43:
+ 377              		.loc 1 1277 0
+ 378 007a 5220     		movs	r0, #82
+ 379              	.LVL42:
+ 380 007c FFF7FEFF 		bl	ADC_SetDSMRef0Reg
+ 381              	.LVL43:
 1278:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_REF3_REG    = ADC_CFG1_DSM_REF3;
- 384              		.loc 1 1278 0
- 385 0084 5822     		movs	r2, #88
- 386 0086 134B     		ldr	r3, .L28+8
- 387 0088 1A70     		strb	r2, [r3]
+ 382              		.loc 1 1278 0
+ 383 0080 5822     		movs	r2, #88
+ 384 0082 154B     		ldr	r3, .L28+16
+ 385 0084 1A70     		strb	r2, [r3]
 1279:Generated_Source\PSoC5/ADC.c **** 
- 388              		.loc 1 1279 0
- 389 008a 0133     		adds	r3, r3, #1
- 390 008c 1C70     		strb	r4, [r3]
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 39
-
-
+ 386              		.loc 1 1279 0
+ 387 0086 0133     		adds	r3, r3, #1
+ 388 0088 1C70     		strb	r4, [r3]
 1281:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_BUF1_REG    = ADC_CFG1_DSM_BUF1;
- 391              		.loc 1 1281 0
- 392 008e 0526     		movs	r6, #5
- 393 0090 0533     		adds	r3, r3, #5
- 394 0092 1E70     		strb	r6, [r3]
+ 389              		.loc 1 1281 0
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 39
+
+
+ 390 008a 0526     		movs	r6, #5
+ 391 008c 0533     		adds	r3, r3, #5
+ 392 008e 1E70     		strb	r6, [r3]
 1282:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_BUF2_REG    = ADC_CFG1_DSM_BUF2;
- 395              		.loc 1 1282 0
- 396 0094 0222     		movs	r2, #2
- 397 0096 0133     		adds	r3, r3, #1
- 398 0098 1A70     		strb	r2, [r3]
+ 393              		.loc 1 1282 0
+ 394 0090 0222     		movs	r2, #2
+ 395 0092 0133     		adds	r3, r3, #1
+ 396 0094 1A70     		strb	r2, [r3]
 1283:Generated_Source\PSoC5/ADC.c ****         ADC_DSM_BUF3_REG    = ADC_CFG1_DSM_BUF3;
- 399              		.loc 1 1283 0
- 400 009a 0133     		adds	r3, r3, #1
- 401 009c 1C70     		strb	r4, [r3]
+ 397              		.loc 1 1283 0
+ 398 0096 0133     		adds	r3, r3, #1
+ 399 0098 1C70     		strb	r4, [r3]
 1284:Generated_Source\PSoC5/ADC.c **** 
- 402              		.loc 1 1284 0
- 403 009e 0133     		adds	r3, r3, #1
- 404 00a0 1C70     		strb	r4, [r3]
+ 400              		.loc 1 1284 0
+ 401 009a 0133     		adds	r3, r3, #1
+ 402 009c 1C70     		strb	r4, [r3]
 1293:Generated_Source\PSoC5/ADC.c ****             #endif /* ADC_IR_VSSA_TO_2VREF) */
- 405              		.loc 1 1293 0
- 406 00a2 2046     		mov	r0, r4
- 407 00a4 FFF7FEFF 		bl	ADC_AMux_Select
- 408              	.LVL44:
+ 403              		.loc 1 1293 0
+ 404 009e 2046     		mov	r0, r4
+ 405 00a0 FFF7FEFF 		bl	ADC_AMux_Select
+ 406              	.LVL44:
 1305:Generated_Source\PSoC5/ADC.c **** 
- 409              		.loc 1 1305 0
- 410 00a8 43F23332 		movw	r2, #13107
- 411 00ac 0A4B     		ldr	r3, .L28+12
- 412 00ae 1A60     		str	r2, [r3]
+ 407              		.loc 1 1305 0
+ 408 00a4 43F23332 		movw	r2, #13107
+ 409 00a8 0C4B     		ldr	r3, .L28+20
+ 410 00aa 1A60     		str	r2, [r3]
 1307:Generated_Source\PSoC5/ADC.c **** 
- 413              		.loc 1 1307 0
- 414 00b0 2946     		mov	r1, r5
- 415 00b2 3046     		mov	r0, r6
- 416 00b4 FFF7FEFF 		bl	ADC_Ext_CP_Clk_SetDividerRegister
- 417              	.LVL45:
+ 411              		.loc 1 1307 0
+ 412 00ac 2946     		mov	r1, r5
+ 413 00ae 3046     		mov	r0, r6
+ 414 00b0 FFF7FEFF 		bl	ADC_Ext_CP_Clk_SetDividerRegister
+ 415              	.LVL45:
 1311:Generated_Source\PSoC5/ADC.c ****         #endif /* ADC_DEFAULT_INTERNAL_CLK */
- 418              		.loc 1 1311 0
- 419 00b8 2946     		mov	r1, r5
- 420 00ba 2520     		movs	r0, #37
- 421 00bc FFF7FEFF 		bl	ADC_theACLK_SetDividerRegister
- 422              	.LVL46:
+ 416              		.loc 1 1311 0
+ 417 00b4 2946     		mov	r1, r5
+ 418 00b6 BA20     		movs	r0, #186
+ 419 00b8 FFF7FEFF 		bl	ADC_theACLK_SetDividerRegister
+ 420              	.LVL46:
 1316:Generated_Source\PSoC5/ADC.c ****         #endif   /* End ADC_IRQ_REMOVE */
- 423              		.loc 1 1316 0
- 424 00c0 0649     		ldr	r1, .L28+16
- 425 00c2 1D20     		movs	r0, #29
- 426 00c4 FFF7FEFF 		bl	CyIntSetVector
- 427              	.LVL47:
- 428 00c8 70BD     		pop	{r4, r5, r6, pc}
- 429              	.LVL48:
- 430              	.L27:
- 431              		.cfi_def_cfa_offset 0
- 432              		.cfi_restore 4
- 433              		.cfi_restore 5
- 434              		.cfi_restore 6
- 435              		.cfi_restore 14
- 436 00ca 7047     		bx	lr
- 437              	.L29:
- 438              		.align	2
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 40
+ 421              		.loc 1 1316 0
+ 422 00bc 0849     		ldr	r1, .L28+24
+ 423 00be 1D20     		movs	r0, #29
+ 424 00c0 FFF7FEFF 		bl	CyIntSetVector
+ 425              	.LVL47:
+ 426 00c4 70BD     		pop	{r4, r5, r6, pc}
+ 427              	.LVL48:
+ 428              	.L27:
+ 429              		.cfi_def_cfa_offset 0
+ 430              		.cfi_restore 4
+ 431              		.cfi_restore 5
+ 432              		.cfi_restore 6
+ 433              		.cfi_restore 14
+ 434 00c6 7047     		bx	lr
+ 435              	.L29:
+ 436              		.align	2
+ 437              	.L28:
+ 438 00c8 00000000 		.word	.LANCHOR0
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 40
 
 
- 439              	.L28:
- 440 00cc 00000000 		.word	.LANCHOR0
- 441 00d0 004E0040 		.word	1073761792
- 442 00d4 94580040 		.word	1073764500
- 443 00d8 00000000 		.word	ADC_CountsPerVolt
- 444 00dc 00000000 		.word	ADC_ISR1
+ 439 00cc 004E0040 		.word	1073761792
+ 440 00d0 85580040 		.word	1073764485
+ 441 00d4 91580040 		.word	1073764497
+ 442 00d8 94580040 		.word	1073764500
+ 443 00dc 00000000 		.word	ADC_CountsPerVolt
+ 444 00e0 00000000 		.word	ADC_ISR1
  445              		.cfi_endproc
  446              	.LFE19:
  447              		.size	ADC_InitConfig, .-ADC_InitConfig
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  487 001e 1D20     		movs	r0, #29
  488 0020 FFF7FEFF 		bl	CyIntSetPriority
  489              	.LVL51:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 41
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 41
 
 
  110:Generated_Source\PSoC5/ADC.c ****     ADC_DSM_DEM1_REG    = ADC_CFG1_DSM_DEM1;
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  128:Generated_Source\PSoC5/ADC.c **** 
  532              		.loc 1 128 0
  533 0066 0433     		adds	r3, r3, #4
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 42
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 42
 
 
  534 0068 1C70     		strb	r4, [r3]
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  582              		.section	.text.ADC_Enable,"ax",%progbits
  583              		.align	2
  584              		.global	ADC_Enable
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 43
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 43
 
 
  585              		.thumb
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  631 0038 2B70     		strb	r3, [r5]
  205:Generated_Source\PSoC5/ADC.c **** 
  632              		.loc 1 205 0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 44
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 44
 
 
  633 003a 214C     		ldr	r4, .L36+12
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  293:Generated_Source\PSoC5/ADC.c **** 
  678              		.loc 1 293 0
  679 0092 1032     		adds	r2, r2, #16
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 45
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 45
 
 
  680 0094 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  729 0004 9B79     		ldrb	r3, [r3, #6]	@ zero_extendqisi2
  730 0006 4BB9     		cbnz	r3, .L39
  338:Generated_Source\PSoC5/ADC.c ****         {
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 46
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 46
 
 
  731              		.loc 1 338 0
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  779              		.loc 1 373 0
  780 0008 314A     		ldr	r2, .L46
  781 000a 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 47
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 47
 
 
  782 000c 03F0FE03 		and	r3, r3, #254
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  826              		.loc 1 395 0
  827 0066 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
  828 0068 02F0FE02 		and	r2, r2, #254
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 48
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 48
 
 
  829 006c 1A70     		strb	r2, [r3]
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  874              	.LVL65:
  875 00cc 70BD     		pop	{r4, r5, r6, pc}
  876              	.LVL66:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 49
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 49
 
 
  877              	.L47:
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  927              		.thumb_func
  928              		.type	ADC_SetCoherency, %function
  929              	ADC_SetCoherency:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 50
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 50
 
 
  930              	.LFB5:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  979 0002 0446     		mov	r4, r0
  516:Generated_Source\PSoC5/ADC.c ****     tmpValue = ((float32)tmpReg / (float32)ADC_IDEAL_GAIN_CONST);
  980              		.loc 1 516 0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 51
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 51
 
 
  981 0004 184B     		ldr	r3, .L58+8
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  532:Generated_Source\PSoC5/ADC.c **** 
  1028              		.loc 1 532 0
  1029 0054 0020     		movs	r0, #0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 52
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 52
 
 
  1030              	.LVL88:
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1077              		.loc 1 567 0
  1078 0010 C3F10F03 		rsb	r3, r3, #15
  1079              	.LVL94:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 53
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 53
 
 
  1080 0014 9840     		lsls	r0, r0, r3
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1130              		.cfi_startproc
  1131              		@ args = 0, pretend = 0, frame = 0
  1132              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 54
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 54
 
 
  1133              		@ link register save eliminated.
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1181              		.loc 1 666 0
  1182 001a 012B     		cmp	r3, #1
  1183 001c 01D0     		beq	.L73
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 55
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 55
 
 
  666:Generated_Source\PSoC5/ADC.c **** 
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1231              	.LVL105:
  1232              	.L78:
  710:Generated_Source\PSoC5/ADC.c ****     {   /* Dummy read of the MSB byte to unlock the coherency */
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 56
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 56
 
 
  1233              		.loc 1 710 0
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1281              	.LVL107:
  758:Generated_Source\PSoC5/ADC.c ****     {   /*  Use default method to read result registers i.e. LSB byte read at the end*/
  1282              		.loc 1 758 0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 57
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 57
 
 
  1283 0008 012B     		cmp	r3, #1
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1329 0044 114E0040 		.word	1073761809
  1330 0048 124E0040 		.word	1073761810
  1331 004c 00000000 		.word	.LANCHOR0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 58
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 58
 
 
  1332              		.cfi_endproc
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1378              		.loc 1 847 0
  1379 0024 023B     		subs	r3, r3, #2
  1380 0026 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 59
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 59
 
 
  1381 0028 43EA0043 		orr	r3, r3, r0, lsl #16
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1429              		.thumb
  1430              		.thumb_func
  1431              		.type	ADC_SetOffset, %function
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 60
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 60
 
 
  1432              	ADC_SetOffset:
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1482              	ADC_CountsTo_mVolts:
  1483              	.LFB16:
  966:Generated_Source\PSoC5/ADC.c **** 
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 61
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 61
 
 
  1484              		.loc 1 966 0
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1533              		.loc 1 1058 0
  1534 0002 074B     		ldr	r3, .L107
  1535 0004 9B68     		ldr	r3, [r3, #8]
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 62
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 62
 
 
  1536              	.LVL134:
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1585 0010 022B     		cmp	r3, #2
  1586 0012 01D0     		beq	.L110
 1116:Generated_Source\PSoC5/ADC.c ****     {
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 63
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 63
 
 
  1587              		.loc 1 1116 0
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1637 0000 38B5     		push	{r3, r4, r5, lr}
  1638              		.cfi_def_cfa_offset 16
  1639              		.cfi_offset 3, -16
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 64
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 64
 
 
  1640              		.cfi_offset 4, -12
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1593:Generated_Source\PSoC5/ADC.c ****         }
  1684              		.loc 1 1593 0
  1685 0042 FFF7FEFF 		bl	ADC_StartConvert
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 65
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 65
 
 
  1686              	.LVL149:
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1716              		.cfi_startproc
  1717              		@ args = 0, pretend = 0, frame = 0
  1718              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 66
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 66
 
 
  1719 0000 10B5     		push	{r4, lr}
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
 1783:Generated_Source\PSoC5/ADC.c **** 
 1784:Generated_Source\PSoC5/ADC.c **** 
 1785:Generated_Source\PSoC5/ADC.c **** /*******************************************************************************
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 67
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 67
 
 
 1786:Generated_Source\PSoC5/ADC.c **** * Function Name: ADC_Read16
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1789              	.LVL163:
 1813:Generated_Source\PSoC5/ADC.c ****     
 1814:Generated_Source\PSoC5/ADC.c ****      return(result);
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 68
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 68
 
 
 1815:Generated_Source\PSoC5/ADC.c **** }
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1817              		.loc 1 1841 0
  1818 0002 084A     		ldr	r2, .L131
  1819 0004 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 69
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 69
 
 
  1820 0006 43F00403 		orr	r3, r3, #4
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1867 0000 00000000 		.space	4
  1868              		.type	ADC_stopConversion, %object
  1869              		.size	ADC_stopConversion, 1
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 70
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 70
 
 
  1870              	ADC_stopConversion:
@@ -4174,17 +4174,17 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1900 0006 00000000 		.4byte	.Ldebug_abbrev0
  1901 000a 04       		.byte	0x4
  1902 000b 01       		.uleb128 0x1
- 1903 000c 47040000 		.4byte	.LASF101
+ 1903 000c 5F040000 		.4byte	.LASF101
  1904 0010 0C       		.byte	0xc
  1905 0011 92000000 		.4byte	.LASF102
- 1906 0015 51020000 		.4byte	.LASF103
+ 1906 0015 54010000 		.4byte	.LASF103
  1907 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1908 001d 00000000 		.4byte	0
  1909 0021 00000000 		.4byte	.Ldebug_line0
  1910 0025 02       		.uleb128 0x2
  1911 0026 04       		.byte	0x4
  1912 0027 04       		.byte	0x4
- 1913 0028 A2030000 		.4byte	.LASF0
+ 1913 0028 BA030000 		.4byte	.LASF0
  1914 002c 02       		.uleb128 0x2
  1915 002d 01       		.byte	0x1
  1916 002e 06       		.byte	0x6
@@ -4192,18 +4192,18 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1918 0033 02       		.uleb128 0x2
  1919 0034 01       		.byte	0x1
  1920 0035 08       		.byte	0x8
- 1921 0036 E0030000 		.4byte	.LASF2
+ 1921 0036 F8030000 		.4byte	.LASF2
  1922 003a 02       		.uleb128 0x2
  1923 003b 02       		.byte	0x2
  1924 003c 05       		.byte	0x5
- 1925 003d 06040000 		.4byte	.LASF3
+ 1925 003d 1E040000 		.4byte	.LASF3
  1926 0041 02       		.uleb128 0x2
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 71
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 71
 
 
  1927 0042 02       		.byte	0x2
  1928 0043 07       		.byte	0x7
- 1929 0044 29020000 		.4byte	.LASF4
+ 1929 0044 BB020000 		.4byte	.LASF4
  1930 0048 02       		.uleb128 0x2
  1931 0049 04       		.byte	0x4
  1932 004a 05       		.byte	0x5
@@ -4211,7 +4211,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1934 004f 02       		.uleb128 0x2
  1935 0050 04       		.byte	0x4
  1936 0051 07       		.byte	0x7
- 1937 0052 F0010000 		.4byte	.LASF6
+ 1937 0052 82020000 		.4byte	.LASF6
  1938 0056 02       		.uleb128 0x2
  1939 0057 08       		.byte	0x8
  1940 0058 05       		.byte	0x5
@@ -4227,7 +4227,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1950 006b 02       		.uleb128 0x2
  1951 006c 04       		.byte	0x4
  1952 006d 07       		.byte	0x7
- 1953 006e DC010000 		.4byte	.LASF9
+ 1953 006e 6E020000 		.4byte	.LASF9
  1954 0072 04       		.uleb128 0x4
  1955 0073 4E010000 		.4byte	.LASF10
  1956 0077 02       		.byte	0x2
@@ -4239,17 +4239,17 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1962 0084 E501     		.2byte	0x1e5
  1963 0086 41000000 		.4byte	0x41
  1964 008a 04       		.uleb128 0x4
- 1965 008b 7B010000 		.4byte	.LASF12
+ 1965 008b 0D020000 		.4byte	.LASF12
  1966 008f 02       		.byte	0x2
  1967 0090 E601     		.2byte	0x1e6
  1968 0092 4F000000 		.4byte	0x4f
  1969 0096 04       		.uleb128 0x4
- 1970 0097 3C020000 		.4byte	.LASF13
+ 1970 0097 CE020000 		.4byte	.LASF13
  1971 009b 02       		.byte	0x2
  1972 009c E701     		.2byte	0x1e7
  1973 009e 2C000000 		.4byte	0x2c
  1974 00a2 04       		.uleb128 0x4
- 1975 00a3 BD050000 		.4byte	.LASF14
+ 1975 00a3 D5050000 		.4byte	.LASF14
  1976 00a7 02       		.byte	0x2
  1977 00a8 E801     		.2byte	0x1e8
  1978 00aa 3A000000 		.4byte	0x3a
@@ -4258,24 +4258,24 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  1981 00b3 02       		.byte	0x2
  1982 00b4 E901     		.2byte	0x1e9
  1983 00b6 48000000 		.4byte	0x48
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 72
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 72
 
 
  1984 00ba 04       		.uleb128 0x4
- 1985 00bb F6020000 		.4byte	.LASF16
+ 1985 00bb 0E030000 		.4byte	.LASF16
  1986 00bf 02       		.byte	0x2
  1987 00c0 EA01     		.2byte	0x1ea
  1988 00c2 25000000 		.4byte	0x25
  1989 00c6 02       		.uleb128 0x2
  1990 00c7 08       		.byte	0x8
  1991 00c8 04       		.byte	0x4
- 1992 00c9 5E010000 		.4byte	.LASF17
+ 1992 00c9 F0010000 		.4byte	.LASF17
  1993 00cd 02       		.uleb128 0x2
  1994 00ce 01       		.byte	0x1
  1995 00cf 08       		.byte	0x8
- 1996 00d0 29050000 		.4byte	.LASF18
+ 1996 00d0 41050000 		.4byte	.LASF18
  1997 00d4 04       		.uleb128 0x4
- 1998 00d5 BC030000 		.4byte	.LASF19
+ 1998 00d5 D4030000 		.4byte	.LASF19
  1999 00d9 02       		.byte	0x2
  2000 00da 8E02     		.2byte	0x28e
  2001 00dc E0000000 		.4byte	0xe0
@@ -4289,7 +4289,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2009 00f1 05       		.uleb128 0x5
  2010 00f2 7E000000 		.4byte	0x7e
  2011 00f6 04       		.uleb128 0x4
- 2012 00f7 F0020000 		.4byte	.LASF21
+ 2012 00f7 08030000 		.4byte	.LASF21
  2013 00fb 02       		.byte	0x2
  2014 00fc 9002     		.2byte	0x290
  2015 00fe 02010000 		.4byte	0x102
@@ -4298,11 +4298,11 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2018 0107 02       		.uleb128 0x2
  2019 0108 08       		.byte	0x8
  2020 0109 04       		.byte	0x4
- 2021 010a 07030000 		.4byte	.LASF22
+ 2021 010a 1F030000 		.4byte	.LASF22
  2022 010e 02       		.uleb128 0x2
  2023 010f 04       		.byte	0x4
  2024 0110 07       		.byte	0x7
- 2025 0111 FE020000 		.4byte	.LASF23
+ 2025 0111 16030000 		.4byte	.LASF23
  2026 0115 06       		.uleb128 0x6
  2027 0116 04       		.byte	0x4
  2028 0117 03       		.byte	0x3
@@ -4315,22 +4315,22 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2035 0124 7E000000 		.4byte	0x7e
  2036 0128 00       		.byte	0
  2037 0129 07       		.uleb128 0x7
- 2038 012a 3C050000 		.4byte	.LASF25
+ 2038 012a 54050000 		.4byte	.LASF25
  2039 012e 03       		.byte	0x3
  2040 012f 32       		.byte	0x32
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 73
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 73
 
 
  2041 0130 72000000 		.4byte	0x72
  2042 0134 02       		.byte	0x2
  2043 0135 00       		.byte	0
  2044 0136 08       		.uleb128 0x8
- 2045 0137 19020000 		.4byte	.LASF26
+ 2045 0137 AB020000 		.4byte	.LASF26
  2046 013b 03       		.byte	0x3
  2047 013c 33       		.byte	0x33
  2048 013d 15010000 		.4byte	0x115
  2049 0141 09       		.uleb128 0x9
- 2050 0142 D5020000 		.4byte	.LASF36
+ 2050 0142 ED020000 		.4byte	.LASF36
  2051 0146 01       		.byte	0x1
  2052 0147 5906     		.2byte	0x659
  2053 0149 00000000 		.4byte	.LFB21
@@ -4345,7 +4345,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2062 015f 72000000 		.4byte	0x72
  2063 0163 00000000 		.4byte	.LLST0
  2064 0167 0A       		.uleb128 0xa
- 2065 0168 C1030000 		.4byte	.LASF28
+ 2065 0168 D9030000 		.4byte	.LASF28
  2066 016c 01       		.byte	0x1
  2067 016d 5906     		.2byte	0x659
  2068 016f 7E000000 		.4byte	0x7e
@@ -4357,40 +4357,40 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2074 017f 7E000000 		.4byte	0x7e
  2075 0183 74000000 		.4byte	.LLST2
  2076 0187 0A       		.uleb128 0xa
- 2077 0188 E5040000 		.4byte	.LASF30
+ 2077 0188 FD040000 		.4byte	.LASF30
  2078 018c 01       		.byte	0x1
  2079 018d 5A06     		.2byte	0x65a
  2080 018f 72000000 		.4byte	0x72
  2081 0193 AE000000 		.4byte	.LLST3
  2082 0197 0A       		.uleb128 0xa
- 2083 0198 35050000 		.4byte	.LASF31
+ 2083 0198 4D050000 		.4byte	.LASF31
  2084 019c 01       		.byte	0x1
  2085 019d 5A06     		.2byte	0x65a
  2086 019f 72000000 		.4byte	0x72
  2087 01a3 01010000 		.4byte	.LLST4
  2088 01a7 0B       		.uleb128 0xb
- 2089 01a8 EA020000 		.4byte	.LASF32
+ 2089 01a8 02030000 		.4byte	.LASF32
  2090 01ac 01       		.byte	0x1
  2091 01ad 5C06     		.2byte	0x65c
  2092 01af 96000000 		.4byte	0x96
  2093 01b3 2D010000 		.4byte	.LLST5
  2094 01b7 0B       		.uleb128 0xb
- 2095 01b8 CE030000 		.4byte	.LASF33
+ 2095 01b8 E6030000 		.4byte	.LASF33
  2096 01bc 01       		.byte	0x1
  2097 01bd 5D06     		.2byte	0x65d
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 74
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 74
 
 
  2098 01bf AE000000 		.4byte	0xae
  2099 01c3 A3010000 		.4byte	.LLST6
  2100 01c7 0B       		.uleb128 0xb
- 2101 01c8 CB020000 		.4byte	.LASF34
+ 2101 01c8 E3020000 		.4byte	.LASF34
  2102 01cc 01       		.byte	0x1
  2103 01cd 5E06     		.2byte	0x65e
  2104 01cf 7E000000 		.4byte	0x7e
  2105 01d3 B6010000 		.4byte	.LLST7
  2106 01d7 0B       		.uleb128 0xb
- 2107 01d8 19040000 		.4byte	.LASF35
+ 2107 01d8 31040000 		.4byte	.LASF35
  2108 01dc 01       		.byte	0x1
  2109 01dd 5F06     		.2byte	0x65f
  2110 01df 8A000000 		.4byte	0x8a
@@ -4406,7 +4406,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2120 01f5 00       		.byte	0
  2121 01f6 00       		.byte	0
  2122 01f7 09       		.uleb128 0x9
- 2123 01f8 9D010000 		.4byte	.LASF37
+ 2123 01f8 2F020000 		.4byte	.LASF37
  2124 01fc 01       		.byte	0x1
  2125 01fd C406     		.2byte	0x6c4
  2126 01ff 00000000 		.4byte	.LFB22
@@ -4415,13 +4415,13 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2129 0208 9C       		.byte	0x9c
  2130 0209 5A020000 		.4byte	0x25a
  2131 020d 0A       		.uleb128 0xa
- 2132 020e AF010000 		.4byte	.LASF38
+ 2132 020e 41020000 		.4byte	.LASF38
  2133 0212 01       		.byte	0x1
  2134 0213 C406     		.2byte	0x6c4
  2135 0215 72000000 		.4byte	0x72
  2136 0219 F2010000 		.4byte	.LLST9
  2137 021d 0B       		.uleb128 0xb
- 2138 021e 89050000 		.4byte	.LASF39
+ 2138 021e A1050000 		.4byte	.LASF39
  2139 0222 01       		.byte	0x1
  2140 0223 C606     		.2byte	0x6c6
  2141 0225 72000000 		.4byte	0x72
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2152 0245 50       		.byte	0x50
  2153 0246 01       		.uleb128 0x1
  2154 0247 33       		.byte	0x33
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 75
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 75
 
 
  2155 0248 00       		.byte	0
@@ -4454,22 +4454,22 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2165 0258 00       		.byte	0
  2166 0259 00       		.byte	0
  2167 025a 09       		.uleb128 0x9
- 2168 025b 3C030000 		.4byte	.LASF40
+ 2168 025b 54030000 		.4byte	.LASF40
  2169 025f 01       		.byte	0x1
  2170 0260 DF04     		.2byte	0x4df
  2171 0262 00000000 		.4byte	.LFB19
- 2172 0266 E0000000 		.4byte	.LFE19-.LFB19
+ 2172 0266 E4000000 		.4byte	.LFE19-.LFB19
  2173 026a 01       		.uleb128 0x1
  2174 026b 9C       		.byte	0x9c
  2175 026c EC020000 		.4byte	0x2ec
  2176 0270 0A       		.uleb128 0xa
- 2177 0271 35050000 		.4byte	.LASF31
+ 2177 0271 4D050000 		.4byte	.LASF31
  2178 0275 01       		.byte	0x1
  2179 0276 DF04     		.2byte	0x4df
  2180 0278 72000000 		.4byte	0x72
  2181 027c 26020000 		.4byte	.LLST11
  2182 0280 0F       		.uleb128 0xf
- 2183 0281 84000000 		.4byte	.LVL43
+ 2183 0281 80000000 		.4byte	.LVL43
  2184 0285 F7010000 		.4byte	0x1f7
  2185 0289 94020000 		.4byte	0x294
  2186 028d 0D       		.uleb128 0xd
@@ -4480,7 +4480,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2191 0292 52       		.byte	0x52
  2192 0293 00       		.byte	0
  2193 0294 0F       		.uleb128 0xf
- 2194 0295 A8000000 		.4byte	.LVL44
+ 2194 0295 A4000000 		.4byte	.LVL44
  2195 0299 CB090000 		.4byte	0x9cb
  2196 029d A8020000 		.4byte	0x2a8
  2197 02a1 0D       		.uleb128 0xd
@@ -4491,14 +4491,14 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2202 02a6 00       		.sleb128 0
  2203 02a7 00       		.byte	0
  2204 02a8 0F       		.uleb128 0xf
- 2205 02a9 B8000000 		.4byte	.LVL45
+ 2205 02a9 B4000000 		.4byte	.LVL45
  2206 02ad D6090000 		.4byte	0x9d6
  2207 02b1 C2020000 		.4byte	0x2c2
  2208 02b5 0D       		.uleb128 0xd
  2209 02b6 01       		.uleb128 0x1
  2210 02b7 50       		.byte	0x50
  2211 02b8 02       		.uleb128 0x2
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 76
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 76
 
 
  2212 02b9 76       		.byte	0x76
@@ -4511,7 +4511,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2219 02c0 00       		.sleb128 0
  2220 02c1 00       		.byte	0
  2221 02c2 0F       		.uleb128 0xf
- 2222 02c3 C0000000 		.4byte	.LVL46
+ 2222 02c3 BC000000 		.4byte	.LVL46
  2223 02c7 E1090000 		.4byte	0x9e1
  2224 02cb DC020000 		.4byte	0x2dc
  2225 02cf 0D       		.uleb128 0xd
@@ -4519,7 +4519,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2227 02d1 50       		.byte	0x50
  2228 02d2 02       		.uleb128 0x2
  2229 02d3 08       		.byte	0x8
- 2230 02d4 25       		.byte	0x25
+ 2230 02d4 BA       		.byte	0xba
  2231 02d5 0D       		.uleb128 0xd
  2232 02d6 01       		.uleb128 0x1
  2233 02d7 51       		.byte	0x51
@@ -4528,7 +4528,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2236 02da 00       		.sleb128 0
  2237 02db 00       		.byte	0
  2238 02dc 0C       		.uleb128 0xc
- 2239 02dd C8000000 		.4byte	.LVL47
+ 2239 02dd C4000000 		.4byte	.LVL47
  2240 02e1 EC090000 		.4byte	0x9ec
  2241 02e5 0D       		.uleb128 0xd
  2242 02e6 01       		.uleb128 0x1
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2266 0313 00       		.byte	0
  2267 0314 0F       		.uleb128 0xf
  2268 0315 1C000000 		.4byte	.LVL50
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 77
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 77
 
 
  2269 0319 020A0000 		.4byte	0xa02
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2323 0369 77       		.byte	0x77
  2324 036a 00       		.sleb128 0
  2325 036b 00       		.byte	0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 78
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 78
 
 
  2326 036c 0E       		.uleb128 0xe
@@ -4626,7 +4626,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2328 0371 5A020000 		.4byte	0x25a
  2329 0375 00       		.byte	0
  2330 0376 10       		.uleb128 0x10
- 2331 0377 9A050000 		.4byte	.LASF42
+ 2331 0377 B2050000 		.4byte	.LASF42
  2332 037b 01       		.byte	0x1
  2333 037c BA       		.byte	0xba
  2334 037d 00000000 		.4byte	.LFB1
@@ -4635,12 +4635,12 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2337 0386 9C       		.byte	0x9c
  2338 0387 D2030000 		.4byte	0x3d2
  2339 038b 11       		.uleb128 0x11
- 2340 038c 35050000 		.4byte	.LASF31
+ 2340 038c 4D050000 		.4byte	.LASF31
  2341 0390 01       		.byte	0x1
  2342 0391 BC       		.byte	0xbc
  2343 0392 72000000 		.4byte	0x72
  2344 0396 12       		.uleb128 0x12
- 2345 0397 89050000 		.4byte	.LASF39
+ 2345 0397 A1050000 		.4byte	.LASF39
  2346 039b 01       		.byte	0x1
  2347 039c BD       		.byte	0xbd
  2348 039d 72000000 		.4byte	0x72
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2380 03e2 01       		.uleb128 0x1
  2381 03e3 9C       		.byte	0x9c
  2382 03e4 FB030000 		.4byte	0x3fb
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 79
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 79
 
 
  2383 03e8 0E       		.uleb128 0xe
@@ -4689,7 +4689,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2388 03f6 76030000 		.4byte	0x376
  2389 03fa 00       		.byte	0
  2390 03fb 13       		.uleb128 0x13
- 2391 03fc 10040000 		.4byte	.LASF44
+ 2391 03fc 28040000 		.4byte	.LASF44
  2392 0400 01       		.byte	0x1
  2393 0401 6F01     		.2byte	0x16f
  2394 0403 00000000 		.4byte	.LFB3
@@ -4698,7 +4698,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2397 040c 9C       		.byte	0x9c
  2398 040d 4E040000 		.4byte	0x44e
  2399 0411 0B       		.uleb128 0xb
- 2400 0412 89050000 		.4byte	.LASF39
+ 2400 0412 A1050000 		.4byte	.LASF39
  2401 0416 01       		.byte	0x1
  2402 0417 7101     		.2byte	0x171
  2403 0419 72000000 		.4byte	0x72
@@ -4737,8 +4737,8 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2436 045f 9C       		.byte	0x9c
  2437 0460 85040000 		.4byte	0x485
  2438 0464 0A       		.uleb128 0xa
- 2439 0465 91030000 		.4byte	.LASF46
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 80
+ 2439 0465 A9030000 		.4byte	.LASF46
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 80
 
 
  2440 0469 01       		.byte	0x1
@@ -4746,14 +4746,14 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2442 046c 72000000 		.4byte	0x72
  2443 0470 78020000 		.4byte	.LLST14
  2444 0474 0B       		.uleb128 0xb
- 2445 0475 E3050000 		.4byte	.LASF47
+ 2445 0475 FB050000 		.4byte	.LASF47
  2446 0479 01       		.byte	0x1
  2447 047a B401     		.2byte	0x1b4
  2448 047c 72000000 		.4byte	0x72
  2449 0480 99020000 		.4byte	.LLST15
  2450 0484 00       		.byte	0
  2451 0485 13       		.uleb128 0x13
- 2452 0486 59050000 		.4byte	.LASF48
+ 2452 0486 71050000 		.4byte	.LASF48
  2453 048a 01       		.byte	0x1
  2454 048b D601     		.2byte	0x1d6
  2455 048d 00000000 		.4byte	.LFB5
@@ -4762,20 +4762,20 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2458 0496 9C       		.byte	0x9c
  2459 0497 BC040000 		.4byte	0x4bc
  2460 049b 0A       		.uleb128 0xa
- 2461 049c 76030000 		.4byte	.LASF49
+ 2461 049c 8E030000 		.4byte	.LASF49
  2462 04a0 01       		.byte	0x1
  2463 04a1 D601     		.2byte	0x1d6
  2464 04a3 72000000 		.4byte	0x72
  2465 04a7 B7020000 		.4byte	.LLST16
  2466 04ab 0B       		.uleb128 0xb
- 2467 04ac E3050000 		.4byte	.LASF47
+ 2467 04ac FB050000 		.4byte	.LASF47
  2468 04b0 01       		.byte	0x1
  2469 04b1 D801     		.2byte	0x1d8
  2470 04b3 72000000 		.4byte	0x72
  2471 04b7 D8020000 		.4byte	.LLST17
  2472 04bb 00       		.byte	0
  2473 04bc 14       		.uleb128 0x14
- 2474 04bd 13030000 		.4byte	.LASF53
+ 2474 04bd 2B030000 		.4byte	.LASF53
  2475 04c1 01       		.byte	0x1
  2476 04c2 FE01     		.2byte	0x1fe
  2477 04c4 72000000 		.4byte	0x72
@@ -4785,20 +4785,20 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2481 04d1 9C       		.byte	0x9c
  2482 04d2 17050000 		.4byte	0x517
  2483 04d6 0A       		.uleb128 0xa
- 2484 04d7 B2050000 		.4byte	.LASF50
+ 2484 04d7 CA050000 		.4byte	.LASF50
  2485 04db 01       		.byte	0x1
  2486 04dc FE01     		.2byte	0x1fe
  2487 04de BA000000 		.4byte	0xba
  2488 04e2 F6020000 		.4byte	.LLST18
  2489 04e6 0B       		.uleb128 0xb
- 2490 04e7 E3050000 		.4byte	.LASF47
+ 2490 04e7 FB050000 		.4byte	.LASF47
  2491 04eb 01       		.byte	0x1
  2492 04ec 0002     		.2byte	0x200
  2493 04ee 7E000000 		.4byte	0x7e
  2494 04f2 24030000 		.4byte	.LLST19
  2495 04f6 0B       		.uleb128 0xb
  2496 04f7 F5000000 		.4byte	.LASF51
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 81
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 81
 
 
  2497 04fb 01       		.byte	0x1
@@ -4806,14 +4806,14 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2499 04fe 72000000 		.4byte	0x72
  2500 0502 5C030000 		.4byte	.LLST20
  2501 0506 0B       		.uleb128 0xb
- 2502 0507 49050000 		.4byte	.LASF52
+ 2502 0507 61050000 		.4byte	.LASF52
  2503 050b 01       		.byte	0x1
  2504 050c 0202     		.2byte	0x202
  2505 050e BA000000 		.4byte	0xba
  2506 0512 7B030000 		.4byte	.LLST21
  2507 0516 00       		.byte	0
  2508 0517 15       		.uleb128 0x15
- 2509 0518 A5050000 		.4byte	.LASF54
+ 2509 0518 BD050000 		.4byte	.LASF54
  2510 051c 01       		.byte	0x1
  2511 051d 2D02     		.2byte	0x22d
  2512 051f 7E000000 		.4byte	0x7e
@@ -4823,13 +4823,13 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2516 052c 9C       		.byte	0x9c
  2517 052d 52050000 		.4byte	0x552
  2518 0531 0B       		.uleb128 0xb
- 2519 0532 2E050000 		.4byte	.LASF55
+ 2519 0532 46050000 		.4byte	.LASF55
  2520 0536 01       		.byte	0x1
  2521 0537 2F02     		.2byte	0x22f
  2522 0539 72000000 		.4byte	0x72
  2523 053d BA030000 		.4byte	.LLST22
  2524 0541 0B       		.uleb128 0xb
- 2525 0542 CB020000 		.4byte	.LASF34
+ 2525 0542 E3020000 		.4byte	.LASF34
  2526 0546 01       		.byte	0x1
  2527 0547 3002     		.2byte	0x230
  2528 0549 7E000000 		.4byte	0x7e
@@ -4844,7 +4844,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2537 0562 01       		.uleb128 0x1
  2538 0563 9C       		.byte	0x9c
  2539 0564 16       		.uleb128 0x16
- 2540 0565 41020000 		.4byte	.LASF57
+ 2540 0565 D3020000 		.4byte	.LASF57
  2541 0569 01       		.byte	0x1
  2542 056a 6602     		.2byte	0x266
  2543 056c 00000000 		.4byte	.LFB9
@@ -4852,20 +4852,20 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2545 0574 01       		.uleb128 0x1
  2546 0575 9C       		.byte	0x9c
  2547 0576 15       		.uleb128 0x15
- 2548 0577 1F030000 		.4byte	.LASF58
+ 2548 0577 37030000 		.4byte	.LASF58
  2549 057b 01       		.byte	0x1
  2550 057c 8902     		.2byte	0x289
  2551 057e 72000000 		.4byte	0x72
  2552 0582 00000000 		.4byte	.LFB10
  2553 0586 30000000 		.4byte	.LFE10-.LFB10
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 82
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 82
 
 
  2554 058a 01       		.uleb128 0x1
  2555 058b 9C       		.byte	0x9c
  2556 058c B1050000 		.4byte	0x5b1
  2557 0590 0A       		.uleb128 0xa
- 2558 0591 B5010000 		.4byte	.LASF59
+ 2558 0591 47020000 		.4byte	.LASF59
  2559 0595 01       		.byte	0x1
  2560 0596 8902     		.2byte	0x289
  2561 0598 72000000 		.4byte	0x72
@@ -4878,7 +4878,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2568 05ac 0C040000 		.4byte	.LLST25
  2569 05b0 00       		.byte	0
  2570 05b1 15       		.uleb128 0x15
- 2571 05b2 4B030000 		.4byte	.LASF60
+ 2571 05b2 63030000 		.4byte	.LASF60
  2572 05b6 01       		.byte	0x1
  2573 05b7 B802     		.2byte	0x2b8
  2574 05b9 96000000 		.4byte	0x96
@@ -4888,21 +4888,21 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2578 05c6 9C       		.byte	0x9c
  2579 05c7 EA050000 		.4byte	0x5ea
  2580 05cb 17       		.uleb128 0x17
- 2581 05cc EA050000 		.4byte	.LASF61
+ 2581 05cc 02060000 		.4byte	.LASF61
  2582 05d0 01       		.byte	0x1
  2583 05d1 BA02     		.2byte	0x2ba
  2584 05d3 96000000 		.4byte	0x96
  2585 05d7 01       		.uleb128 0x1
  2586 05d8 50       		.byte	0x50
  2587 05d9 0B       		.uleb128 0xb
- 2588 05da 76030000 		.4byte	.LASF49
+ 2588 05da 8E030000 		.4byte	.LASF49
  2589 05de 01       		.byte	0x1
  2590 05df BB02     		.2byte	0x2bb
  2591 05e1 72000000 		.4byte	0x72
  2592 05e5 2A040000 		.4byte	.LLST26
  2593 05e9 00       		.byte	0
  2594 05ea 15       		.uleb128 0x15
- 2595 05eb F1050000 		.4byte	.LASF62
+ 2595 05eb 09060000 		.4byte	.LASF62
  2596 05ef 01       		.byte	0x1
  2597 05f0 EE02     		.2byte	0x2ee
  2598 05f2 A2000000 		.4byte	0xa2
@@ -4912,23 +4912,23 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2602 05ff 9C       		.byte	0x9c
  2603 0600 25060000 		.4byte	0x625
  2604 0604 0B       		.uleb128 0xb
- 2605 0605 EA050000 		.4byte	.LASF61
+ 2605 0605 02060000 		.4byte	.LASF61
  2606 0609 01       		.byte	0x1
  2607 060a F002     		.2byte	0x2f0
  2608 060c 7E000000 		.4byte	0x7e
  2609 0610 48040000 		.4byte	.LLST27
  2610 0614 0B       		.uleb128 0xb
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 83
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 83
 
 
- 2611 0615 76030000 		.4byte	.LASF49
+ 2611 0615 8E030000 		.4byte	.LASF49
  2612 0619 01       		.byte	0x1
  2613 061a F102     		.2byte	0x2f1
  2614 061c 72000000 		.4byte	0x72
  2615 0620 71040000 		.4byte	.LLST28
  2616 0624 00       		.byte	0
  2617 0625 15       		.uleb128 0x15
- 2618 0626 65010000 		.4byte	.LASF63
+ 2618 0626 F7010000 		.4byte	.LASF63
  2619 062a 01       		.byte	0x1
  2620 062b 2A03     		.2byte	0x32a
  2621 062d AE000000 		.4byte	0xae
@@ -4938,20 +4938,20 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2625 063a 9C       		.byte	0x9c
  2626 063b 60060000 		.4byte	0x660
  2627 063f 0B       		.uleb128 0xb
- 2628 0640 EA050000 		.4byte	.LASF61
+ 2628 0640 02060000 		.4byte	.LASF61
  2629 0644 01       		.byte	0x1
  2630 0645 2C03     		.2byte	0x32c
  2631 0647 8A000000 		.4byte	0x8a
  2632 064b 8F040000 		.4byte	.LLST29
  2633 064f 0B       		.uleb128 0xb
- 2634 0650 76030000 		.4byte	.LASF49
+ 2634 0650 8E030000 		.4byte	.LASF49
  2635 0654 01       		.byte	0x1
  2636 0655 2D03     		.2byte	0x32d
  2637 0657 72000000 		.4byte	0x72
  2638 065b F0040000 		.4byte	.LLST30
  2639 065f 00       		.byte	0
  2640 0660 13       		.uleb128 0x13
- 2641 0661 C3050000 		.4byte	.LASF64
+ 2641 0661 DB050000 		.4byte	.LASF64
  2642 0665 01       		.byte	0x1
  2643 0666 8703     		.2byte	0x387
  2644 0668 00000000 		.4byte	.LFB14
@@ -4960,7 +4960,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2647 0671 9C       		.byte	0x9c
  2648 0672 85060000 		.4byte	0x685
  2649 0676 18       		.uleb128 0x18
- 2650 0677 52050000 		.4byte	.LASF65
+ 2650 0677 6A050000 		.4byte	.LASF65
  2651 067b 01       		.byte	0x1
  2652 067c 8703     		.2byte	0x387
  2653 067e AE000000 		.4byte	0xae
@@ -4968,7 +4968,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2655 0683 50       		.byte	0x50
  2656 0684 00       		.byte	0
  2657 0685 13       		.uleb128 0x13
- 2658 0686 96030000 		.4byte	.LASF66
+ 2658 0686 AE030000 		.4byte	.LASF66
  2659 068a 01       		.byte	0x1
  2660 068b AA03     		.2byte	0x3aa
  2661 068d 00000000 		.4byte	.LFB15
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2665 0697 AA060000 		.4byte	0x6aa
  2666 069b 18       		.uleb128 0x18
  2667 069c 07000000 		.4byte	.LASF67
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 84
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 84
 
 
  2668 06a0 01       		.byte	0x1
@@ -4988,7 +4988,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2672 06a8 50       		.byte	0x50
  2673 06a9 00       		.byte	0
  2674 06aa 15       		.uleb128 0x15
- 2675 06ab A8030000 		.4byte	.LASF68
+ 2675 06ab C0030000 		.4byte	.LASF68
  2676 06af 01       		.byte	0x1
  2677 06b0 C503     		.2byte	0x3c5
  2678 06b2 A2000000 		.4byte	0xa2
@@ -4998,13 +4998,13 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2682 06bf 9C       		.byte	0x9c
  2683 06c0 E3060000 		.4byte	0x6e3
  2684 06c4 0A       		.uleb128 0xa
- 2685 06c5 74050000 		.4byte	.LASF69
+ 2685 06c5 8C050000 		.4byte	.LASF69
  2686 06c9 01       		.byte	0x1
  2687 06ca C503     		.2byte	0x3c5
  2688 06cc AE000000 		.4byte	0xae
  2689 06d0 19050000 		.4byte	.LLST31
  2690 06d4 17       		.uleb128 0x17
- 2691 06d5 40040000 		.4byte	.LASF70
+ 2691 06d5 58040000 		.4byte	.LASF70
  2692 06d9 01       		.byte	0x1
  2693 06da C803     		.2byte	0x3c8
  2694 06dc A2000000 		.4byte	0xa2
@@ -5022,13 +5022,13 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2706 06f8 9C       		.byte	0x9c
  2707 06f9 1C070000 		.4byte	0x71c
  2708 06fd 0A       		.uleb128 0xa
- 2709 06fe 74050000 		.4byte	.LASF69
+ 2709 06fe 8C050000 		.4byte	.LASF69
  2710 0702 01       		.byte	0x1
  2711 0703 0204     		.2byte	0x402
  2712 0705 AE000000 		.4byte	0xae
  2713 0709 37050000 		.4byte	.LLST32
  2714 070d 17       		.uleb128 0x17
- 2715 070e 75010000 		.4byte	.LASF72
+ 2715 070e 07020000 		.4byte	.LASF72
  2716 0712 01       		.byte	0x1
  2717 0713 0504     		.2byte	0x405
  2718 0715 BA000000 		.4byte	0xba
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2722 071c 15       		.uleb128 0x15
  2723 071d 34010000 		.4byte	.LASF73
  2724 0721 01       		.byte	0x1
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 85
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 85
 
 
  2725 0722 4404     		.2byte	0x444
@@ -5049,38 +5049,38 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2730 0731 9C       		.byte	0x9c
  2731 0732 82070000 		.4byte	0x782
  2732 0736 0A       		.uleb128 0xa
- 2733 0737 74050000 		.4byte	.LASF69
+ 2733 0737 8C050000 		.4byte	.LASF69
  2734 073b 01       		.byte	0x1
  2735 073c 4404     		.2byte	0x444
  2736 073e AE000000 		.4byte	0xae
  2737 0742 65050000 		.4byte	.LLST33
  2738 0746 0B       		.uleb128 0xb
- 2739 0747 E9010000 		.4byte	.LASF74
+ 2739 0747 7B020000 		.4byte	.LASF74
  2740 074b 01       		.byte	0x1
  2741 074c 4704     		.2byte	0x447
  2742 074e AE000000 		.4byte	0xae
  2743 0752 86050000 		.4byte	.LLST34
  2744 0756 19       		.uleb128 0x19
- 2745 0757 FB040000 		.4byte	.LASF75
+ 2745 0757 13050000 		.4byte	.LASF75
  2746 075b 01       		.byte	0x1
  2747 075c 4804     		.2byte	0x448
  2748 075e AE000000 		.4byte	0xae
  2749 0762 127A     		.2byte	0x7a12
  2750 0764 0B       		.uleb128 0xb
- 2751 0765 01050000 		.4byte	.LASF76
+ 2751 0765 19050000 		.4byte	.LASF76
  2752 0769 01       		.byte	0x1
  2753 076a 4904     		.2byte	0x449
  2754 076c AE000000 		.4byte	0xae
  2755 0770 A9050000 		.4byte	.LLST35
  2756 0774 1A       		.uleb128 0x1a
- 2757 0775 E5040000 		.4byte	.LASF30
+ 2757 0775 FD040000 		.4byte	.LASF30
  2758 0779 01       		.byte	0x1
  2759 077a 4A04     		.2byte	0x44a
  2760 077c 72000000 		.4byte	0x72
  2761 0780 10       		.byte	0x10
  2762 0781 00       		.byte	0
  2763 0782 13       		.uleb128 0x13
- 2764 0783 EE030000 		.4byte	.LASF77
+ 2764 0783 06040000 		.4byte	.LASF77
  2765 0787 01       		.byte	0x1
  2766 0788 1806     		.2byte	0x618
  2767 078a 00000000 		.4byte	.LFB20
@@ -5089,16 +5089,16 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2770 0793 9C       		.byte	0x9c
  2771 0794 F7070000 		.4byte	0x7f7
  2772 0798 0A       		.uleb128 0xa
- 2773 0799 35050000 		.4byte	.LASF31
+ 2773 0799 4D050000 		.4byte	.LASF31
  2774 079d 01       		.byte	0x1
  2775 079e 1806     		.2byte	0x618
  2776 07a0 72000000 		.4byte	0x72
  2777 07a4 C9050000 		.4byte	.LLST36
  2778 07a8 0A       		.uleb128 0xa
- 2779 07a9 41050000 		.4byte	.LASF78
+ 2779 07a9 59050000 		.4byte	.LASF78
  2780 07ad 01       		.byte	0x1
  2781 07ae 1806     		.2byte	0x618
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 86
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 86
 
 
  2782 07b0 72000000 		.4byte	0x72
@@ -5134,7 +5134,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2812 07f5 00       		.byte	0
  2813 07f6 00       		.byte	0
  2814 07f7 15       		.uleb128 0x15
- 2815 07f8 6A050000 		.4byte	.LASF79
+ 2815 07f8 82050000 		.4byte	.LASF79
  2816 07fc 01       		.byte	0x1
  2817 07fd EA06     		.2byte	0x6ea
  2818 07ff 96000000 		.4byte	0x96
@@ -5144,7 +5144,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2822 080c 9C       		.byte	0x9c
  2823 080d 50080000 		.4byte	0x850
  2824 0811 0B       		.uleb128 0xb
- 2825 0812 EA050000 		.4byte	.LASF61
+ 2825 0812 02060000 		.4byte	.LASF61
  2826 0816 01       		.byte	0x1
  2827 0817 EC06     		.2byte	0x6ec
  2828 0819 96000000 		.4byte	0x96
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2836 0833 3D080000 		.4byte	0x83d
  2837 0837 0D       		.uleb128 0xd
  2838 0838 01       		.uleb128 0x1
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 87
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 87
 
 
  2839 0839 50       		.byte	0x50
@@ -5183,7 +5183,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2858 0865 9C       		.byte	0x9c
  2859 0866 A9080000 		.4byte	0x8a9
  2860 086a 0B       		.uleb128 0xb
- 2861 086b EA050000 		.4byte	.LASF61
+ 2861 086b 02060000 		.4byte	.LASF61
  2862 086f 01       		.byte	0x1
  2863 0870 0D07     		.2byte	0x70d
  2864 0872 A2000000 		.4byte	0xa2
@@ -5209,7 +5209,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2884 08a4 64050000 		.4byte	0x564
  2885 08a8 00       		.byte	0
  2886 08a9 15       		.uleb128 0x15
- 2887 08aa 7E050000 		.4byte	.LASF81
+ 2887 08aa 96050000 		.4byte	.LASF81
  2888 08ae 01       		.byte	0x1
  2889 08af 2C07     		.2byte	0x72c
  2890 08b1 AE000000 		.4byte	0xae
@@ -5218,11 +5218,11 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2893 08bd 01       		.uleb128 0x1
  2894 08be 9C       		.byte	0x9c
  2895 08bf 02090000 		.4byte	0x902
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 88
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 88
 
 
  2896 08c3 0B       		.uleb128 0xb
- 2897 08c4 EA050000 		.4byte	.LASF61
+ 2897 08c4 02060000 		.4byte	.LASF61
  2898 08c8 01       		.byte	0x1
  2899 08c9 2E07     		.2byte	0x72e
  2900 08cb AE000000 		.4byte	0xae
@@ -5255,7 +5255,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2927 0910 00       		.byte	0
  2928 0911 00       		.byte	0
  2929 0912 1D       		.uleb128 0x1d
- 2930 0913 33030000 		.4byte	.LASF82
+ 2930 0913 4B030000 		.4byte	.LASF82
  2931 0917 01       		.byte	0x1
  2932 0918 3D       		.byte	0x3d
  2933 0919 02090000 		.4byte	0x902
@@ -5263,7 +5263,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2935 091e 03       		.byte	0x3
  2936 091f 00000000 		.4byte	ADC_gcor
  2937 0923 1E       		.uleb128 0x1e
- 2938 0924 91010000 		.4byte	.LASF83
+ 2938 0924 23020000 		.4byte	.LASF83
  2939 0928 01       		.byte	0x1
  2940 0929 2C       		.byte	0x2c
  2941 092a 72000000 		.4byte	0x72
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2950 093f 05       		.uleb128 0x5
  2951 0940 03       		.byte	0x3
  2952 0941 00000000 		.4byte	ADC_convDone
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 89
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 89
 
 
  2953 0945 1E       		.uleb128 0x1e
@@ -5306,7 +5306,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2975 0973 03       		.byte	0x3
  2976 0974 00000000 		.4byte	ADC_Config
  2977 0978 1E       		.uleb128 0x1e
- 2978 0979 F0040000 		.4byte	.LASF88
+ 2978 0979 08050000 		.4byte	.LASF88
  2979 097d 01       		.byte	0x1
  2980 097e 34       		.byte	0x34
  2981 097f 89090000 		.4byte	0x989
@@ -5316,7 +5316,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2985 0989 05       		.uleb128 0x5
  2986 098a AE000000 		.4byte	0xae
  2987 098e 1E       		.uleb128 0x1e
- 2988 098f D1050000 		.4byte	.LASF89
+ 2988 098f E9050000 		.4byte	.LASF89
  2989 0993 01       		.byte	0x1
  2990 0994 35       		.byte	0x35
  2991 0995 89090000 		.4byte	0x989
@@ -5324,21 +5324,21 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  2993 099a 03       		.byte	0x3
  2994 099b 00000000 		.4byte	ADC_CountsPerVolt
  2995 099f 1F       		.uleb128 0x1f
- 2996 09a0 D9030000 		.4byte	.LASF90
- 2997 09a4 D9030000 		.4byte	.LASF90
+ 2996 09a0 F1030000 		.4byte	.LASF90
+ 2997 09a4 F1030000 		.4byte	.LASF90
  2998 09a8 04       		.byte	0x4
  2999 09a9 7F       		.byte	0x7f
  3000 09aa 1F       		.uleb128 0x1f
- 3001 09ab 02020000 		.4byte	.LASF91
- 3002 09af 02020000 		.4byte	.LASF91
+ 3001 09ab 94020000 		.4byte	.LASF91
+ 3002 09af 94020000 		.4byte	.LASF91
  3003 09b3 04       		.byte	0x4
  3004 09b4 7D       		.byte	0x7d
  3005 09b5 1F       		.uleb128 0x1f
- 3006 09b6 54010000 		.4byte	.LASF92
- 3007 09ba 54010000 		.4byte	.LASF92
+ 3006 09b6 E6010000 		.4byte	.LASF92
+ 3007 09ba E6010000 		.4byte	.LASF92
  3008 09be 04       		.byte	0x4
  3009 09bf 77       		.byte	0x77
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 90
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 90
 
 
  3010 09c0 1F       		.uleb128 0x1f
@@ -5347,38 +5347,38 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3013 09c9 04       		.byte	0x4
  3014 09ca 7E       		.byte	0x7e
  3015 09cb 1F       		.uleb128 0x1f
- 3016 09cc D5040000 		.4byte	.LASF94
- 3017 09d0 D5040000 		.4byte	.LASF94
+ 3016 09cc ED040000 		.4byte	.LASF94
+ 3017 09d0 ED040000 		.4byte	.LASF94
  3018 09d4 05       		.byte	0x5
  3019 09d5 57       		.byte	0x57
  3020 09d6 1F       		.uleb128 0x1f
- 3021 09d7 07050000 		.4byte	.LASF95
- 3022 09db 07050000 		.4byte	.LASF95
+ 3021 09d7 1F050000 		.4byte	.LASF95
+ 3022 09db 1F050000 		.4byte	.LASF95
  3023 09df 06       		.byte	0x6
  3024 09e0 2F       		.byte	0x2f
  3025 09e1 1F       		.uleb128 0x1f
- 3026 09e2 BD010000 		.4byte	.LASF96
- 3027 09e6 BD010000 		.4byte	.LASF96
+ 3026 09e2 4F020000 		.4byte	.LASF96
+ 3027 09e6 4F020000 		.4byte	.LASF96
  3028 09ea 07       		.byte	0x7
  3029 09eb 2F       		.byte	0x2f
  3030 09ec 1F       		.uleb128 0x1f
- 3031 09ed 82010000 		.4byte	.LASF97
- 3032 09f1 82010000 		.4byte	.LASF97
+ 3031 09ed 14020000 		.4byte	.LASF97
+ 3032 09f1 14020000 		.4byte	.LASF97
  3033 09f5 04       		.byte	0x4
  3034 09f6 88       		.byte	0x88
  3035 09f7 1F       		.uleb128 0x1f
- 3036 09f8 21040000 		.4byte	.LASF98
- 3037 09fc 21040000 		.4byte	.LASF98
+ 3036 09f8 39040000 		.4byte	.LASF98
+ 3037 09fc 39040000 		.4byte	.LASF98
  3038 0a00 06       		.byte	0x6
  3039 0a01 32       		.byte	0x32
  3040 0a02 1F       		.uleb128 0x1f
- 3041 0a03 5A030000 		.4byte	.LASF99
- 3042 0a07 5A030000 		.4byte	.LASF99
+ 3041 0a03 72030000 		.4byte	.LASF99
+ 3042 0a07 72030000 		.4byte	.LASF99
  3043 0a0b 07       		.byte	0x7
  3044 0a0c 32       		.byte	0x32
  3045 0a0d 1F       		.uleb128 0x1f
- 3046 0a0e 80030000 		.4byte	.LASF100
- 3047 0a12 80030000 		.4byte	.LASF100
+ 3046 0a0e 98030000 		.4byte	.LASF100
+ 3047 0a12 98030000 		.4byte	.LASF100
  3048 0a16 04       		.byte	0x4
  3049 0a17 8B       		.byte	0x8b
  3050 0a18 00       		.byte	0
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3064 000b 55       		.uleb128 0x55
  3065 000c 17       		.uleb128 0x17
  3066 000d 11       		.uleb128 0x11
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 91
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 91
 
 
  3067 000e 01       		.uleb128 0x1
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3121 0044 3B       		.uleb128 0x3b
  3122 0045 0B       		.uleb128 0xb
  3123 0046 01       		.uleb128 0x1
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 92
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 92
 
 
  3124 0047 13       		.uleb128 0x13
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3178 007e 0A       		.uleb128 0xa
  3179 007f 05       		.uleb128 0x5
  3180 0080 00       		.byte	0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 93
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 93
 
 
  3181 0081 03       		.uleb128 0x3
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3235 00be 0F       		.uleb128 0xf
  3236 00bf 898201   		.uleb128 0x4109
  3237 00c2 01       		.byte	0x1
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 94
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 94
 
 
  3238 00c3 11       		.uleb128 0x11
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3292 00fa 0B       		.uleb128 0xb
  3293 00fb 49       		.uleb128 0x49
  3294 00fc 13       		.uleb128 0x13
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 95
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 95
 
 
  3295 00fd 02       		.uleb128 0x2
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3349 0135 00       		.byte	0
  3350 0136 00       		.byte	0
  3351 0137 15       		.uleb128 0x15
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 96
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 96
 
 
  3352 0138 2E       		.uleb128 0x2e
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3406 0170 3A       		.uleb128 0x3a
  3407 0171 0B       		.uleb128 0xb
  3408 0172 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 97
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 97
 
 
  3409 0173 05       		.uleb128 0x5
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3463 01a9 01       		.byte	0x1
  3464 01aa 49       		.uleb128 0x49
  3465 01ab 13       		.uleb128 0x13
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 98
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 98
 
 
  3466 01ac 01       		.uleb128 0x1
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3520 01e2 03       		.uleb128 0x3
  3521 01e3 0E       		.uleb128 0xe
  3522 01e4 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 99
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 99
 
 
  3523 01e5 0B       		.uleb128 0xb
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3577 006a 51       		.byte	0x51
  3578 006b 9F       		.byte	0x9f
  3579 006c 00000000 		.4byte	0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 100
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 100
 
 
  3580 0070 00000000 		.4byte	0
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3634 00ef DC000000 		.4byte	.LFE21
  3635 00f3 0400     		.2byte	0x4
  3636 00f5 F3       		.byte	0xf3
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 101
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 101
 
 
  3637 00f6 01       		.uleb128 0x1
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3691 0182 0100     		.2byte	0x1
  3692 0184 50       		.byte	0x50
  3693 0185 70000000 		.4byte	.LVL18
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 102
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 102
 
 
  3694 0189 8E000000 		.4byte	.LVL26
@@ -6118,25 +6118,25 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3748 0217 40000000 		.4byte	.LVL40
  3749 021b 0100     		.2byte	0x1
  3750 021d 56       		.byte	0x56
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 103
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 103
 
 
  3751 021e 00000000 		.4byte	0
  3752 0222 00000000 		.4byte	0
  3753              	.LLST11:
  3754 0226 00000000 		.4byte	.LVL41
- 3755 022a 80000000 		.4byte	.LVL42
+ 3755 022a 7C000000 		.4byte	.LVL42
  3756 022e 0100     		.2byte	0x1
  3757 0230 50       		.byte	0x50
- 3758 0231 80000000 		.4byte	.LVL42
- 3759 0235 CA000000 		.4byte	.LVL48
+ 3758 0231 7C000000 		.4byte	.LVL42
+ 3759 0235 C6000000 		.4byte	.LVL48
  3760 0239 0400     		.2byte	0x4
  3761 023b F3       		.byte	0xf3
  3762 023c 01       		.uleb128 0x1
  3763 023d 50       		.byte	0x50
  3764 023e 9F       		.byte	0x9f
- 3765 023f CA000000 		.4byte	.LVL48
- 3766 0243 E0000000 		.4byte	.LFE19
+ 3765 023f C6000000 		.4byte	.LVL48
+ 3766 0243 E4000000 		.4byte	.LFE19
  3767 0247 0100     		.2byte	0x1
  3768 0249 50       		.byte	0x50
  3769 024a 00000000 		.4byte	0
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3805 02a8 18000000 		.4byte	.LFE4
  3806 02ac 0100     		.2byte	0x1
  3807 02ae 50       		.byte	0x50
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 104
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 104
 
 
  3808 02af 00000000 		.4byte	0
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3862 0331 24       		.byte	0x24
  3863 0332 03       		.byte	0x3
  3864 0333 00000000 		.4byte	.LANCHOR0
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 105
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 105
 
 
  3865 0337 22       		.byte	0x22
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3919 03be 14000000 		.4byte	.LVL94
  3920 03c2 0100     		.2byte	0x1
  3921 03c4 53       		.byte	0x53
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 106
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 106
 
 
  3922 03c5 00000000 		.4byte	0
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  3976 0453 18000000 		.4byte	.LVL111
  3977 0457 20000000 		.4byte	.LVL112
  3978 045b 0100     		.2byte	0x1
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 107
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 107
 
 
  3979 045d 52       		.byte	0x52
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4033 04e1 6C000000 		.4byte	.LFE13
  4034 04e5 0100     		.2byte	0x1
  4035 04e7 50       		.byte	0x50
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 108
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 108
 
 
  4036 04e8 00000000 		.4byte	0
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4090 0574 4C000000 		.4byte	.LFE18
  4091 0578 0400     		.2byte	0x4
  4092 057a F3       		.byte	0xf3
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 109
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 109
 
 
  4093 057b 01       		.uleb128 0x1
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4147 05f8 01       		.uleb128 0x1
  4148 05f9 50       		.byte	0x50
  4149 05fa 9F       		.byte	0x9f
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 110
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 110
 
 
  4150 05fb 00000000 		.4byte	0
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4204 0684 00000000 		.4byte	0
  4205 0688 00000000 		.4byte	0
  4206              		.section	.debug_aranges,"",%progbits
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 111
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 111
 
 
  4207 0000 E4000000 		.4byte	0xe4
@@ -6613,7 +6613,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4216 0018 00000000 		.4byte	.LFB22
  4217 001c 4C000000 		.4byte	.LFE22-.LFB22
  4218 0020 00000000 		.4byte	.LFB19
- 4219 0024 E0000000 		.4byte	.LFE19-.LFB19
+ 4219 0024 E4000000 		.4byte	.LFE19-.LFB19
  4220 0028 00000000 		.4byte	.LFB0
  4221 002c C4000000 		.4byte	.LFE0-.LFB0
  4222 0030 00000000 		.4byte	.LFB1
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4261 00cc 28000000 		.4byte	.LFE23-.LFB23
  4262 00d0 00000000 		.4byte	.LFB24
  4263 00d4 28000000 		.4byte	.LFE24-.LFB24
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 112
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 112
 
 
  4264 00d8 00000000 		.4byte	.LFB25
@@ -6672,7 +6672,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4272 0008 00000000 		.4byte	.LFB22
  4273 000c 4C000000 		.4byte	.LFE22
  4274 0010 00000000 		.4byte	.LFB19
- 4275 0014 E0000000 		.4byte	.LFE19
+ 4275 0014 E4000000 		.4byte	.LFE19
  4276 0018 00000000 		.4byte	.LFB0
  4277 001c C4000000 		.4byte	.LFE0
  4278 0020 00000000 		.4byte	.LFB1
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4318 00c0 00000000 		.4byte	.LFB24
  4319 00c4 28000000 		.4byte	.LFE24
  4320 00c8 00000000 		.4byte	.LFB25
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 113
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 113
 
 
  4321 00cc 28000000 		.4byte	.LFE25
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4348 007b 6C6F6E67 		.ascii	"long long unsigned int\000"
  4348      206C6F6E 
  4348      6720756E 
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 114
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 114
 
 
  4348      7369676E 
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4372 012b 6C6F6E67 		.ascii	"long int\000"
  4372      20696E74 
  4372      00
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 115
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 115
 
 
  4373              	.LASF73:
@@ -6853,375 +6853,375 @@ ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 1
  4377              	.LASF10:
  4378 014e 75696E74 		.ascii	"uint8\000"
  4378      3800
- 4379              	.LASF92:
- 4380 0154 43794465 		.ascii	"CyDelayUs\000"
- 4380      6C617955 
- 4380      7300
- 4381              	.LASF17:
- 4382 015e 646F7562 		.ascii	"double\000"
- 4382      6C6500
- 4383              	.LASF63:
- 4384 0165 4144435F 		.ascii	"ADC_GetResult32\000"
- 4384      47657452 
- 4384      6573756C 
- 4384      74333200 
- 4385              	.LASF72:
- 4386 0175 566F6C74 		.ascii	"Volts\000"
- 4386      7300
- 4387              	.LASF12:
- 4388 017b 75696E74 		.ascii	"uint32\000"
- 4388      333200
- 4389              	.LASF97:
- 4390 0182 4379496E 		.ascii	"CyIntSetVector\000"
- 4390      74536574 
- 4390      56656374 
- 4390      6F7200
- 4391              	.LASF83:
- 4392 0191 4144435F 		.ascii	"ADC_initVar\000"
- 4392      696E6974 
- 4392      56617200 
- 4393              	.LASF37:
- 4394 019d 4144435F 		.ascii	"ADC_SetDSMRef0Reg\000"
- 4394      53657444 
- 4394      534D5265 
- 4394      66305265 
- 4394      6700
- 4395              	.LASF38:
- 4396 01af 76616C75 		.ascii	"value\000"
- 4396      6500
- 4397              	.LASF59:
- 4398 01b5 7265744D 		.ascii	"retMode\000"
- 4398      6F646500 
- 4399              	.LASF96:
- 4400 01bd 4144435F 		.ascii	"ADC_theACLK_SetDividerRegister\000"
- 4400      74686541 
- 4400      434C4B5F 
- 4400      53657444 
- 4400      69766964 
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 116
+ 4379              	.LASF103:
+ 4380 0154 443A5C68 		.ascii	"D:\\h_da\\Lecturs\\SS-20-Systytem Driven Hardware D"
+ 4380      5F64615C 
+ 4380      4C656374 
+ 4380      7572735C 
+ 4380      53532D32 
+ 4381 0184 65736967 		.ascii	"esign\\freeSoC2\\ADC_2_UART_DMA_Transfer\\Workspace"
+ 4381      6E5C6672 
+ 4381      6565536F 
+ 4381      43325C41 
+ 4381      44435F32 
+ 4382 01b4 30315C30 		.ascii	"01\\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydsn\000"
+ 4382      315F4441 
+ 4382      435F4144 
+ 4382      435F444D 
+ 4382      415F5541 
+ 4383              	.LASF92:
+ 4384 01e6 43794465 		.ascii	"CyDelayUs\000"
+ 4384      6C617955 
+ 4384      7300
+ 4385              	.LASF17:
+ 4386 01f0 646F7562 		.ascii	"double\000"
+ 4386      6C6500
+ 4387              	.LASF63:
+ 4388 01f7 4144435F 		.ascii	"ADC_GetResult32\000"
+ 4388      47657452 
+ 4388      6573756C 
+ 4388      74333200 
+ 4389              	.LASF72:
+ 4390 0207 566F6C74 		.ascii	"Volts\000"
+ 4390      7300
+ 4391              	.LASF12:
+ 4392 020d 75696E74 		.ascii	"uint32\000"
+ 4392      333200
+ 4393              	.LASF97:
+ 4394 0214 4379496E 		.ascii	"CyIntSetVector\000"
+ 4394      74536574 
+ 4394      56656374 
+ 4394      6F7200
+ 4395              	.LASF83:
+ 4396 0223 4144435F 		.ascii	"ADC_initVar\000"
+ 4396      696E6974 
+ 4396      56617200 
+ 4397              	.LASF37:
+ 4398 022f 4144435F 		.ascii	"ADC_SetDSMRef0Reg\000"
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 116
 
 
- 4401              	.LASF9:
- 4402 01dc 756E7369 		.ascii	"unsigned int\000"
- 4402      676E6564 
- 4402      20696E74 
- 4402      00
- 4403              	.LASF74:
- 4404 01e9 75566F6C 		.ascii	"uVolts\000"
- 4404      747300
- 4405              	.LASF6:
- 4406 01f0 6C6F6E67 		.ascii	"long unsigned int\000"
- 4406      20756E73 
- 4406      69676E65 
- 4406      6420696E 
- 4406      7400
- 4407              	.LASF91:
- 4408 0202 4379456E 		.ascii	"CyEnterCriticalSection\000"
- 4408      74657243 
- 4408      72697469 
- 4408      63616C53 
- 4408      65637469 
- 4409              	.LASF26:
- 4410 0219 4144435F 		.ascii	"ADC_GCOR_STRUCT\000"
- 4410      47434F52 
- 4410      5F535452 
- 4410      55435400 
- 4411              	.LASF4:
- 4412 0229 73686F72 		.ascii	"short unsigned int\000"
- 4412      7420756E 
- 4412      7369676E 
- 4412      65642069 
- 4412      6E7400
- 4413              	.LASF13:
- 4414 023c 696E7438 		.ascii	"int8\000"
- 4414      00
- 4415              	.LASF57:
- 4416 0241 4144435F 		.ascii	"ADC_StopConvert\000"
- 4416      53746F70 
- 4416      436F6E76 
- 4416      65727400 
- 4417              	.LASF103:
- 4418 0251 443A5C68 		.ascii	"D:\\h_da\\Lecturs\\SS-20-Systytem Driven Hardware D"
- 4418      5F64615C 
- 4418      4C656374 
- 4418      7572735C 
- 4418      53532D32 
- 4419 0281 65736967 		.ascii	"esign\\freeSoC2\\Workspace01\\01_DAC_ADC_DMA_UART_M"
- 4419      6E5C6672 
- 4419      6565536F 
- 4419      43325C57 
- 4419      6F726B73 
- 4420 02b1 41544C41 		.ascii	"ATLAB_data_transfer.cydsn\000"
- 4420      425F6461 
- 4420      74615F74 
- 4420      72616E73 
- 4420      6665722E 
+ 4398      53657444 
+ 4398      534D5265 
+ 4398      66305265 
+ 4398      6700
+ 4399              	.LASF38:
+ 4400 0241 76616C75 		.ascii	"value\000"
+ 4400      6500
+ 4401              	.LASF59:
+ 4402 0247 7265744D 		.ascii	"retMode\000"
+ 4402      6F646500 
+ 4403              	.LASF96:
+ 4404 024f 4144435F 		.ascii	"ADC_theACLK_SetDividerRegister\000"
+ 4404      74686541 
+ 4404      434C4B5F 
+ 4404      53657444 
+ 4404      69766964 
+ 4405              	.LASF9:
+ 4406 026e 756E7369 		.ascii	"unsigned int\000"
+ 4406      676E6564 
+ 4406      20696E74 
+ 4406      00
+ 4407              	.LASF74:
+ 4408 027b 75566F6C 		.ascii	"uVolts\000"
+ 4408      747300
+ 4409              	.LASF6:
+ 4410 0282 6C6F6E67 		.ascii	"long unsigned int\000"
+ 4410      20756E73 
+ 4410      69676E65 
+ 4410      6420696E 
+ 4410      7400
+ 4411              	.LASF91:
+ 4412 0294 4379456E 		.ascii	"CyEnterCriticalSection\000"
+ 4412      74657243 
+ 4412      72697469 
+ 4412      63616C53 
+ 4412      65637469 
+ 4413              	.LASF26:
+ 4414 02ab 4144435F 		.ascii	"ADC_GCOR_STRUCT\000"
+ 4414      47434F52 
+ 4414      5F535452 
+ 4414      55435400 
+ 4415              	.LASF4:
+ 4416 02bb 73686F72 		.ascii	"short unsigned int\000"
+ 4416      7420756E 
+ 4416      7369676E 
+ 4416      65642069 
+ 4416      6E7400
+ 4417              	.LASF13:
+ 4418 02ce 696E7438 		.ascii	"int8\000"
+ 4418      00
+ 4419              	.LASF57:
+ 4420 02d3 4144435F 		.ascii	"ADC_StopConvert\000"
+ 4420      53746F70 
+ 4420      436F6E76 
+ 4420      65727400 
  4421              	.LASF34:
- 4422 02cb 67636F72 		.ascii	"gcorValue\000"
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 117
+ 4422 02e3 67636F72 		.ascii	"gcorValue\000"
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 117
 
 
  4422      56616C75 
  4422      6500
  4423              	.LASF36:
- 4424 02d5 4144435F 		.ascii	"ADC_GainCompensation\000"
+ 4424 02ed 4144435F 		.ascii	"ADC_GainCompensation\000"
  4424      4761696E 
  4424      436F6D70 
  4424      656E7361 
  4424      74696F6E 
  4425              	.LASF32:
- 4426 02ea 666C6173 		.ascii	"flash\000"
+ 4426 0302 666C6173 		.ascii	"flash\000"
  4426      6800
  4427              	.LASF21:
- 4428 02f0 72656733 		.ascii	"reg32\000"
+ 4428 0308 72656733 		.ascii	"reg32\000"
  4428      3200
  4429              	.LASF16:
- 4430 02f6 666C6F61 		.ascii	"float32\000"
+ 4430 030e 666C6F61 		.ascii	"float32\000"
  4430      74333200 
  4431              	.LASF23:
- 4432 02fe 73697A65 		.ascii	"sizetype\000"
+ 4432 0316 73697A65 		.ascii	"sizetype\000"
  4432      74797065 
  4432      00
  4433              	.LASF22:
- 4434 0307 6C6F6E67 		.ascii	"long double\000"
+ 4434 031f 6C6F6E67 		.ascii	"long double\000"
  4434      20646F75 
  4434      626C6500 
  4435              	.LASF53:
- 4436 0313 4144435F 		.ascii	"ADC_SetGCOR\000"
+ 4436 032b 4144435F 		.ascii	"ADC_SetGCOR\000"
  4436      53657447 
  4436      434F5200 
  4437              	.LASF58:
- 4438 031f 4144435F 		.ascii	"ADC_IsEndConversion\000"
+ 4438 0337 4144435F 		.ascii	"ADC_IsEndConversion\000"
  4438      4973456E 
  4438      64436F6E 
  4438      76657273 
  4438      696F6E00 
  4439              	.LASF82:
- 4440 0333 4144435F 		.ascii	"ADC_gcor\000"
+ 4440 034b 4144435F 		.ascii	"ADC_gcor\000"
  4440      67636F72 
  4440      00
  4441              	.LASF40:
- 4442 033c 4144435F 		.ascii	"ADC_InitConfig\000"
+ 4442 0354 4144435F 		.ascii	"ADC_InitConfig\000"
  4442      496E6974 
  4442      436F6E66 
  4442      696700
  4443              	.LASF60:
- 4444 034b 4144435F 		.ascii	"ADC_GetResult8\000"
+ 4444 0363 4144435F 		.ascii	"ADC_GetResult8\000"
  4444      47657452 
  4444      6573756C 
  4444      743800
  4445              	.LASF99:
- 4446 035a 4144435F 		.ascii	"ADC_theACLK_SetModeRegister\000"
+ 4446 0372 4144435F 		.ascii	"ADC_theACLK_SetModeRegister\000"
  4446      74686541 
  4446      434C4B5F 
  4446      5365744D 
  4446      6F646552 
  4447              	.LASF49:
- 4448 0376 636F6865 		.ascii	"coherency\000"
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 118
+ 4448 038e 636F6865 		.ascii	"coherency\000"
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 118
 
 
  4448      72656E63 
  4448      7900
  4449              	.LASF100:
- 4450 0380 4379496E 		.ascii	"CyIntSetPriority\000"
+ 4450 0398 4379496E 		.ascii	"CyIntSetPriority\000"
  4450      74536574 
  4450      5072696F 
  4450      72697479 
  4450      00
  4451              	.LASF46:
- 4452 0391 6761696E 		.ascii	"gain\000"
+ 4452 03a9 6761696E 		.ascii	"gain\000"
  4452      00
  4453              	.LASF66:
- 4454 0396 4144435F 		.ascii	"ADC_SetGain\000"
+ 4454 03ae 4144435F 		.ascii	"ADC_SetGain\000"
  4454      53657447 
  4454      61696E00 
  4455              	.LASF0:
- 4456 03a2 666C6F61 		.ascii	"float\000"
+ 4456 03ba 666C6F61 		.ascii	"float\000"
  4456      7400
  4457              	.LASF68:
- 4458 03a8 4144435F 		.ascii	"ADC_CountsTo_mVolts\000"
+ 4458 03c0 4144435F 		.ascii	"ADC_CountsTo_mVolts\000"
  4458      436F756E 
  4458      7473546F 
  4458      5F6D566F 
  4458      6C747300 
  4459              	.LASF19:
- 4460 03bc 72656738 		.ascii	"reg8\000"
+ 4460 03d4 72656738 		.ascii	"reg8\000"
  4460      00
  4461              	.LASF28:
- 4462 03c1 69646561 		.ascii	"idealDecGain\000"
+ 4462 03d9 69646561 		.ascii	"idealDecGain\000"
  4462      6C446563 
  4462      4761696E 
  4462      00
  4463              	.LASF33:
- 4464 03ce 6E6F726D 		.ascii	"normalised\000"
+ 4464 03e6 6E6F726D 		.ascii	"normalised\000"
  4464      616C6973 
  4464      656400
  4465              	.LASF90:
- 4466 03d9 43794861 		.ascii	"CyHalt\000"
+ 4466 03f1 43794861 		.ascii	"CyHalt\000"
  4466      6C7400
  4467              	.LASF2:
- 4468 03e0 756E7369 		.ascii	"unsigned char\000"
+ 4468 03f8 756E7369 		.ascii	"unsigned char\000"
  4468      676E6564 
  4468      20636861 
  4468      7200
  4469              	.LASF77:
- 4470 03ee 4144435F 		.ascii	"ADC_SelectConfiguration\000"
+ 4470 0406 4144435F 		.ascii	"ADC_SelectConfiguration\000"
  4470      53656C65 
  4470      6374436F 
  4470      6E666967 
  4470      75726174 
  4471              	.LASF3:
- 4472 0406 73686F72 		.ascii	"short int\000"
+ 4472 041e 73686F72 		.ascii	"short int\000"
  4472      7420696E 
  4472      7400
  4473              	.LASF44:
- 4474 0410 4144435F 		.ascii	"ADC_Stop\000"
+ 4474 0428 4144435F 		.ascii	"ADC_Stop\000"
  4474      53746F70 
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 119
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 119
 
 
  4474      00
  4475              	.LASF35:
- 4476 0419 67636F72 		.ascii	"gcorTmp\000"
+ 4476 0431 67636F72 		.ascii	"gcorTmp\000"
  4476      546D7000 
  4477              	.LASF98:
- 4478 0421 4144435F 		.ascii	"ADC_Ext_CP_Clk_SetModeRegister\000"
+ 4478 0439 4144435F 		.ascii	"ADC_Ext_CP_Clk_SetModeRegister\000"
  4478      4578745F 
  4478      43505F43 
  4478      6C6B5F53 
  4478      65744D6F 
  4479              	.LASF70:
- 4480 0440 6D566F6C 		.ascii	"mVolts\000"
+ 4480 0458 6D566F6C 		.ascii	"mVolts\000"
  4480      747300
  4481              	.LASF101:
- 4482 0447 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 4482 045f 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
  4482      43313120 
  4482      352E342E 
  4482      31203230 
  4482      31363036 
- 4483 047a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 4483 0492 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
  4483      20726576 
  4483      6973696F 
  4483      6E203233 
  4483      37373135 
- 4484 04ad 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 4484 04c5 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
  4484      66756E63 
  4484      74696F6E 
  4484      2D736563 
  4484      74696F6E 
  4485              	.LASF94:
- 4486 04d5 4144435F 		.ascii	"ADC_AMux_Select\000"
+ 4486 04ed 4144435F 		.ascii	"ADC_AMux_Select\000"
  4486      414D7578 
  4486      5F53656C 
  4486      65637400 
  4487              	.LASF30:
- 4488 04e5 7265736F 		.ascii	"resolution\000"
+ 4488 04fd 7265736F 		.ascii	"resolution\000"
  4488      6C757469 
  4488      6F6E00
  4489              	.LASF88:
- 4490 04f0 4144435F 		.ascii	"ADC_Offset\000"
+ 4490 0508 4144435F 		.ascii	"ADC_Offset\000"
  4490      4F666673 
  4490      657400
  4491              	.LASF75:
- 4492 04fb 636F6566 		.ascii	"coefA\000"
+ 4492 0513 636F6566 		.ascii	"coefA\000"
  4492      4100
  4493              	.LASF76:
- 4494 0501 636F6566 		.ascii	"coefB\000"
+ 4494 0519 636F6566 		.ascii	"coefB\000"
  4494      4200
  4495              	.LASF95:
- 4496 0507 4144435F 		.ascii	"ADC_Ext_CP_Clk_SetDividerRegister\000"
+ 4496 051f 4144435F 		.ascii	"ADC_Ext_CP_Clk_SetDividerRegister\000"
  4496      4578745F 
  4496      43505F43 
  4496      6C6B5F53 
  4496      65744469 
  4497              	.LASF18:
- 4498 0529 63686172 		.ascii	"char\000"
+ 4498 0541 63686172 		.ascii	"char\000"
  4498      00
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 120
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 120
 
 
  4499              	.LASF55:
- 4500 052e 6756616C 		.ascii	"gValue\000"
+ 4500 0546 6756616C 		.ascii	"gValue\000"
  4500      756500
  4501              	.LASF31:
- 4502 0535 636F6E66 		.ascii	"config\000"
+ 4502 054d 636F6E66 		.ascii	"config\000"
  4502      696700
  4503              	.LASF25:
- 4504 053c 6776616C 		.ascii	"gval\000"
+ 4504 0554 6776616C 		.ascii	"gval\000"
  4504      00
  4505              	.LASF78:
- 4506 0541 72657374 		.ascii	"restart\000"
+ 4506 0559 72657374 		.ascii	"restart\000"
  4506      61727400 
  4507              	.LASF52:
- 4508 0549 746D7056 		.ascii	"tmpValue\000"
+ 4508 0561 746D7056 		.ascii	"tmpValue\000"
  4508      616C7565 
  4508      00
  4509              	.LASF65:
- 4510 0552 6F666673 		.ascii	"offset\000"
+ 4510 056a 6F666673 		.ascii	"offset\000"
  4510      657400
  4511              	.LASF48:
- 4512 0559 4144435F 		.ascii	"ADC_SetCoherency\000"
+ 4512 0571 4144435F 		.ascii	"ADC_SetCoherency\000"
  4512      53657443 
  4512      6F686572 
  4512      656E6379 
  4512      00
  4513              	.LASF79:
- 4514 056a 4144435F 		.ascii	"ADC_Read8\000"
+ 4514 0582 4144435F 		.ascii	"ADC_Read8\000"
  4514      52656164 
  4514      3800
  4515              	.LASF69:
- 4516 0574 61646343 		.ascii	"adcCounts\000"
+ 4516 058c 61646343 		.ascii	"adcCounts\000"
  4516      6F756E74 
  4516      7300
  4517              	.LASF81:
- 4518 057e 4144435F 		.ascii	"ADC_Read32\000"
+ 4518 0596 4144435F 		.ascii	"ADC_Read32\000"
  4518      52656164 
  4518      333200
  4519              	.LASF39:
- 4520 0589 656E6162 		.ascii	"enableInterrupts\000"
+ 4520 05a1 656E6162 		.ascii	"enableInterrupts\000"
  4520      6C65496E 
  4520      74657272 
  4520      75707473 
  4520      00
  4521              	.LASF42:
- 4522 059a 4144435F 		.ascii	"ADC_Enable\000"
+ 4522 05b2 4144435F 		.ascii	"ADC_Enable\000"
  4522      456E6162 
  4522      6C6500
  4523              	.LASF54:
- 4524 05a5 4144435F 		.ascii	"ADC_ReadGCOR\000"
+ 4524 05bd 4144435F 		.ascii	"ADC_ReadGCOR\000"
  4524      52656164 
  4524      47434F52 
  4524      00
  4525              	.LASF50:
- 4526 05b2 6761696E 		.ascii	"gainAdjust\000"
+ 4526 05ca 6761696E 		.ascii	"gainAdjust\000"
  4526      41646A75 
  4526      737400
  4527              	.LASF14:
-ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc9m5Dog.s 			page 121
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\ccTYNyqM.s 			page 121
 
 
- 4528 05bd 696E7431 		.ascii	"int16\000"
+ 4528 05d5 696E7431 		.ascii	"int16\000"
  4528      3600
  4529              	.LASF64:
- 4530 05c3 4144435F 		.ascii	"ADC_SetOffset\000"
+ 4530 05db 4144435F 		.ascii	"ADC_SetOffset\000"
  4530      5365744F 
  4530      66667365 
  4530      7400
  4531              	.LASF89:
- 4532 05d1 4144435F 		.ascii	"ADC_CountsPerVolt\000"
+ 4532 05e9 4144435F 		.ascii	"ADC_CountsPerVolt\000"
  4532      436F756E 
  4532      74735065 
  4532      72566F6C 
  4532      7400
  4533              	.LASF47:
- 4534 05e3 746D7052 		.ascii	"tmpReg\000"
+ 4534 05fb 746D7052 		.ascii	"tmpReg\000"
  4534      656700
  4535              	.LASF61:
- 4536 05ea 72657375 		.ascii	"result\000"
+ 4536 0602 72657375 		.ascii	"result\000"
  4536      6C7400
  4537              	.LASF62:
- 4538 05f1 4144435F 		.ascii	"ADC_GetResult16\000"
+ 4538 0609 4144435F 		.ascii	"ADC_GetResult16\000"
  4538      47657452 
  4538      6573756C 
  4538      74313600 

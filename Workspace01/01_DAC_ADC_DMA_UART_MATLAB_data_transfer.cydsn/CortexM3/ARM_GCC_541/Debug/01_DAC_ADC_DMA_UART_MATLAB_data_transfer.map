@@ -12,6 +12,12 @@ Archive member included to satisfy reference by file (symbol)
                               .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o) (UART_TXISR)
 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
                               .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o) (UART_IntClock_Start)
+.\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (isr_button_StartEx)
+.\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (led_red_Write)
+.\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (led_green_Write)
 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
                               .\CortexM3\ARM_GCC_541\Debug\main.o (ISR_UART_Rx_StartEx)
 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
@@ -24,6 +30,8 @@ Archive member included to satisfy reference by file (symbol)
                               .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o) (ADC_Ext_CP_Clk_SetModeRegister)
 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
                               .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o) (ADC_theACLK_SetModeRegister)
+.\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+                              .\CortexM3\ARM_GCC_541\Debug\main.o (led_yellow_Write)
 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
                               .\CortexM3\ARM_GCC_541\Debug\main.o (WaveDAC_Start)
 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
@@ -70,6 +78,7 @@ c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.
 Allocating common symbols
 Common symbol       size              file
 
+rx_buffer           0x1               .\CortexM3\ARM_GCC_541\Debug\main.o
 tx_buffer           0x800             .\CortexM3\ARM_GCC_541\Debug\main.o
 ADC_CountsPerVolt   0x4               .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
 DMA_ADC_TD          0x1               .\CortexM3\ARM_GCC_541\Debug\main.o
@@ -90,7 +99,6 @@ Discarded input sections
  .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
  .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/crt0.o
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
- .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\main.o
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
@@ -336,14 +344,8 @@ Discarded input sections
                 0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
  .text.UART_SetRxInterruptMode
                 0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
- .text.UART_ReadRxData
-                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
- .text.UART_ReadRxStatus
-                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
  .text.UART_GetChar
                 0x00000000       0x2c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
- .text.UART_GetByte
-                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
  .text.UART_GetRxBufferSize
                 0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
  .text.UART_ClearRxBuffer
@@ -398,6 +400,41 @@ Discarded input sections
                 0x00000000       0xdc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
  .text.UART_IntClock_SetSourceRegister
                 0x00000000       0x5c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .text.isr_button_Interrupt
+                0x00000000        0x4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .text.isr_button_GetVector
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .text.isr_button_GetPriority
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .text.isr_button_GetState
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .text.isr_button_Start
+                0x00000000       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .text.isr_button_Stop
+                0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .text.isr_button_SetPending
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .text.led_red_SetDriveMode
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .text.led_red_Read
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .text.led_red_ReadDataReg
+                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .text.led_green_SetDriveMode
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .text.led_green_Read
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .text.led_green_ReadDataReg
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
  .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
@@ -414,8 +451,6 @@ Discarded input sections
  .text.ISR_UART_Rx_Stop
                 0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
  .text.ISR_UART_Rx_SetPending
-                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
- .text.ISR_UART_Rx_ClearPending
                 0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
  .text.ADC_Stop
@@ -503,6 +538,15 @@ Discarded input sections
                 0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
  .text.ADC_theACLK_GetPhaseRegister
                 0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+ .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .text.led_yellow_SetDriveMode
+                0x00000000       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .text.led_yellow_Read
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .text.led_yellow_ReadDataReg
+                0x00000000       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
  .text          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
  .text.WaveDAC_Stop
@@ -567,8 +611,6 @@ Discarded input sections
  .text.ISR_DMA_XFER_DONE_Stop
                 0x00000000       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
  .text.ISR_DMA_XFER_DONE_SetPending
-                0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
- .text.ISR_DMA_XFER_DONE_ClearPending
                 0x00000000        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
  .data          0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
  .bss           0x00000000        0x0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
@@ -738,7 +780,7 @@ END GROUP
                 0x00000800                ee_size = (CY_APPL_LOADABLE && ! (CY_EE_IN_BTLDR))?(CY_EE_SIZE / CY_APPL_MAX):CY_EE_SIZE
                 [!provide]                PROVIDE (CY_ECC_OFFSET, ecc_offset)
 
-.text           0x00000000     0x13be
+.text           0x00000000     0x15f6
  CREATE_OBJECT_SYMBOLS
                 0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
  *(.romvectors)
@@ -756,341 +798,397 @@ END GROUP
  *(.text .text.* .gnu.linkonce.t.*)
  .text          0x00000028       0x5c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  .text.ISR_UART_Rx
-                0x00000084        0xc .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000084       0x30 .\CortexM3\ARM_GCC_541\Debug\main.o
                 0x00000084                ISR_UART_Rx
  .text.ISR_DMA_XFER_DONE
-                0x00000090        0xc .\CortexM3\ARM_GCC_541\Debug\main.o
-                0x00000090                ISR_DMA_XFER_DONE
- .text.main     0x0000009c       0xf0 .\CortexM3\ARM_GCC_541\Debug\main.o
-                0x0000009c                main
+                0x000000b4       0x14 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x000000b4                ISR_DMA_XFER_DONE
+ .text.ISR_BUTTON
+                0x000000c8       0x24 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x000000c8                ISR_BUTTON
+ .text.GREEN_LED
+                0x000000ec       0x2c .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x000000ec                GREEN_LED
+ .text.RED_LED  0x00000118       0x28 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000118                RED_LED
+ .text.YELLOW_LED
+                0x00000140       0x3c .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000140                YELLOW_LED
+ .text.DATA_COUNTER
+                0x0000017c       0x14 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x0000017c                DATA_COUNTER
+ .text.main     0x00000190      0x130 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000190                main
  .text.CyClockStartupError
-                0x0000018c        0x4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000002c0        0x4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.cfg_write_bytes32
-                0x00000190       0x34 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000002c4       0x34 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.AnalogSetDefault
-                0x000001c4       0x40 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000002f8       0x40 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.CYMEMZERO
-                0x00000204        0xc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000338        0xc .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.CYCONFIGCPY
-                0x00000210        0x8 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000344        0x8 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.ClockSetup
-                0x00000218      0x104 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x0000034c      0x118 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .text.ADC_AMux_Set
-                0x0000031c       0x1c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x0000031c                ADC_AMux_Set
+                0x00000464       0x1c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000464                ADC_AMux_Set
  .text.ADC_AMux_Unset
-                0x00000338       0x1c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x00000338                ADC_AMux_Unset
+                0x00000480       0x1c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000480                ADC_AMux_Unset
  .text.cyfitter_cfg
-                0x00000354      0x120 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x00000354                cyfitter_cfg
+                0x0000049c      0x120 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x0000049c                cyfitter_cfg
  .text.IntDefaultHandler
-                0x00000474       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00000474                IntDefaultHandler
- .text.Start_c  0x00000484       0x4c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00000484                Start_c
+                0x000005bc       0x10 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000005bc                IntDefaultHandler
+ .text.Start_c  0x000005cc       0x4c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000005cc                Start_c
  .text.initialize_psoc
-                0x000004d0       0x6c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x000004d0                initialize_psoc
+                0x00000618       0x6c .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00000618                initialize_psoc
  .text.CyDmacConfigure
-                0x0000053c       0x34 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
-                0x0000053c                CyDmacConfigure
+                0x00000684       0x34 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                0x00000684                CyDmacConfigure
  .text.CyDmaChEnable
-                0x00000570       0x38 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
-                0x00000570                CyDmaChEnable
+                0x000006b8       0x38 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                0x000006b8                CyDmaChEnable
  .text.CyDmaChPriority
-                0x000005a8       0x24 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
-                0x000005a8                CyDmaChPriority
+                0x000006f0       0x24 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                0x000006f0                CyDmaChPriority
  .text.CyDmaChSetExtendedAddress
-                0x000005cc       0x34 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
-                0x000005cc                CyDmaChSetExtendedAddress
+                0x00000714       0x34 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                0x00000714                CyDmaChSetExtendedAddress
  .text.CyDmaChSetInitialTd
-                0x00000600       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
-                0x00000600                CyDmaChSetInitialTd
+                0x00000748       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                0x00000748                CyDmaChSetInitialTd
  .text.CyDmaChSetConfiguration
-                0x00000618       0x44 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
-                0x00000618                CyDmaChSetConfiguration
+                0x00000760       0x44 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                0x00000760                CyDmaChSetConfiguration
  .text.CyDmaTdAllocate
-                0x0000065c       0x34 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
-                0x0000065c                CyDmaTdAllocate
+                0x000007a4       0x34 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                0x000007a4                CyDmaTdAllocate
  .text.CyDmaTdSetConfiguration
-                0x00000690       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
-                0x00000690                CyDmaTdSetConfiguration
+                0x000007d8       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                0x000007d8                CyDmaTdSetConfiguration
  .text.CyDmaTdSetAddress
-                0x000006b8       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
-                0x000006b8                CyDmaTdSetAddress
- .text.CyHalt   0x000006d4        0x4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
-                0x000006d4                CyHalt
- .text.CyDelay  0x000006d8       0x2c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
-                0x000006d8                CyDelay
+                0x00000800       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                0x00000800                CyDmaTdSetAddress
+ .text.CyHalt   0x0000081c        0x4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+                0x0000081c                CyHalt
+ .text.CyDelay  0x00000820       0x2c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+                0x00000820                CyDelay
  .text.CyDelayUs
-                0x00000704       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
-                0x00000704                CyDelayUs
+                0x0000084c       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+                0x0000084c                CyDelayUs
  .text.CyIntSetVector
-                0x00000718       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
-                0x00000718                CyIntSetVector
+                0x00000860       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+                0x00000860                CyIntSetVector
  .text.CyIntSetPriority
-                0x00000740       0x30 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
-                0x00000740                CyIntSetPriority
+                0x00000888       0x30 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+                0x00000888                CyIntSetPriority
  .text.UART_Init
-                0x00000770       0x40 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
-                0x00000770                UART_Init
+                0x000008b8       0x40 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x000008b8                UART_Init
  .text.UART_Enable
-                0x000007b0       0x48 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
-                0x000007b0                UART_Enable
+                0x000008f8       0x48 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x000008f8                UART_Enable
  .text.UART_Start
-                0x000007f8       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
-                0x000007f8                UART_Start
+                0x00000940       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x00000940                UART_Start
+ .text.UART_ReadRxData
+                0x0000095c        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x0000095c                UART_ReadRxData
+ .text.UART_ReadRxStatus
+                0x00000968       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x00000968                UART_ReadRxStatus
+ .text.UART_GetByte
+                0x00000978       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x00000978                UART_GetByte
  .text.UART_PutChar
-                0x00000814       0x7c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
-                0x00000814                UART_PutChar
+                0x0000098c       0x7c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x0000098c                UART_PutChar
  .text.UART_PutArray
-                0x00000890       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
-                0x00000890                UART_PutArray
+                0x00000a08       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x00000a08                UART_PutArray
  .text.UART_TXISR
-                0x000008b8       0x5c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
-                0x000008b8                UART_TXISR
+                0x00000a30       0x5c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
+                0x00000a30                UART_TXISR
  .text.UART_IntClock_Start
-                0x00000914       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
-                0x00000914                UART_IntClock_Start
+                0x00000a8c       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
+                0x00000a8c                UART_IntClock_Start
+ .text.isr_button_SetVector
+                0x00000aa8        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+                0x00000aa8                isr_button_SetVector
+ .text.isr_button_SetPriority
+                0x00000ab4       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+                0x00000ab4                isr_button_SetPriority
+ .text.isr_button_Enable
+                0x00000ac4        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+                0x00000ac4                isr_button_Enable
+ .text.isr_button_Disable
+                0x00000ad0        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+                0x00000ad0                isr_button_Disable
+ .text.isr_button_StartEx
+                0x00000adc       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+                0x00000adc                isr_button_StartEx
+ .text.isr_button_ClearPending
+                0x00000af8        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+                0x00000af8                isr_button_ClearPending
+ .text.led_red_Write
+                0x00000b04       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+                0x00000b04                led_red_Write
+ .text.led_green_Write
+                0x00000b1c       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+                0x00000b1c                led_green_Write
  .text.ISR_UART_Rx_SetVector
-                0x00000930        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
-                0x00000930                ISR_UART_Rx_SetVector
+                0x00000b34        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+                0x00000b34                ISR_UART_Rx_SetVector
  .text.ISR_UART_Rx_SetPriority
-                0x0000093c       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
-                0x0000093c                ISR_UART_Rx_SetPriority
+                0x00000b40       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+                0x00000b40                ISR_UART_Rx_SetPriority
  .text.ISR_UART_Rx_Enable
-                0x0000094c        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
-                0x0000094c                ISR_UART_Rx_Enable
+                0x00000b50        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+                0x00000b50                ISR_UART_Rx_Enable
  .text.ISR_UART_Rx_Disable
-                0x00000958        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
-                0x00000958                ISR_UART_Rx_Disable
+                0x00000b5c        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+                0x00000b5c                ISR_UART_Rx_Disable
  .text.ISR_UART_Rx_StartEx
-                0x00000964       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
-                0x00000964                ISR_UART_Rx_StartEx
+                0x00000b68       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+                0x00000b68                ISR_UART_Rx_StartEx
+ .text.ISR_UART_Rx_ClearPending
+                0x00000b84        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+                0x00000b84                ISR_UART_Rx_ClearPending
  .text.ADC_GainCompensation
-                0x00000980       0xdc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000b90       0xdc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
  .text.ADC_SetDSMRef0Reg
-                0x00000a5c       0x4c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000c6c       0x4c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
  .text.ADC_InitConfig
-                0x00000aa8       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000cb8       0xe4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
  .text.ADC_Init
-                0x00000b88       0xc4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
-                0x00000b88                ADC_Init
+                0x00000d9c       0xc4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000d9c                ADC_Init
  .text.ADC_Enable
-                0x00000c4c       0xd8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
-                0x00000c4c                ADC_Enable
+                0x00000e60       0xd8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000e60                ADC_Enable
  .text.ADC_Start
-                0x00000d24       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
-                0x00000d24                ADC_Start
+                0x00000f38       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000f38                ADC_Start
  .text.ADC_StartConvert
-                0x00000d4c       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
-                0x00000d4c                ADC_StartConvert
+                0x00000f60       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000f60                ADC_StartConvert
  .text.ADC_IsEndConversion
-                0x00000d5c       0x30 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
-                0x00000d5c                ADC_IsEndConversion
+                0x00000f70       0x30 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000f70                ADC_IsEndConversion
  .text.ADC_GetResult32
-                0x00000d8c       0x6c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
-                0x00000d8c                ADC_GetResult32
+                0x00000fa0       0x6c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000fa0                ADC_GetResult32
  .text.ADC_ISR1
-                0x00000df8        0x4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
-                0x00000df8                ADC_ISR1
+                0x0000100c        0x4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
+                0x0000100c                ADC_ISR1
  .text.ADC_AMux_Start
-                0x00000dfc       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
-                0x00000dfc                ADC_AMux_Start
+                0x00001010       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+                0x00001010                ADC_AMux_Start
  .text.ADC_AMux_Select
-                0x00000e1c       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
-                0x00000e1c                ADC_AMux_Select
+                0x00001030       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+                0x00001030                ADC_AMux_Select
  .text.ADC_Ext_CP_Clk_GetDividerRegister
-                0x00000e34        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
-                0x00000e34                ADC_Ext_CP_Clk_GetDividerRegister
+                0x00001048        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+                0x00001048                ADC_Ext_CP_Clk_GetDividerRegister
  .text.ADC_Ext_CP_Clk_SetModeRegister
-                0x00000e40       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
-                0x00000e40                ADC_Ext_CP_Clk_SetModeRegister
+                0x00001054       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+                0x00001054                ADC_Ext_CP_Clk_SetModeRegister
  .text.ADC_Ext_CP_Clk_GetSourceRegister
-                0x00000e54       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
-                0x00000e54                ADC_Ext_CP_Clk_GetSourceRegister
+                0x00001068       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+                0x00001068                ADC_Ext_CP_Clk_GetSourceRegister
  .text.ADC_Ext_CP_Clk_SetDividerRegister
-                0x00000e64       0xd8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
-                0x00000e64                ADC_Ext_CP_Clk_SetDividerRegister
+                0x00001078       0xd8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+                0x00001078                ADC_Ext_CP_Clk_SetDividerRegister
  .text.ADC_theACLK_GetDividerRegister
-                0x00000f3c        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
-                0x00000f3c                ADC_theACLK_GetDividerRegister
+                0x00001150        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+                0x00001150                ADC_theACLK_GetDividerRegister
  .text.ADC_theACLK_SetModeRegister
-                0x00000f48       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
-                0x00000f48                ADC_theACLK_SetModeRegister
+                0x0000115c       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+                0x0000115c                ADC_theACLK_SetModeRegister
  .text.ADC_theACLK_GetSourceRegister
-                0x00000f5c       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
-                0x00000f5c                ADC_theACLK_GetSourceRegister
+                0x00001170       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+                0x00001170                ADC_theACLK_GetSourceRegister
  .text.ADC_theACLK_SetDividerRegister
-                0x00000f6c       0xd8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
-                0x00000f6c                ADC_theACLK_SetDividerRegister
+                0x00001180       0xd8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+                0x00001180                ADC_theACLK_SetDividerRegister
+ .text.led_yellow_Write
+                0x00001258       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+                0x00001258                led_yellow_Write
  .text.WaveDAC_Enable
-                0x00001044       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
-                0x00001044                WaveDAC_Enable
+                0x00001270       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+                0x00001270                WaveDAC_Enable
  .text.WaveDAC_Wave1Setup
-                0x0000106c       0x40 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
-                0x0000106c                WaveDAC_Wave1Setup
+                0x00001298       0x40 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+                0x00001298                WaveDAC_Wave1Setup
  .text.WaveDAC_Wave2Setup
-                0x000010ac       0x40 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
-                0x000010ac                WaveDAC_Wave2Setup
+                0x000012d8       0x40 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+                0x000012d8                WaveDAC_Wave2Setup
  .text.WaveDAC_Init
-                0x000010ec       0x40 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
-                0x000010ec                WaveDAC_Init
+                0x00001318       0x40 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+                0x00001318                WaveDAC_Init
  .text.WaveDAC_Start
-                0x0000112c       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
-                0x0000112c                WaveDAC_Start
+                0x00001358       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+                0x00001358                WaveDAC_Start
  .text.WaveDAC_DacClk_Start
-                0x00001148       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
-                0x00001148                WaveDAC_DacClk_Start
+                0x00001374       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
+                0x00001374                WaveDAC_DacClk_Start
  .text.WaveDAC_Wave1_DMA_DmaInitialize
-                0x00001164       0x3c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
-                0x00001164                WaveDAC_Wave1_DMA_DmaInitialize
+                0x00001390       0x3c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+                0x00001390                WaveDAC_Wave1_DMA_DmaInitialize
  .text.WaveDAC_Wave2_DMA_DmaInitialize
-                0x000011a0       0x3c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
-                0x000011a0                WaveDAC_Wave2_DMA_DmaInitialize
+                0x000013cc       0x3c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+                0x000013cc                WaveDAC_Wave2_DMA_DmaInitialize
  .text.WaveDAC_VDAC8_Enable
-                0x000011dc       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
-                0x000011dc                WaveDAC_VDAC8_Enable
+                0x00001408       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+                0x00001408                WaveDAC_VDAC8_Enable
  .text.WaveDAC_VDAC8_SetSpeed
-                0x000011f8       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
-                0x000011f8                WaveDAC_VDAC8_SetSpeed
+                0x00001424       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+                0x00001424                WaveDAC_VDAC8_SetSpeed
  .text.WaveDAC_VDAC8_SetValue
-                0x00001214        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
-                0x00001214                WaveDAC_VDAC8_SetValue
+                0x00001440        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+                0x00001440                WaveDAC_VDAC8_SetValue
  .text.WaveDAC_VDAC8_DacTrim
-                0x00001220       0x24 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
-                0x00001220                WaveDAC_VDAC8_DacTrim
+                0x0000144c       0x24 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+                0x0000144c                WaveDAC_VDAC8_DacTrim
  .text.WaveDAC_VDAC8_SetRange
-                0x00001244       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
-                0x00001244                WaveDAC_VDAC8_SetRange
+                0x00001470       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+                0x00001470                WaveDAC_VDAC8_SetRange
  .text.WaveDAC_VDAC8_Init
-                0x00001264       0x2c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
-                0x00001264                WaveDAC_VDAC8_Init
+                0x00001490       0x2c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+                0x00001490                WaveDAC_VDAC8_Init
  .text.DMA_ADC_DmaInitialize
-                0x00001290       0x3c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
-                0x00001290                DMA_ADC_DmaInitialize
+                0x000014bc       0x3c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+                0x000014bc                DMA_ADC_DmaInitialize
  .text.ISR_DMA_XFER_DONE_SetVector
-                0x000012cc        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
-                0x000012cc                ISR_DMA_XFER_DONE_SetVector
+                0x000014f8        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+                0x000014f8                ISR_DMA_XFER_DONE_SetVector
  .text.ISR_DMA_XFER_DONE_SetPriority
-                0x000012d8       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
-                0x000012d8                ISR_DMA_XFER_DONE_SetPriority
+                0x00001504       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+                0x00001504                ISR_DMA_XFER_DONE_SetPriority
  .text.ISR_DMA_XFER_DONE_Enable
-                0x000012e8        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
-                0x000012e8                ISR_DMA_XFER_DONE_Enable
+                0x00001514        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+                0x00001514                ISR_DMA_XFER_DONE_Enable
  .text.ISR_DMA_XFER_DONE_Disable
-                0x000012f4        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
-                0x000012f4                ISR_DMA_XFER_DONE_Disable
+                0x00001520        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+                0x00001520                ISR_DMA_XFER_DONE_Disable
  .text.ISR_DMA_XFER_DONE_StartEx
-                0x00001300       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
-                0x00001300                ISR_DMA_XFER_DONE_StartEx
- *fill*         0x0000131c        0x4 
- .text          0x00001320       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
-                0x00001320                CyDelayCycles
-                0x00001330                CyEnterCriticalSection
-                0x00001338                CyExitCriticalSection
- .text.__errno  0x00001340        0xc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
-                0x00001340                __errno
+                0x0000152c       0x1c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+                0x0000152c                ISR_DMA_XFER_DONE_StartEx
+ .text.ISR_DMA_XFER_DONE_ClearPending
+                0x00001548        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+                0x00001548                ISR_DMA_XFER_DONE_ClearPending
+ *fill*         0x00001554        0x4 
+ .text          0x00001558       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
+                0x00001558                CyDelayCycles
+                0x00001568                CyEnterCriticalSection
+                0x00001570                CyExitCriticalSection
+ .text.__errno  0x00001578        0xc c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x00001578                __errno
  .text.__libc_init_array
-                0x0000134c       0x4c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
-                0x0000134c                __libc_init_array
- .text.memcpy   0x00001398       0x16 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
-                0x00001398                memcpy
- .text.memset   0x000013ae       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
-                0x000013ae                memset
+                0x00001584       0x4c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x00001584                __libc_init_array
+ .text.memcpy   0x000015d0       0x16 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x000015d0                memcpy
+ .text.memset   0x000015e6       0x10 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x000015e6                memset
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
- .glue_7t       0x000013be        0x0 linker stubs
+ .glue_7t       0x000015f6        0x0 linker stubs
  *(.glue_7)
- .glue_7        0x000013be        0x0 linker stubs
+ .glue_7        0x000015f6        0x0 linker stubs
  *(.vfp11_veneer)
- .vfp11_veneer  0x000013be        0x0 linker stubs
+ .vfp11_veneer  0x000015f6        0x0 linker stubs
  *(.bootloader)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
 
-.v4_bx          0x000013c0        0x0
- .v4_bx         0x000013c0        0x0 linker stubs
+.v4_bx          0x000015f8        0x0
+ .v4_bx         0x000015f8        0x0 linker stubs
 
-.iplt           0x000013c0        0x0
- .iplt          0x000013c0        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.iplt           0x000015f8        0x0
+ .iplt          0x000015f8        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
 .eh_frame_hdr
  *(.eh_frame_hdr)
 
-.eh_frame       0x000013c0        0x4
+.eh_frame       0x000015f8        0x4
  *(.eh_frame)
- .eh_frame      0x000013c0        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .eh_frame      0x000013c0        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .eh_frame      0x000015f8        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .eh_frame      0x000015f8        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
                 [!provide]                PROVIDE (__exidx_start, .)
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000013c4                __exidx_end = .
+                0x000015fc                __exidx_end = .
 
-.rodata         0x000013c4      0x4c4
+.rodata         0x000015fc      0x4c4
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x000013c4       0x3c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                0x000013c4                ADC_AMux__addrTable
-                0x000013cc                ADC_AMux__maskTable
- .rodata        0x00001400      0x44c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
-                0x00001400                WaveDAC_wave1
-                0x000017e8                WaveDAC_wave2
+ .rodata        0x000015fc       0x3c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000015fc                ADC_AMux__addrTable
+                0x00001604                ADC_AMux__maskTable
+ .rodata        0x00001638      0x44c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+                0x00001638                WaveDAC_wave1
+                0x00001a20                WaveDAC_wave2
  .rodata.str1.1
-                0x0000184c        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x00001850                . = ALIGN (0x4)
- *fill*         0x0000184e        0x2 
+                0x00001a84        0x2 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x00001a88                . = ALIGN (0x4)
+ *fill*         0x00001a86        0x2 
  *(.init)
- .init          0x00001850        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x00001850                _init
- .init          0x00001854        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x0000185c                . = ALIGN (0x4)
-                0x0000185c                __preinit_array_start = .
+ .init          0x00001a88        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00001a88                _init
+ .init          0x00001a8c        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00001a94                . = ALIGN (0x4)
+                0x00001a94                __preinit_array_start = .
  *(.preinit_array)
-                0x0000185c                __preinit_array_end = .
-                0x0000185c                . = ALIGN (0x4)
-                0x0000185c                __init_array_start = .
+                0x00001a94                __preinit_array_end = .
+                0x00001a94                . = ALIGN (0x4)
+                0x00001a94                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x0000185c        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .init_array    0x00001860        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                0x00001864                __init_array_end = .
-                0x00001864                . = ALIGN (0x4)
+ .init_array    0x00001a94        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .init_array    0x00001a98        0x4 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x00001a9c                __init_array_end = .
+                0x00001a9c                . = ALIGN (0x4)
  *(.fini)
- .fini          0x00001864        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
-                0x00001864                _fini
- .fini          0x00001868        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
-                0x00001870                . = ALIGN (0x4)
-                0x00001870                __fini_array_start = .
+ .fini          0x00001a9c        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crti.o
+                0x00001a9c                _fini
+ .fini          0x00001aa0        0x8 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00001aa8                . = ALIGN (0x4)
+                0x00001aa8                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x00001870        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .fini_array    0x00001aa8        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x00001874                __fini_array_end = .
-                0x00001874                . = ALIGN (0x4)
+                0x00001aac                __fini_array_end = .
+                0x00001aac                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x00001874                . = ALIGN (0x4)
+                0x00001aac                . = ALIGN (0x4)
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x00001874                . = ALIGN (0x4)
-                0x00001874                __cy_regions = .
-                0x00001874        0x4 LONG 0x1888 __cy_region_init_ram
-                0x00001878        0x4 LONG 0x1fff80c8 __cy_region_start_data
-                0x0000187c        0x4 LONG 0x88 __cy_region_init_size_ram
-                0x00001880        0x4 LONG 0x1848 __cy_region_zero_size_ram
-                0x00001884                __cy_regions_end = .
-                0x00001888                . = ALIGN (0x8)
- *fill*         0x00001884        0x4 
-                0x00001888                _etext = .
+                0x00001aac                . = ALIGN (0x4)
+                0x00001aac                __cy_regions = .
+                0x00001aac        0x4 LONG 0x1ac0 __cy_region_init_ram
+                0x00001ab0        0x4 LONG 0x1fff80c8 __cy_region_start_data
+                0x00001ab4        0x4 LONG 0x90 __cy_region_init_size_ram
+                0x00001ab8        0x4 LONG 0x1850 __cy_region_zero_size_ram
+                0x00001abc                __cy_regions_end = .
+                0x00001ac0                . = ALIGN (0x8)
+ *fill*         0x00001abc        0x4 
+                0x00001ac0                _etext = .
 
 .cy_checksum_exclude
-                0x00001888        0x0
+                0x00001ac0        0x0
  *(.cy_checksum_exclude)
 
 .ramvectors     0x1fff8000       0xc0
@@ -1104,7 +1202,7 @@ END GROUP
  .noinit        0x1fff80c0        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
                 0x1fff80c0                CyResetStatus
 
-.data           0x1fff80c8       0x88 load address 0x00001888
+.data           0x1fff80c8       0x90 load address 0x00001ac0
                 0x1fff80c8                __cy_region_start_data = .
  *(.jcr)
  .jcr           0x1fff80c8        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
@@ -1113,82 +1211,90 @@ END GROUP
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x1fff80cc        0x8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
- .data          0x1fff80d4       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
-                0x1fff80d4                cydelay_32k_ms
-                0x1fff80d8                cydelay_freq_khz
-                0x1fff80dc                cydelay_freq_mhz
-                0x1fff80e0                cydelay_freq_hz
- .data          0x1fff80e4        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
-                0x1fff80e4                ADC_Config
- .data          0x1fff80e5        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
- .data          0x1fff80e6        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
-                0x1fff80e6                WaveDAC_Wave1_DMA_DmaHandle
- .data          0x1fff80e7        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
-                0x1fff80e7                WaveDAC_Wave2_DMA_DmaHandle
- .data          0x1fff80e8        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
-                0x1fff80e8                DMA_ADC_DmaHandle
- *fill*         0x1fff80e9        0x3 
+ .data          0x1fff80cc        0x1 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x1fff80cc                count_value
+ *fill*         0x1fff80cd        0x3 
+ .data          0x1fff80d0        0x8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+ .data          0x1fff80d8       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+                0x1fff80d8                cydelay_32k_ms
+                0x1fff80dc                cydelay_freq_khz
+                0x1fff80e0                cydelay_freq_mhz
+                0x1fff80e4                cydelay_freq_hz
+ .data          0x1fff80e8        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x1fff80e8                ADC_Config
+ .data          0x1fff80e9        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+ .data          0x1fff80ea        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+                0x1fff80ea                WaveDAC_Wave1_DMA_DmaHandle
+ .data          0x1fff80eb        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+                0x1fff80eb                WaveDAC_Wave2_DMA_DmaHandle
+ .data          0x1fff80ec        0x1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+                0x1fff80ec                DMA_ADC_DmaHandle
+ *fill*         0x1fff80ed        0x3 
  .data.impure_data
-                0x1fff80ec       0x60 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x1fff80f0       0x60 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
  .data._impure_ptr
-                0x1fff814c        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
-                0x1fff814c                _impure_ptr
-                0x1fff8150                . = ALIGN (0x8)
+                0x1fff8150        0x4 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x1fff8150                _impure_ptr
+                0x1fff8158                . = ALIGN (0x8)
+ *fill*         0x1fff8154        0x4 
  *(.ram)
-                0x1fff8150                _edata = .
+                0x1fff8158                _edata = .
 
-.igot.plt       0x1fff8150        0x0 load address 0x00001910
- .igot.plt      0x1fff8150        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.igot.plt       0x1fff8158        0x0 load address 0x00001b50
+ .igot.plt      0x1fff8158        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
-.bss            0x1fff8150     0x1848 load address 0x00001910
-                0x1fff8150                PROVIDE (__bss_start__, .)
+.bss            0x1fff8158     0x1850 load address 0x00001b50
+                0x1fff8158                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x1fff8150       0x1c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
- .bss           0x1fff816c        0x2 .\CortexM3\ARM_GCC_541\Debug\main.o
-                0x1fff816c                rx_buffer_flag
-                0x1fff816d                dma_xfer_done_flag
- .bss           0x1fff816e        0x7 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
-                0x1fff816e                UART_initVar
-                0x1fff8170                UART_txBufferRead
-                0x1fff8172                UART_txBufferWrite
- *fill*         0x1fff8175        0x3 
- .bss           0x1fff8178        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
-                0x1fff817c                ADC_stopConversion
-                0x1fff817d                ADC_convDone
-                0x1fff817e                ADC_initVar
-                0x1fff817f                ADC_started
-                0x1fff8180                ADC_Offset
- .bss           0x1fff8184        0x5 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
-                0x1fff8188                WaveDAC_initVar
+ .bss           0x1fff8158       0x1c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+ .bss           0x1fff8174        0x4 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x1fff8174                rx_buffer_flag
+                0x1fff8175                data_received_flag
+                0x1fff8176                dma_xfer_done_flag
+                0x1fff8177                button_pressed_flag
+ .bss           0x1fff8178        0x7 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x1fff8178                UART_initVar
+                0x1fff817a                UART_txBufferRead
+                0x1fff817c                UART_txBufferWrite
+ *fill*         0x1fff817f        0x1 
+ .bss           0x1fff8180        0xc .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x1fff8184                ADC_stopConversion
+                0x1fff8185                ADC_convDone
+                0x1fff8186                ADC_initVar
+                0x1fff8187                ADC_started
+                0x1fff8188                ADC_Offset
+ .bss           0x1fff818c        0x5 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+                0x1fff8190                WaveDAC_initVar
  *(COMMON)
- *fill*         0x1fff8189        0x3 
- COMMON         0x1fff818c     0x1005 .\CortexM3\ARM_GCC_541\Debug\main.o
-                0x1fff818c                tx_buffer
-                0x1fff898c                DMA_ADC_TD
-                0x1fff8990                ADC_buffer
-                0x1fff9190                DMA_ADC_Chan
- *fill*         0x1fff9191        0x3 
- COMMON         0x1fff9194      0x800 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
-                0x1fff9194                UART_txBuffer
- COMMON         0x1fff9994        0x4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
-                0x1fff9994                ADC_CountsPerVolt
-                0x1fff9998                . = ALIGN (0x8)
+ *fill*         0x1fff8191        0x3 
+ COMMON         0x1fff8194     0x1009 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x1fff8194                rx_buffer
+                0x1fff8198                tx_buffer
+                0x1fff8998                DMA_ADC_TD
+                0x1fff899c                ADC_buffer
+                0x1fff919c                DMA_ADC_Chan
+ *fill*         0x1fff919d        0x3 
+ COMMON         0x1fff91a0      0x800 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x1fff91a0                UART_txBuffer
+ COMMON         0x1fff99a0        0x4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x1fff99a0                ADC_CountsPerVolt
+                0x1fff99a8                . = ALIGN (0x8)
+ *fill*         0x1fff99a4        0x4 
  *(.ram.b)
-                0x1fff9998                _end = .
-                0x1fff9998                __end = .
-                0x1fff9998                PROVIDE (end, .)
-                0x1fff9998                PROVIDE (__bss_end__, .)
-                0x00001888                __cy_region_init_ram = LOADADDR (.data)
-                0x00000088                __cy_region_init_size_ram = (_edata - ADDR (.data))
-                0x00001848                __cy_region_zero_size_ram = (_end - _edata)
+                0x1fff99a8                _end = .
+                0x1fff99a8                __end = .
+                0x1fff99a8                PROVIDE (end, .)
+                0x1fff99a8                PROVIDE (__bss_end__, .)
+                0x00001ac0                __cy_region_init_ram = LOADADDR (.data)
+                0x00000090                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x00001850                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x1fff9998       0x80 load address 0x00001910
-                0x1fff9998                . = _end
-                0x1fff9a18                . = (. + 0x80)
- *fill*         0x1fff9998       0x80 
-                0x1fff9a18                __cy_heap_limit = .
+.heap           0x1fff99a8       0x80 load address 0x00001b50
+                0x1fff99a8                . = _end
+                0x1fff9a28                . = (. + 0x80)
+ *fill*         0x1fff99a8       0x80 
+                0x1fff9a28                __cy_heap_limit = .
 
 .stack          0x20007800      0x800
                 0x20007800                __cy_stack_limit = .
@@ -1204,9 +1310,9 @@ END GROUP
 .cyloadablemeta
  *(.cyloadablemeta)
 
-.cyconfigecc    0x80000000      0x498
+.cyconfigecc    0x80000000      0x4a8
  *(.cyconfigecc)
- .cyconfigecc   0x80000000      0x498 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .cyconfigecc   0x80000000      0x4a8 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
                 0x80000000                cy_meta_configecc
 
 .cycustnvl      0x90000000        0x4
@@ -1235,8 +1341,8 @@ END GROUP
  .cymeta        0x90500000        0xc .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
                 0x90500000                cy_metadata
 
-.rel.dyn        0x00001910        0x0 load address 0x9050000c
- .rel.iplt      0x00001910        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
+.rel.dyn        0x00001b50        0x0 load address 0x9050000c
+ .rel.iplt      0x00001b50        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtbegin.o
 
 .stab
  *(.stab)
@@ -1256,290 +1362,330 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0xc80
+.debug_aranges  0x00000000      0xdd0
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x30 .\CortexM3\ARM_GCC_541\Debug\main.o
+                0x00000000       0x58 .\CortexM3\ARM_GCC_541\Debug\main.o
  .debug_aranges
-                0x00000030       0x68 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x00000058       0x68 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
  .debug_aranges
-                0x00000098       0x18 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                0x000000c0       0x18 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
  .debug_aranges
-                0x000000b0       0x48 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                0x000000d8       0x48 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
  .debug_aranges
-                0x000000f8       0xd8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                0x00000120       0xd8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
  .debug_aranges
-                0x000001d0      0x2a0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+                0x000001f8      0x2a0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
  .debug_aranges
-                0x00000470       0x98 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
+                0x00000498       0x98 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
  .debug_aranges
-                0x00000508       0xf0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                0x00000530       0xf0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
  .debug_aranges
-                0x000005f8       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
+                0x00000620       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
  .debug_aranges
-                0x00000618       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
+                0x00000640       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
  .debug_aranges
-                0x00000688       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+                0x000006b0       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
  .debug_aranges
-                0x00000708       0xe8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000730       0x38 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
  .debug_aranges
-                0x000007f0       0x38 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
+                0x00000768       0x38 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
  .debug_aranges
-                0x00000828       0x30 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+                0x000007a0       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
  .debug_aranges
-                0x00000858       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+                0x00000820       0xe8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
  .debug_aranges
-                0x000008c8       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+                0x00000908       0x38 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
  .debug_aranges
-                0x00000948       0x50 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+                0x00000940       0x30 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
  .debug_aranges
-                0x00000998       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
+                0x00000970       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
  .debug_aranges
-                0x00000a08       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+                0x000009e0       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
  .debug_aranges
-                0x00000a30       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+                0x00000a60       0x38 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
  .debug_aranges
-                0x00000a58       0x58 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+                0x00000a98       0x50 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
  .debug_aranges
-                0x00000ab0       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+                0x00000ae8       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
  .debug_aranges
-                0x00000ad8       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+                0x00000b58       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
  .debug_aranges
-                0x00000b58       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
+                0x00000b80       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
  .debug_aranges
-                0x00000b78       0x88 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
+                0x00000ba8       0x58 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
  .debug_aranges
-                0x00000c00       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
+                0x00000c00       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+ .debug_aranges
+                0x00000c28       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+ .debug_aranges
+                0x00000ca8       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000cc8       0x88 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
+ .debug_aranges
+                0x00000d50       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x7250
+.debug_info     0x00000000     0x7aac
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x3f0 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_info    0x000003f0      0x5f9 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_info    0x000009e9      0x136 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x00000b1f      0x3cf .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_info    0x00000eee      0x94e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
- .debug_info    0x0000183c     0x1374 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
- .debug_info    0x00002bb0      0xa2a .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
- .debug_info    0x000035da      0x6d7 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
- .debug_info    0x00003cb1      0x108 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
- .debug_info    0x00003db9      0x283 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
- .debug_info    0x0000403c      0x2d2 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
- .debug_info    0x0000430e      0xa19 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
- .debug_info    0x00004d27       0xd3 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
- .debug_info    0x00004dfa      0x165 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
- .debug_info    0x00004f5f      0x283 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
- .debug_info    0x000051e2      0x2c4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
- .debug_info    0x000054a6      0x519 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
- .debug_info    0x000059bf      0x283 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
- .debug_info    0x00005c42      0x1aa .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
- .debug_info    0x00005dec      0x1a7 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
- .debug_info    0x00005f93      0x1de .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
- .debug_info    0x00006171      0x1a8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
- .debug_info    0x00006319      0x2d2 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
- .debug_info    0x000065eb       0xc8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
- .debug_info    0x000066b3      0x64d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
- .debug_info    0x00006d00      0x550 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
+ .debug_info    0x00000000      0x605 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_info    0x00000605      0x5f9 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00000bfe      0x136 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00000d34      0x3cf .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_info    0x00001103      0x94e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+ .debug_info    0x00001a51     0x1374 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+ .debug_info    0x00002dc5      0xa2a .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
+ .debug_info    0x000037ef      0x6d7 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+ .debug_info    0x00003ec6      0x108 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
+ .debug_info    0x00003fce      0x283 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
+ .debug_info    0x00004251      0x2d2 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .debug_info    0x00004523      0x11f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .debug_info    0x00004642      0x11f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .debug_info    0x00004761      0x2d2 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+ .debug_info    0x00004a33      0xa19 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+ .debug_info    0x0000544c       0xd3 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
+ .debug_info    0x0000551f      0x165 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+ .debug_info    0x00005684      0x283 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+ .debug_info    0x00005907      0x2c4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+ .debug_info    0x00005bcb      0x11f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .debug_info    0x00005cea      0x519 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+ .debug_info    0x00006203      0x283 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
+ .debug_info    0x00006486      0x1aa .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+ .debug_info    0x00006630      0x1a7 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+ .debug_info    0x000067d7      0x1de .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+ .debug_info    0x000069b5      0x1a8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+ .debug_info    0x00006b5d      0x2d2 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+ .debug_info    0x00006e2f       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
+ .debug_info    0x00006f0f      0x64d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
+ .debug_info    0x0000755c      0x550 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
 
-.debug_abbrev   0x00000000     0x1f9a
+.debug_abbrev   0x00000000     0x22dc
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x133 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_abbrev  0x00000133      0x21e .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_abbrev  0x00000351       0x77 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_abbrev  0x000003c8      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_abbrev  0x000005b0      0x1b2 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
- .debug_abbrev  0x00000762      0x254 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
- .debug_abbrev  0x000009b6      0x1ab .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
- .debug_abbrev  0x00000b61      0x16f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
- .debug_abbrev  0x00000cd0       0x79 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
- .debug_abbrev  0x00000d49      0x139 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
- .debug_abbrev  0x00000e82      0x173 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
- .debug_abbrev  0x00000ff5      0x1eb .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
- .debug_abbrev  0x000011e0       0x42 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
- .debug_abbrev  0x00001222       0xb1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
- .debug_abbrev  0x000012d3      0x139 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
- .debug_abbrev  0x0000140c      0x121 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
- .debug_abbrev  0x0000152d      0x114 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
- .debug_abbrev  0x00001641      0x139 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
- .debug_abbrev  0x0000177a       0xcd .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
- .debug_abbrev  0x00001847       0xcd .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
- .debug_abbrev  0x00001914       0xf7 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
- .debug_abbrev  0x00001a0b       0xcd .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
- .debug_abbrev  0x00001ad8      0x173 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
- .debug_abbrev  0x00001c4b       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
- .debug_abbrev  0x00001c5f      0x1a7 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
- .debug_abbrev  0x00001e06      0x194 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
+ .debug_abbrev  0x00000000      0x152 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_abbrev  0x00000152      0x21e .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x00000370       0x77 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x000003e7      0x1e8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_abbrev  0x000005cf      0x1b2 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+ .debug_abbrev  0x00000781      0x254 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+ .debug_abbrev  0x000009d5      0x1ab .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
+ .debug_abbrev  0x00000b80      0x16f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+ .debug_abbrev  0x00000cef       0x79 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
+ .debug_abbrev  0x00000d68      0x139 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
+ .debug_abbrev  0x00000ea1      0x173 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .debug_abbrev  0x00001014       0x90 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .debug_abbrev  0x000010a4       0x90 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .debug_abbrev  0x00001134      0x173 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+ .debug_abbrev  0x000012a7      0x1eb .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+ .debug_abbrev  0x00001492       0x42 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
+ .debug_abbrev  0x000014d4       0xb1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+ .debug_abbrev  0x00001585      0x139 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+ .debug_abbrev  0x000016be      0x121 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+ .debug_abbrev  0x000017df       0x90 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .debug_abbrev  0x0000186f      0x114 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+ .debug_abbrev  0x00001983      0x139 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
+ .debug_abbrev  0x00001abc       0xcd .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+ .debug_abbrev  0x00001b89       0xcd .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+ .debug_abbrev  0x00001c56       0xf7 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+ .debug_abbrev  0x00001d4d       0xcd .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+ .debug_abbrev  0x00001e1a      0x173 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+ .debug_abbrev  0x00001f8d       0x14 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00001fa1      0x1a7 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
+ .debug_abbrev  0x00002148      0x194 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
 
-.debug_line     0x00000000     0x2f56
+.debug_line     0x00000000     0x3324
  *(.debug_line)
- .debug_line    0x00000000      0x234 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_line    0x00000234      0x20a .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_line    0x0000043e      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x0000057f      0x241 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_line    0x000007c0      0x2e4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
- .debug_line    0x00000aa4      0x816 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
- .debug_line    0x000012ba      0x367 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
- .debug_line    0x00001621      0x2f9 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
- .debug_line    0x0000191a       0x7d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
- .debug_line    0x00001997      0x17c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
- .debug_line    0x00001b13      0x138 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
- .debug_line    0x00001c4b      0x350 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
- .debug_line    0x00001f9b       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
- .debug_line    0x0000201b       0xac .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
- .debug_line    0x000020c7      0x17d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
- .debug_line    0x00002244      0x19d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
- .debug_line    0x000023e1      0x151 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
- .debug_line    0x00002532      0x17d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
- .debug_line    0x000026af       0x8e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
- .debug_line    0x0000273d       0x8e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
- .debug_line    0x000027cb       0xe9 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
- .debug_line    0x000028b4       0x84 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
- .debug_line    0x00002938      0x13e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
- .debug_line    0x00002a76       0x66 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
- .debug_line    0x00002adc      0x21a .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
- .debug_line    0x00002cf6      0x260 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
+ .debug_line    0x00000000      0x308 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_line    0x00000308      0x20c .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x00000514      0x141 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00000655      0x241 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_line    0x00000896      0x2e4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+ .debug_line    0x00000b7a      0x816 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+ .debug_line    0x00001390      0x367 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
+ .debug_line    0x000016f7      0x2f9 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+ .debug_line    0x000019f0       0x7d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
+ .debug_line    0x00001a6d      0x17c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
+ .debug_line    0x00001be9      0x137 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .debug_line    0x00001d20       0x94 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .debug_line    0x00001db4       0x96 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .debug_line    0x00001e4a      0x138 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+ .debug_line    0x00001f82      0x350 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+ .debug_line    0x000022d2       0x80 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
+ .debug_line    0x00002352       0xac .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+ .debug_line    0x000023fe      0x17d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+ .debug_line    0x0000257b      0x19d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+ .debug_line    0x00002718       0x97 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .debug_line    0x000027af      0x151 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+ .debug_line    0x00002900      0x17d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
+ .debug_line    0x00002a7d       0x8e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+ .debug_line    0x00002b0b       0x8e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+ .debug_line    0x00002b99       0xe9 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+ .debug_line    0x00002c82       0x84 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+ .debug_line    0x00002d06      0x13e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+ .debug_line    0x00002e44       0x66 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
+ .debug_line    0x00002eaa      0x21a .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
+ .debug_line    0x000030c4      0x260 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
 
-.debug_frame    0x00000000     0x1efc
+.debug_frame    0x00000000     0x218c
  *(.debug_frame)
- .debug_frame   0x00000000       0x50 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_frame   0x00000050      0x104 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_frame   0x00000154       0xb8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_frame   0x0000020c      0x1f8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
- .debug_frame   0x00000404      0x738 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
- .debug_frame   0x00000b3c      0x1f8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
- .debug_frame   0x00000d34      0x268 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
- .debug_frame   0x00000f9c       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
- .debug_frame   0x00000fbc       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
- .debug_frame   0x0000109c      0x104 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
- .debug_frame   0x000011a0      0x284 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
- .debug_frame   0x00001424       0x50 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
- .debug_frame   0x00001474       0x64 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
- .debug_frame   0x000014d8       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
- .debug_frame   0x000015b8      0x100 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
- .debug_frame   0x000016b8       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
- .debug_frame   0x00001798       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
- .debug_frame   0x00001878       0x54 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
- .debug_frame   0x000018cc       0x54 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
- .debug_frame   0x00001920       0xb4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
- .debug_frame   0x000019d4       0x54 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
- .debug_frame   0x00001a28      0x104 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
- .debug_frame   0x00001b2c      0x194 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
- .debug_frame   0x00001cc0      0x180 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
- .debug_frame   0x00001e40       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
- .debug_frame   0x00001e60       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
- .debug_frame   0x00001e88       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
- .debug_frame   0x00001eb4       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x00001edc       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000000       0xec .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_frame   0x000000ec      0x104 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_frame   0x000001f0       0xb8 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_frame   0x000002a8      0x1f8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+ .debug_frame   0x000004a0      0x738 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+ .debug_frame   0x00000bd8      0x1f8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
+ .debug_frame   0x00000dd0      0x268 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+ .debug_frame   0x00001038       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
+ .debug_frame   0x00001058       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
+ .debug_frame   0x00001138      0x104 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .debug_frame   0x0000123c       0x50 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .debug_frame   0x0000128c       0x50 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .debug_frame   0x000012dc      0x104 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+ .debug_frame   0x000013e0      0x284 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+ .debug_frame   0x00001664       0x50 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
+ .debug_frame   0x000016b4       0x64 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+ .debug_frame   0x00001718       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+ .debug_frame   0x000017f8      0x100 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+ .debug_frame   0x000018f8       0x50 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .debug_frame   0x00001948       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+ .debug_frame   0x00001a28       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
+ .debug_frame   0x00001b08       0x54 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+ .debug_frame   0x00001b5c       0x54 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+ .debug_frame   0x00001bb0       0xb4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+ .debug_frame   0x00001c64       0x54 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+ .debug_frame   0x00001cb8      0x104 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+ .debug_frame   0x00001dbc      0x194 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
+ .debug_frame   0x00001f50      0x180 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
+ .debug_frame   0x000020d0       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x000020f0       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x00002118       0x2c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x00002144       0x28 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000216c       0x20 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
 
-.debug_str      0x00000000     0x2a4b
+.debug_str      0x00000000     0x2d44
  *(.debug_str)
- .debug_str     0x00000000      0x35c .\CortexM3\ARM_GCC_541\Debug\main.o
-                                0x3ac (size before relaxing)
- .debug_str     0x0000035c      0x1ba .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
-                                0x393 (size before relaxing)
- .debug_str     0x00000516       0x75 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
-                                0x21c (size before relaxing)
- .debug_str     0x0000058b      0x154 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
-                                0x352 (size before relaxing)
- .debug_str     0x000006df      0x32e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
-                                0x582 (size before relaxing)
- .debug_str     0x00000a0d      0x7f1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
-                                0xa7f (size before relaxing)
- .debug_str     0x000011fe      0x365 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
-                                0x76b (size before relaxing)
- .debug_str     0x00001563      0x2e2 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
-                                0x52e (size before relaxing)
- .debug_str     0x00001845       0x2d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
-                                0x225 (size before relaxing)
- .debug_str     0x00001872      0x183 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
-                                0x36e (size before relaxing)
- .debug_str     0x000019f5      0x126 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
-                                0x332 (size before relaxing)
- .debug_str     0x00001b1b      0x31f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
-                                0x601 (size before relaxing)
- .debug_str     0x00001e3a       0x45 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
-                                0x1f8 (size before relaxing)
- .debug_str     0x00001e7f       0x5f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
-                                0x237 (size before relaxing)
- .debug_str     0x00001ede      0x12a .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
-                                0x37a (size before relaxing)
- .debug_str     0x00002008      0x14f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
-                                0x399 (size before relaxing)
- .debug_str     0x00002157      0x216 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
-                                0x456 (size before relaxing)
- .debug_str     0x0000236d      0x142 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
-                                0x37a (size before relaxing)
- .debug_str     0x000024af       0xa3 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
-                                0x2d4 (size before relaxing)
- .debug_str     0x00002552       0x68 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
-                                0x2d4 (size before relaxing)
- .debug_str     0x000025ba       0x73 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
-                                0x2a7 (size before relaxing)
- .debug_str     0x0000262d       0x4a .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
-                                0x2ac (size before relaxing)
- .debug_str     0x00002677      0x174 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+ .debug_str     0x00000000      0x47b .\CortexM3\ARM_GCC_541\Debug\main.o
+                                0x4cb (size before relaxing)
+ .debug_str     0x0000047b      0x1b4 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x3ab (size before relaxing)
+ .debug_str     0x0000062f       0x75 .\CortexM3\ARM_GCC_541\Debug\cymetadata.o
+                                0x234 (size before relaxing)
+ .debug_str     0x000006a4      0x154 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+                                0x36a (size before relaxing)
+ .debug_str     0x000007f8      0x32e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+                                0x59a (size before relaxing)
+ .debug_str     0x00000b26      0x7f1 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+                                0xa97 (size before relaxing)
+ .debug_str     0x00001317      0x365 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
+                                0x783 (size before relaxing)
+ .debug_str     0x0000167c      0x2d5 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+                                0x546 (size before relaxing)
+ .debug_str     0x00001951       0x2d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
+                                0x23d (size before relaxing)
+ .debug_str     0x0000197e      0x183 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
                                 0x386 (size before relaxing)
- .debug_str     0x000027eb      0x1b4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
-                                0x3f8 (size before relaxing)
- .debug_str     0x0000299f       0xac .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
-                                0x370 (size before relaxing)
+ .debug_str     0x00001b01      0x101 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+                                0x33c (size before relaxing)
+ .debug_str     0x00001c02       0x62 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+                                0x23c (size before relaxing)
+ .debug_str     0x00001c64       0x5f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+                                0x246 (size before relaxing)
+ .debug_str     0x00001cc3      0x10d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+                                0x34a (size before relaxing)
+ .debug_str     0x00001dd0      0x31f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                                0x619 (size before relaxing)
+ .debug_str     0x000020ef       0x45 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
+                                0x210 (size before relaxing)
+ .debug_str     0x00002134       0x5f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+                                0x24f (size before relaxing)
+ .debug_str     0x00002193      0x12a .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+                                0x392 (size before relaxing)
+ .debug_str     0x000022bd      0x14f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+                                0x3b1 (size before relaxing)
+ .debug_str     0x0000240c       0x63 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+                                0x24b (size before relaxing)
+ .debug_str     0x0000246f      0x216 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+                                0x46e (size before relaxing)
+ .debug_str     0x00002685      0x142 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
+                                0x392 (size before relaxing)
+ .debug_str     0x000027c7       0xa3 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+                                0x2ec (size before relaxing)
+ .debug_str     0x0000286a       0x68 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+                                0x2ec (size before relaxing)
+ .debug_str     0x000028d2       0x73 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+                                0x2bf (size before relaxing)
+ .debug_str     0x00002945       0x4a .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+                                0x2c4 (size before relaxing)
+ .debug_str     0x0000298f      0x155 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+                                0x39e (size before relaxing)
+ .debug_str     0x00002ae4      0x1b4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
+                                0x410 (size before relaxing)
+ .debug_str     0x00002c98       0xac .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
+                                0x388 (size before relaxing)
 
-.debug_loc      0x00000000     0x3805
+.debug_loc      0x00000000     0x3933
  *(.debug_loc)
- .debug_loc     0x00000000       0x6b .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_loc     0x0000006b      0x219 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_loc     0x00000284      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_loc     0x000003c8      0xb8e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
- .debug_loc     0x00000f56      0xa11 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
- .debug_loc     0x00001967      0x1e4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
- .debug_loc     0x00001b4b      0x276 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
- .debug_loc     0x00001dc1      0x128 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
- .debug_loc     0x00001ee9       0x56 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
- .debug_loc     0x00001f3f      0x68c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
- .debug_loc     0x000025cb       0x6c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
- .debug_loc     0x00002637      0x12c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
- .debug_loc     0x00002763      0x14d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
- .debug_loc     0x000028b0      0x11b .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
- .debug_loc     0x000029cb      0x128 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
- .debug_loc     0x00002af3       0x84 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
- .debug_loc     0x00002b77       0x84 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
- .debug_loc     0x00002bfb       0x79 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
- .debug_loc     0x00002c74       0x84 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
- .debug_loc     0x00002cf8       0x56 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
- .debug_loc     0x00002d4e      0x3b2 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
- .debug_loc     0x00003100      0x705 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
+ .debug_loc     0x00000000       0x7d .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_loc     0x0000007d      0x219 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_loc     0x00000296      0x144 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_loc     0x000003da      0xb8e .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+ .debug_loc     0x00000f68      0xa11 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+ .debug_loc     0x00001979      0x1e4 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
+ .debug_loc     0x00001b5d      0x276 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+ .debug_loc     0x00001dd3      0x128 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
+ .debug_loc     0x00001efb       0x56 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .debug_loc     0x00001f51       0x42 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .debug_loc     0x00001f93       0x42 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .debug_loc     0x00001fd5       0x56 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+ .debug_loc     0x0000202b      0x68c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+ .debug_loc     0x000026b7       0x6c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+ .debug_loc     0x00002723      0x12c .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+ .debug_loc     0x0000284f      0x14d .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+ .debug_loc     0x0000299c       0x42 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .debug_loc     0x000029de      0x11b .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+ .debug_loc     0x00002af9      0x128 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
+ .debug_loc     0x00002c21       0x84 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+ .debug_loc     0x00002ca5       0x84 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+ .debug_loc     0x00002d29       0x79 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+ .debug_loc     0x00002da2       0x84 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+ .debug_loc     0x00002e26       0x56 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+ .debug_loc     0x00002e7c      0x3b2 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
+ .debug_loc     0x0000322e      0x705 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
 
 .debug_macinfo
  *(.debug_macinfo)
 
-.debug_ranges   0x00000000      0xae0
+.debug_ranges   0x00000000      0xc08
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x38 .\CortexM3\ARM_GCC_541\Debug\main.o
- .debug_ranges  0x00000038       0x58 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_ranges  0x00000090       0x38 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
- .debug_ranges  0x000000c8       0xc8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
- .debug_ranges  0x00000190      0x290 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
- .debug_ranges  0x00000420       0x88 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
- .debug_ranges  0x000004a8       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
- .debug_ranges  0x00000588       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
- .debug_ranges  0x00000598       0x60 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
- .debug_ranges  0x000005f8       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
- .debug_ranges  0x00000668       0xd8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
- .debug_ranges  0x00000740       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
- .debug_ranges  0x00000768       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
- .debug_ranges  0x00000788       0x60 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
- .debug_ranges  0x000007e8       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
- .debug_ranges  0x00000858       0x40 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
- .debug_ranges  0x00000898       0x60 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
- .debug_ranges  0x000008f8       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
- .debug_ranges  0x00000910       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
- .debug_ranges  0x00000928       0x48 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
- .debug_ranges  0x00000970       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
- .debug_ranges  0x00000988       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
- .debug_ranges  0x000009f8       0x78 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
- .debug_ranges  0x00000a70       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
+ .debug_ranges  0x00000000       0x78 .\CortexM3\ARM_GCC_541\Debug\main.o
+ .debug_ranges  0x00000078       0x58 .\CortexM3\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_ranges  0x000000d0       0x38 .\CortexM3\ARM_GCC_541\Debug\Cm3Start.o
+ .debug_ranges  0x00000108       0xc8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyDmac.o)
+ .debug_ranges  0x000001d0      0x290 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyLib.o)
+ .debug_ranges  0x00000460       0x88 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(cyPm.o)
+ .debug_ranges  0x000004e8       0xe0 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
+ .debug_ranges  0x000005c8       0x10 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
+ .debug_ranges  0x000005d8       0x60 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
+ .debug_ranges  0x00000638       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .debug_ranges  0x000006a8       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .debug_ranges  0x000006d0       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
+ .debug_ranges  0x000006f8       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+ .debug_ranges  0x00000768       0xd8 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+ .debug_ranges  0x00000840       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
+ .debug_ranges  0x00000868       0x20 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+ .debug_ranges  0x00000888       0x60 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+ .debug_ranges  0x000008e8       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+ .debug_ranges  0x00000958       0x28 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
+ .debug_ranges  0x00000980       0x40 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+ .debug_ranges  0x000009c0       0x60 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
+ .debug_ranges  0x00000a20       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+ .debug_ranges  0x00000a38       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+ .debug_ranges  0x00000a50       0x48 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+ .debug_ranges  0x00000a98       0x18 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+ .debug_ranges  0x00000ab0       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+ .debug_ranges  0x00000b20       0x78 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
+ .debug_ranges  0x00000b98       0x70 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e .\CortexM3\ARM_GCC_541\Debug\main.o
@@ -1553,12 +1699,16 @@ END GROUP
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_INT.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+ .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
  .comment       0x0000006e       0x6f .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
@@ -1614,64 +1764,72 @@ END GROUP
  .ARM.attributes
                 0x00000230       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(UART_IntClock.o)
  .ARM.attributes
-                0x00000263       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
+                0x00000263       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(isr_button.o)
  .ARM.attributes
-                0x00000296       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
+                0x00000296       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_red.o)
  .ARM.attributes
-                0x000002c9       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
+                0x000002c9       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_green.o)
  .ARM.attributes
-                0x000002fc       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
+                0x000002fc       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_UART_Rx.o)
  .ARM.attributes
-                0x0000032f       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
+                0x0000032f       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC.o)
  .ARM.attributes
-                0x00000362       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
+                0x00000362       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_INT.o)
  .ARM.attributes
-                0x00000395       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
+                0x00000395       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_AMux.o)
  .ARM.attributes
-                0x000003c8       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
+                0x000003c8       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_Ext_CP_Clk.o)
  .ARM.attributes
-                0x000003fb       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
+                0x000003fb       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ADC_theACLK.o)
  .ARM.attributes
-                0x0000042e       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
+                0x0000042e       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(led_yellow.o)
  .ARM.attributes
-                0x00000461       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
+                0x00000461       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC.o)
  .ARM.attributes
-                0x00000494       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
+                0x00000494       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_DacClk.o)
  .ARM.attributes
-                0x000004c7       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
+                0x000004c7       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave1_DMA_dma.o)
  .ARM.attributes
-                0x000004fa       0x21 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
+                0x000004fa       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_Wave2_DMA_dma.o)
  .ARM.attributes
-                0x0000051b       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
+                0x0000052d       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(WaveDAC_VDAC8.o)
  .ARM.attributes
-                0x0000054e       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
+                0x00000560       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(DMA_ADC_dma.o)
  .ARM.attributes
-                0x00000581       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
+                0x00000593       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(ISR_DMA_XFER_DONE.o)
  .ARM.attributes
-                0x0000059e       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpdf2.o)
+                0x000005c6       0x21 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyBootAsmGnu.o)
  .ARM.attributes
-                0x000005bb       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
+                0x000005e7       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CyFlash.o)
  .ARM.attributes
-                0x000005d8       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
+                0x0000061a       0x33 .\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.a(CySpc.o)
  .ARM.attributes
-                0x000005f5       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunssfsi.o)
+                0x0000064d       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubdf3.o)
  .ARM.attributes
-                0x00000612       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
+                0x0000066a       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_cmpdf2.o)
  .ARM.attributes
-                0x0000063f       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
+                0x00000687       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_addsubsf3.o)
  .ARM.attributes
-                0x0000066c       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
+                0x000006a4       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_muldivsf3.o)
  .ARM.attributes
-                0x00000699       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+                0x000006c1       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libgcc.a(_arm_fixunssfsi.o)
  .ARM.attributes
-                0x000006c6       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+                0x000006de       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-errno.o)
  .ARM.attributes
-                0x000006f3       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+                0x0000070b       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-exit.o)
  .ARM.attributes
-                0x00000720       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+                0x00000738       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x0000074d       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
+                0x00000765       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000792       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000007bf       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000007ec       0x2d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtend.o
+ .ARM.attributes
+                0x00000819       0x1d c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/crtn.o
 
 /DISCARD/
  *(.note.GNU-stack)
-OUTPUT(D:\h_da\Lecturs\SS-20-Systytem Driven Hardware Design\freeSoC2\Workspace01\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydsn\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.elf elf32-littlearm)
+OUTPUT(D:\h_da\Lecturs\SS-20-Systytem Driven Hardware Design\freeSoC2\ADC_2_UART_DMA_Transfer\Workspace01\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydsn\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.elf elf32-littlearm)
