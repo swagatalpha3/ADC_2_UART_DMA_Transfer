@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\UART">
+<ExpandedNodeIds>
+<v>System_Driven_HW_Design</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\TopDesign</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.cydwr</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.cydwr\Pins</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.cydwr\Analog</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.cydwr\Clocks</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.cydwr\Interrupts</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.cydwr\DMA</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.cydwr\System</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.cydwr\Directives</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.cydwr\Flash Security</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.cydwr\EEPROM</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\Header Files</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\Header Files\cyapicallbacks.h</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\Source Files</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\Source Files\main.c</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\Generated_Source</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\Generated_Source\PSoC5</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\TopDesign</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Pins</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Analog</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Clocks</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Interrupts</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\DMA</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\System</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Directives</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Flash Security</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\EEPROM</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Header Files</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Header Files\cyapicallbacks.h</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Source Files</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Source Files\main.c</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\UART</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>System_Driven_HW_Design</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\TopDesign</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Pins</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Analog</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Clocks</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Interrupts</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\DMA</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\System</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Directives</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\Flash Security</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydwr\EEPROM</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Header Files</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Header Files\cyapicallbacks.h</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Source Files</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Source Files\main.c</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\ADC</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\ADC_AMux</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\ADC_Ext_CP_Clk</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\ADC_IRQ</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\ADC_theACLK</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\cy_boot</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\DMA_ADC</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\Em_EEPROM_Dynamic</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\ISR_DMA_XFER_DONE</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\ISR_UART_Rx</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\led_green</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\led_red</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\led_yellow</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\Pin_ADC_in</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\Pin_DAC_out</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\Generated_Source\PSoC5\UART</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>System_Driven_HW_Design</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\TopDesign</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\TopDesign\TopDesign.cysch</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\TopDesign</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>System_Driven_HW_Design</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\TopDesign</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\TopDesign\TopDesign.cysch</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\TopDesign</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>System_Driven_HW_Design</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_AMux.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Ext_CP_Clk.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_UART_Rx.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\led_green.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\led_red.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\led_yellow.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_ADC_in.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_DAC_out.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_IntClock.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_DacClk.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_PM.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_VDAC8.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_VDAC8_PM.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_Wave1_DMA_dma.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_Wave2_DMA_dma.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\00_DAC_ADC_UART_MATLAB_data_transfer.elf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\00_DAC_ADC_UART_MATLAB_data_transfer.hex</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\00_DAC_ADC_UART_MATLAB_data_transfer.map</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.gpdsc</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer.rpt</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\00_DAC_ADC_UART_MATLAB_data_transfer_timing.html</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_AMux.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Ext_CP_Clk.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\DMA_ADC_dma.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_DMA_XFER_DONE.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_UART_Rx.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\led_green.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\led_red.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\led_yellow.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_ADC_in.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_DAC_out.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_IntClock.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_DacClk.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_PM.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_VDAC8.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_VDAC8_PM.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_Wave1_DMA_dma.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\WaveDAC_Wave2_DMA_dma.lst</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.elf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.hex</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.map</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.gpdsc</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.rpt</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\01_DAC_ADC_DMA_UART_MATLAB_data_transfer_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>System_Driven_HW_Design</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_AMux.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_Ext_CP_Clk.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ADC_theACLK.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\Cm3Start.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyDmac.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\CySpc.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\ISR_UART_Rx.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\led_green.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\led_red.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\led_yellow.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_ADC_in.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\Pin_DAC_out.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_BOOT.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_INT.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_IntClock.lst</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CortexM3\ARM_GCC_541\Debug\Listing Files\UART_PM.lst</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>System_Driven_HW_Design</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\PSoC 5LP Architecture TRM</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CY8C58LP Family Datasheet</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\System Reference Guides</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\System Reference Guides\cy_boot_v5_70</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\ADC_DelSig_v3_30.pdf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\cy_constant_v1_0.pdf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\cy_isr_v1_70.pdf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\cy_pins_v2_20</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\UART_v2_50.pdf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\WaveDAC8_v2_10.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\PSoC 5LP Architecture TRM</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CY8C58LP Family Datasheet</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\System Reference Guides</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\System Reference Guides\cy_boot_v5_70</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\ADC_DelSig_v3_30.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_constant_v1_0.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_dma_v1_70.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_isr_v1_70</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_pins_v2_20</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\UART_v2_50.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\WaveDAC8_v2_10.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>System_Driven_HW_Design</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\PSoC 5LP Architecture TRM</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\CY8C58LP Family Datasheet</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\System Reference Guides</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\System Reference Guides\cy_boot_v5_70</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\ADC_DelSig_v3_30.pdf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\cy_constant_v1_0.pdf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\cy_isr_v1_70.pdf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\cy_pins_v2_20</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\UART_v2_50.pdf</v>
+<v>System_Driven_HW_Design\00_DAC_ADC_UART_MATLAB_data_transfer\WaveDAC8_v2_10.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\PSoC 5LP Architecture TRM</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\CY8C58LP Family Datasheet</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\System Reference Guides</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\System Reference Guides\cy_boot_v5_70</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\ADC_DelSig_v3_30.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_constant_v1_0.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_dma_v1_70.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_isr_v1_70</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_pins_v2_20</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\UART_v2_50.pdf</v>
+<v>System_Driven_HW_Design\01_DAC_ADC_DMA_UART_MATLAB_data_transfer\WaveDAC8_v2_10.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydsn\main.c" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="870, 495" SelectedTabbedMdiWindow="b11ea2a3-d372-4e48-941d-7ea223c78bb9"><DocumentWindow Key="D:\h_da\Lecturs\SS-20-Systytem Driven Hardware Design\freeSoC2\Workspace01\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydsn\TopDesign\TopDesign.cysch" Guid="0aefff35-d270-45d1-90aa-f572195abe7c" /><DocumentWindow Key="D:\h_da\Lecturs\SS-20-Systytem Driven Hardware Design\freeSoC2\Workspace01\01_DAC_ADC_DMA_UART_MATLAB_data_transfer.cydsn\main.c" Guid="b11ea2a3-d372-4e48-941d-7ea223c78bb9" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="cb6fdc78-db2b-4c4e-ac8d-16d57de78d0d" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

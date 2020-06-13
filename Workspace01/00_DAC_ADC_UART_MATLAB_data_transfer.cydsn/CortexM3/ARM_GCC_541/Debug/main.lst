@@ -1,0 +1,1205 @@
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.ISR_UART_Rx,"ax",%progbits
+  20              		.align	2
+  21              		.global	ISR_UART_Rx
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	ISR_UART_Rx, %function
+  25              	ISR_UART_Rx:
+  26              	.LFB64:
+  27              		.file 1 "main.c"
+   1:main.c        **** #include "project.h"
+   2:main.c        **** #include<stdio.h>
+   3:main.c        **** # define vdda 5.0
+   4:main.c        **** # define ADC_COUNT 65536  // 16 bit ADC
+   5:main.c        **** # define TX_BUFF_SIZE 256 // 256 * (uint16) data to be transfered
+   6:main.c        **** 
+   7:main.c        **** //char rx_buffer;          // software buffer
+   8:main.c        **** uint8_t rx_buffer_flag = 0;
+   9:main.c        **** uint16 tx_buffer[TX_BUFF_SIZE];
+  10:main.c        **** 
+  11:main.c        **** 
+  12:main.c        **** // Interrupt function to be activcated ever time a Byte is received
+  13:main.c        **** void ISR_UART_Rx(void){
+  28              		.loc 1 13 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  14:main.c        ****     //rx_buffer = UART_GetByte();
+  15:main.c        ****     rx_buffer_flag = 1;
+  33              		.loc 1 15 0
+  34 0000 0122     		movs	r2, #1
+  35 0002 014B     		ldr	r3, .L2
+  36 0004 1A70     		strb	r2, [r3]
+  37 0006 7047     		bx	lr
+  38              	.L3:
+  39              		.align	2
+  40              	.L2:
+  41 0008 00000000 		.word	.LANCHOR0
+  42              		.cfi_endproc
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 2
+
+
+  43              	.LFE64:
+  44              		.size	ISR_UART_Rx, .-ISR_UART_Rx
+  45              		.section	.text.main,"ax",%progbits
+  46              		.align	2
+  47              		.global	main
+  48              		.thumb
+  49              		.thumb_func
+  50              		.type	main, %function
+  51              	main:
+  52              	.LFB65:
+  16:main.c        ****     
+  17:main.c        **** }
+  18:main.c        **** 
+  19:main.c        **** int main(void)
+  20:main.c        **** {
+  53              		.loc 1 20 0
+  54              		.cfi_startproc
+  55              		@ args = 0, pretend = 0, frame = 0
+  56              		@ frame_needed = 0, uses_anonymous_args = 0
+  57 0000 10B5     		push	{r4, lr}
+  58              		.cfi_def_cfa_offset 8
+  59              		.cfi_offset 4, -8
+  60              		.cfi_offset 14, -4
+  21:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  61              		.loc 1 21 0
+  62              		.syntax unified
+  63              	@ 21 "main.c" 1
+  64 0002 62B6     		CPSIE   i
+  65              	@ 0 "" 2
+  22:main.c        ****     UART_Start();
+  66              		.loc 1 22 0
+  67              		.thumb
+  68              		.syntax unified
+  69 0004 FFF7FEFF 		bl	UART_Start
+  70              	.LVL0:
+  23:main.c        ****     WaveDAC_Start();
+  71              		.loc 1 23 0
+  72 0008 FFF7FEFF 		bl	WaveDAC_Start
+  73              	.LVL1:
+  24:main.c        ****     ADC_Start();
+  74              		.loc 1 24 0
+  75 000c FFF7FEFF 		bl	ADC_Start
+  76              	.LVL2:
+  25:main.c        ****     ADC_StartConvert();
+  77              		.loc 1 25 0
+  78 0010 FFF7FEFF 		bl	ADC_StartConvert
+  79              	.LVL3:
+  26:main.c        ****     uint16 adc_result;
+  27:main.c        ****     float adc_to_vg;
+  28:main.c        ****     uint8 adc_to_tx_buf_flag = 0;
+  29:main.c        ****     
+  30:main.c        ****     // Interrupt function to be activcated ever time a Byte is received
+  31:main.c        ****     ISR_UART_Rx_StartEx(ISR_UART_Rx);
+  80              		.loc 1 31 0
+  81 0014 1748     		ldr	r0, .L12
+  82 0016 FFF7FEFF 		bl	ISR_UART_Rx_StartEx
+  83              	.LVL4:
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 3
+
+
+  28:main.c        ****     
+  84              		.loc 1 28 0
+  85 001a 0024     		movs	r4, #0
+  86              	.LVL5:
+  87              	.L9:
+  32:main.c        ****     
+  33:main.c        ****     
+  34:main.c        ****     for(;;)
+  35:main.c        ****        { 
+  36:main.c        ****         /* transmit the data only when requested from outside 
+  37:main.c        ****         (i.e. rx_buffer_flag is high) and data loaded to tx buffer 
+  38:main.c        ****         (i.e adc_to_tx_buf_flag is high) */
+  39:main.c        ****         
+  40:main.c        ****         if((rx_buffer_flag ==1)&& (adc_to_tx_buf_flag ==1)){
+  88              		.loc 1 40 0
+  89 001c 164B     		ldr	r3, .L12+4
+  90 001e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+  91 0020 012B     		cmp	r3, #1
+  92 0022 08D1     		bne	.L5
+  93              		.loc 1 40 0 is_stmt 0 discriminator 1
+  94 0024 3CB1     		cbz	r4, .L5
+  41:main.c        ****   
+  42:main.c        ****                 UART_PutArray(tx_buffer,TX_BUFF_SIZE * sizeof(uint16_t));//<-----------------------
+  95              		.loc 1 42 0 is_stmt 1
+  96 0026 4FF40071 		mov	r1, #512
+  97 002a 1448     		ldr	r0, .L12+8
+  98 002c FFF7FEFF 		bl	UART_PutArray
+  99              	.LVL6:
+  43:main.c        ****             
+  44:main.c        ****                 adc_to_tx_buf_flag = 0;
+  45:main.c        ****                 rx_buffer_flag = 0;
+ 100              		.loc 1 45 0
+ 101 0030 0024     		movs	r4, #0
+ 102 0032 114B     		ldr	r3, .L12+4
+ 103 0034 1C70     		strb	r4, [r3]
+ 104              	.LVL7:
+ 105              	.L5:
+  46:main.c        ****             }
+  47:main.c        ****         
+  48:main.c        ****        
+  49:main.c        ****         // load ADC readings to tx buffer when requested from outside (i.e. rx_buffer_flag is high)
+  50:main.c        ****         if (rx_buffer_flag ==1){
+ 106              		.loc 1 50 0
+ 107 0036 104B     		ldr	r3, .L12+4
+ 108 0038 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 109 003a 012B     		cmp	r3, #1
+ 110 003c 0ED1     		bne	.L7
+ 111 003e 09E0     		b	.L10
+ 112              	.LVL8:
+ 113              	.L8:
+ 114              	.LBB2:
+  51:main.c        ****            for (int i =0; i<TX_BUFF_SIZE ; i++){
+  52:main.c        ****               ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
+ 115              		.loc 1 52 0 discriminator 3
+ 116 0040 0020     		movs	r0, #0
+ 117 0042 FFF7FEFF 		bl	ADC_IsEndConversion
+ 118              	.LVL9:
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 4
+
+
+  53:main.c        ****               tx_buffer[i] = ADC_GetResult32(); 
+ 119              		.loc 1 53 0 discriminator 3
+ 120 0046 FFF7FEFF 		bl	ADC_GetResult32
+ 121              	.LVL10:
+ 122 004a 0C4B     		ldr	r3, .L12+8
+ 123 004c 23F81400 		strh	r0, [r3, r4, lsl #1]	@ movhi
+  51:main.c        ****            for (int i =0; i<TX_BUFF_SIZE ; i++){
+ 124              		.loc 1 51 0 discriminator 3
+ 125 0050 0134     		adds	r4, r4, #1
+ 126              	.LVL11:
+ 127 0052 00E0     		b	.L6
+ 128              	.LVL12:
+ 129              	.L10:
+ 130              	.LBE2:
+ 131 0054 0024     		movs	r4, #0
+ 132              	.LVL13:
+ 133              	.L6:
+ 134              	.LBB3:
+  51:main.c        ****            for (int i =0; i<TX_BUFF_SIZE ; i++){
+ 135              		.loc 1 51 0 is_stmt 0 discriminator 1
+ 136 0056 FF2C     		cmp	r4, #255
+ 137 0058 F2DD     		ble	.L8
+ 138              	.LBE3:
+  54:main.c        ****            }
+  55:main.c        ****            adc_to_tx_buf_flag = 1;
+ 139              		.loc 1 55 0 is_stmt 1
+ 140 005a 0124     		movs	r4, #1
+ 141              	.LVL14:
+ 142              	.L7:
+  56:main.c        ****         }
+  57:main.c        ****       
+  58:main.c        ****         // default operation ( read ADC data and light the appropriate LED)
+  59:main.c        ****         ADC_StartConvert();
+ 143              		.loc 1 59 0
+ 144 005c FFF7FEFF 		bl	ADC_StartConvert
+ 145              	.LVL15:
+  60:main.c        ****         ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
+ 146              		.loc 1 60 0
+ 147 0060 0020     		movs	r0, #0
+ 148 0062 FFF7FEFF 		bl	ADC_IsEndConversion
+ 149              	.LVL16:
+  61:main.c        ****         adc_result = ADC_GetResult32();
+ 150              		.loc 1 61 0
+ 151 0066 FFF7FEFF 		bl	ADC_GetResult32
+ 152              	.LVL17:
+  62:main.c        ****         adc_to_vg = (vdda/ADC_COUNT) * adc_result ;
+  63:main.c        ****       /*  
+  64:main.c        ****         if (adc_to_vg < (0.088*vdda)){  // flash green LED if adc reads less than 8.8% of vdda 
+  65:main.c        ****             led_green_Write(1);
+  66:main.c        ****             CyDelay(1000);
+  67:main.c        ****             led_green_Write(0);
+  68:main.c        ****             CyDelay(1000);
+  69:main.c        ****             led_red_Write(0);
+  70:main.c        ****             led_yellow_Write(0);
+  71:main.c        ****         }
+  72:main.c        ****         if ((adc_to_vg >= (0.088*vdda)) && (adc_to_vg < (0.5*vdda))){
+  73:main.c        ****             led_green_Write(1);
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 5
+
+
+  74:main.c        ****             led_red_Write(0);
+  75:main.c        ****             led_yellow_Write(0);
+  76:main.c        ****         }
+  77:main.c        ****         if ((adc_to_vg >= (0.5*vdda)) && (adc_to_vg < (0.911*vdda))){
+  78:main.c        ****             led_green_Write(0);
+  79:main.c        ****             led_red_Write(0);
+  80:main.c        ****             led_yellow_Write(1);
+  81:main.c        ****         }
+  82:main.c        ****         if (adc_to_vg >= (0.911*vdda)){
+  83:main.c        ****             led_green_Write(0);
+  84:main.c        ****             led_red_Write(1);
+  85:main.c        ****             led_yellow_Write(0);
+  86:main.c        ****         }*/
+  87:main.c        ****         CyDelay(1);
+ 153              		.loc 1 87 0
+ 154 006a 0120     		movs	r0, #1
+ 155 006c FFF7FEFF 		bl	CyDelay
+ 156              	.LVL18:
+  88:main.c        ****        }
+ 157              		.loc 1 88 0
+ 158 0070 D4E7     		b	.L9
+ 159              	.L13:
+ 160 0072 00BF     		.align	2
+ 161              	.L12:
+ 162 0074 00000000 		.word	ISR_UART_Rx
+ 163 0078 00000000 		.word	.LANCHOR0
+ 164 007c 00000000 		.word	tx_buffer
+ 165              		.cfi_endproc
+ 166              	.LFE65:
+ 167              		.size	main, .-main
+ 168              		.comm	tx_buffer,512,4
+ 169              		.global	rx_buffer_flag
+ 170              		.bss
+ 171              		.set	.LANCHOR0,. + 0
+ 172              		.type	rx_buffer_flag, %object
+ 173              		.size	rx_buffer_flag, 1
+ 174              	rx_buffer_flag:
+ 175 0000 00       		.space	1
+ 176              		.text
+ 177              	.Letext0:
+ 178              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 179              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 180              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 181              		.file 5 "Generated_Source\\PSoC5/core_cm3.h"
+ 182              		.file 6 "Generated_Source\\PSoC5/ADC.h"
+ 183              		.file 7 "Generated_Source\\PSoC5/UART.h"
+ 184              		.file 8 "Generated_Source\\PSoC5/WaveDAC.h"
+ 185              		.file 9 "Generated_Source\\PSoC5/ISR_UART_Rx.h"
+ 186              		.file 10 "Generated_Source\\PSoC5/CyLib.h"
+ 187              		.section	.debug_info,"",%progbits
+ 188              	.Ldebug_info0:
+ 189 0000 85020000 		.4byte	0x285
+ 190 0004 0400     		.2byte	0x4
+ 191 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 192 000a 04       		.byte	0x4
+ 193 000b 01       		.uleb128 0x1
+ 194 000c 4F000000 		.4byte	.LASF35
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 6
+
+
+ 195 0010 0C       		.byte	0xc
+ 196 0011 5E020000 		.4byte	.LASF36
+ 197 0015 78010000 		.4byte	.LASF37
+ 198 0019 18000000 		.4byte	.Ldebug_ranges0+0x18
+ 199 001d 00000000 		.4byte	0
+ 200 0021 00000000 		.4byte	.Ldebug_line0
+ 201 0025 02       		.uleb128 0x2
+ 202 0026 01       		.byte	0x1
+ 203 0027 06       		.byte	0x6
+ 204 0028 B1020000 		.4byte	.LASF0
+ 205 002c 03       		.uleb128 0x3
+ 206 002d 00000000 		.4byte	.LASF4
+ 207 0031 02       		.byte	0x2
+ 208 0032 1D       		.byte	0x1d
+ 209 0033 37000000 		.4byte	0x37
+ 210 0037 02       		.uleb128 0x2
+ 211 0038 01       		.byte	0x1
+ 212 0039 08       		.byte	0x8
+ 213 003a 41000000 		.4byte	.LASF1
+ 214 003e 02       		.uleb128 0x2
+ 215 003f 02       		.byte	0x2
+ 216 0040 05       		.byte	0x5
+ 217 0041 8C020000 		.4byte	.LASF2
+ 218 0045 02       		.uleb128 0x2
+ 219 0046 02       		.byte	0x2
+ 220 0047 07       		.byte	0x7
+ 221 0048 02010000 		.4byte	.LASF3
+ 222 004c 03       		.uleb128 0x3
+ 223 004d 16000000 		.4byte	.LASF5
+ 224 0051 02       		.byte	0x2
+ 225 0052 3F       		.byte	0x3f
+ 226 0053 57000000 		.4byte	0x57
+ 227 0057 02       		.uleb128 0x2
+ 228 0058 04       		.byte	0x4
+ 229 0059 05       		.byte	0x5
+ 230 005a 9C020000 		.4byte	.LASF6
+ 231 005e 02       		.uleb128 0x2
+ 232 005f 04       		.byte	0x4
+ 233 0060 07       		.byte	0x7
+ 234 0061 4B010000 		.4byte	.LASF7
+ 235 0065 02       		.uleb128 0x2
+ 236 0066 08       		.byte	0x8
+ 237 0067 05       		.byte	0x5
+ 238 0068 50020000 		.4byte	.LASF8
+ 239 006c 02       		.uleb128 0x2
+ 240 006d 08       		.byte	0x8
+ 241 006e 07       		.byte	0x7
+ 242 006f 16020000 		.4byte	.LASF9
+ 243 0073 04       		.uleb128 0x4
+ 244 0074 04       		.byte	0x4
+ 245 0075 05       		.byte	0x5
+ 246 0076 696E7400 		.ascii	"int\000"
+ 247 007a 02       		.uleb128 0x2
+ 248 007b 04       		.byte	0x4
+ 249 007c 07       		.byte	0x7
+ 250 007d 09020000 		.4byte	.LASF10
+ 251 0081 03       		.uleb128 0x3
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 7
+
+
+ 252 0082 2D020000 		.4byte	.LASF11
+ 253 0086 03       		.byte	0x3
+ 254 0087 18       		.byte	0x18
+ 255 0088 2C000000 		.4byte	0x2c
+ 256 008c 03       		.uleb128 0x3
+ 257 008d 3F020000 		.4byte	.LASF12
+ 258 0091 03       		.byte	0x3
+ 259 0092 2C       		.byte	0x2c
+ 260 0093 4C000000 		.4byte	0x4c
+ 261 0097 05       		.uleb128 0x5
+ 262 0098 96020000 		.4byte	.LASF13
+ 263 009c 04       		.byte	0x4
+ 264 009d E401     		.2byte	0x1e4
+ 265 009f 37000000 		.4byte	0x37
+ 266 00a3 05       		.uleb128 0x5
+ 267 00a4 5D010000 		.4byte	.LASF14
+ 268 00a8 04       		.byte	0x4
+ 269 00a9 E501     		.2byte	0x1e5
+ 270 00ab 45000000 		.4byte	0x45
+ 271 00af 02       		.uleb128 0x2
+ 272 00b0 04       		.byte	0x4
+ 273 00b1 04       		.byte	0x4
+ 274 00b2 3B000000 		.4byte	.LASF15
+ 275 00b6 02       		.uleb128 0x2
+ 276 00b7 08       		.byte	0x8
+ 277 00b8 04       		.byte	0x4
+ 278 00b9 34000000 		.4byte	.LASF16
+ 279 00bd 02       		.uleb128 0x2
+ 280 00be 01       		.byte	0x1
+ 281 00bf 08       		.byte	0x8
+ 282 00c0 65020000 		.4byte	.LASF17
+ 283 00c4 02       		.uleb128 0x2
+ 284 00c5 08       		.byte	0x8
+ 285 00c6 04       		.byte	0x4
+ 286 00c7 A5020000 		.4byte	.LASF18
+ 287 00cb 02       		.uleb128 0x2
+ 288 00cc 04       		.byte	0x4
+ 289 00cd 07       		.byte	0x7
+ 290 00ce 47020000 		.4byte	.LASF19
+ 291 00d2 06       		.uleb128 0x6
+ 292 00d3 0A000000 		.4byte	.LASF38
+ 293 00d7 01       		.byte	0x1
+ 294 00d8 0D       		.byte	0xd
+ 295 00d9 00000000 		.4byte	.LFB64
+ 296 00dd 0C000000 		.4byte	.LFE64-.LFB64
+ 297 00e1 01       		.uleb128 0x1
+ 298 00e2 9C       		.byte	0x9c
+ 299 00e3 07       		.uleb128 0x7
+ 300 00e4 64010000 		.4byte	.LASF39
+ 301 00e8 01       		.byte	0x1
+ 302 00e9 13       		.byte	0x13
+ 303 00ea 73000000 		.4byte	0x73
+ 304 00ee 00000000 		.4byte	.LFB65
+ 305 00f2 80000000 		.4byte	.LFE65-.LFB65
+ 306 00f6 01       		.uleb128 0x1
+ 307 00f7 9C       		.byte	0x9c
+ 308 00f8 E2010000 		.4byte	0x1e2
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 8
+
+
+ 309 00fc 08       		.uleb128 0x8
+ 310 00fd C5020000 		.4byte	.LASF20
+ 311 0101 01       		.byte	0x1
+ 312 0102 1A       		.byte	0x1a
+ 313 0103 A3000000 		.4byte	0xa3
+ 314 0107 08       		.uleb128 0x8
+ 315 0108 20000000 		.4byte	.LASF21
+ 316 010c 01       		.byte	0x1
+ 317 010d 1B       		.byte	0x1b
+ 318 010e AF000000 		.4byte	0xaf
+ 319 0112 09       		.uleb128 0x9
+ 320 0113 F6010000 		.4byte	.LASF22
+ 321 0117 01       		.byte	0x1
+ 322 0118 1C       		.byte	0x1c
+ 323 0119 97000000 		.4byte	0x97
+ 324 011d 00000000 		.4byte	.LLST0
+ 325 0121 0A       		.uleb128 0xa
+ 326 0122 00000000 		.4byte	.Ldebug_ranges0+0
+ 327 0126 54010000 		.4byte	0x154
+ 328 012a 0B       		.uleb128 0xb
+ 329 012b 6900     		.ascii	"i\000"
+ 330 012d 01       		.byte	0x1
+ 331 012e 33       		.byte	0x33
+ 332 012f 73000000 		.4byte	0x73
+ 333 0133 4C000000 		.4byte	.LLST1
+ 334 0137 0C       		.uleb128 0xc
+ 335 0138 46000000 		.4byte	.LVL9
+ 336 013c 25020000 		.4byte	0x225
+ 337 0140 4A010000 		.4byte	0x14a
+ 338 0144 0D       		.uleb128 0xd
+ 339 0145 01       		.uleb128 0x1
+ 340 0146 50       		.byte	0x50
+ 341 0147 01       		.uleb128 0x1
+ 342 0148 30       		.byte	0x30
+ 343 0149 00       		.byte	0
+ 344 014a 0E       		.uleb128 0xe
+ 345 014b 4A000000 		.4byte	.LVL10
+ 346 014f 30020000 		.4byte	0x230
+ 347 0153 00       		.byte	0
+ 348 0154 0E       		.uleb128 0xe
+ 349 0155 08000000 		.4byte	.LVL0
+ 350 0159 3B020000 		.4byte	0x23b
+ 351 015d 0E       		.uleb128 0xe
+ 352 015e 0C000000 		.4byte	.LVL1
+ 353 0162 46020000 		.4byte	0x246
+ 354 0166 0E       		.uleb128 0xe
+ 355 0167 10000000 		.4byte	.LVL2
+ 356 016b 51020000 		.4byte	0x251
+ 357 016f 0E       		.uleb128 0xe
+ 358 0170 14000000 		.4byte	.LVL3
+ 359 0174 5C020000 		.4byte	0x25c
+ 360 0178 0C       		.uleb128 0xc
+ 361 0179 1A000000 		.4byte	.LVL4
+ 362 017d 67020000 		.4byte	0x267
+ 363 0181 8F010000 		.4byte	0x18f
+ 364 0185 0D       		.uleb128 0xd
+ 365 0186 01       		.uleb128 0x1
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 9
+
+
+ 366 0187 50       		.byte	0x50
+ 367 0188 05       		.uleb128 0x5
+ 368 0189 03       		.byte	0x3
+ 369 018a 00000000 		.4byte	ISR_UART_Rx
+ 370 018e 00       		.byte	0
+ 371 018f 0C       		.uleb128 0xc
+ 372 0190 30000000 		.4byte	.LVL6
+ 373 0194 72020000 		.4byte	0x272
+ 374 0198 AD010000 		.4byte	0x1ad
+ 375 019c 0D       		.uleb128 0xd
+ 376 019d 01       		.uleb128 0x1
+ 377 019e 50       		.byte	0x50
+ 378 019f 05       		.uleb128 0x5
+ 379 01a0 03       		.byte	0x3
+ 380 01a1 00000000 		.4byte	tx_buffer
+ 381 01a5 0D       		.uleb128 0xd
+ 382 01a6 01       		.uleb128 0x1
+ 383 01a7 51       		.byte	0x51
+ 384 01a8 03       		.uleb128 0x3
+ 385 01a9 0A       		.byte	0xa
+ 386 01aa 0002     		.2byte	0x200
+ 387 01ac 00       		.byte	0
+ 388 01ad 0E       		.uleb128 0xe
+ 389 01ae 60000000 		.4byte	.LVL15
+ 390 01b2 5C020000 		.4byte	0x25c
+ 391 01b6 0C       		.uleb128 0xc
+ 392 01b7 66000000 		.4byte	.LVL16
+ 393 01bb 25020000 		.4byte	0x225
+ 394 01bf C9010000 		.4byte	0x1c9
+ 395 01c3 0D       		.uleb128 0xd
+ 396 01c4 01       		.uleb128 0x1
+ 397 01c5 50       		.byte	0x50
+ 398 01c6 01       		.uleb128 0x1
+ 399 01c7 30       		.byte	0x30
+ 400 01c8 00       		.byte	0
+ 401 01c9 0E       		.uleb128 0xe
+ 402 01ca 6A000000 		.4byte	.LVL17
+ 403 01ce 30020000 		.4byte	0x230
+ 404 01d2 0F       		.uleb128 0xf
+ 405 01d3 70000000 		.4byte	.LVL18
+ 406 01d7 7D020000 		.4byte	0x27d
+ 407 01db 0D       		.uleb128 0xd
+ 408 01dc 01       		.uleb128 0x1
+ 409 01dd 50       		.byte	0x50
+ 410 01de 01       		.uleb128 0x1
+ 411 01df 31       		.byte	0x31
+ 412 01e0 00       		.byte	0
+ 413 01e1 00       		.byte	0
+ 414 01e2 10       		.uleb128 0x10
+ 415 01e3 2E010000 		.4byte	.LASF23
+ 416 01e7 05       		.byte	0x5
+ 417 01e8 1207     		.2byte	0x712
+ 418 01ea EE010000 		.4byte	0x1ee
+ 419 01ee 11       		.uleb128 0x11
+ 420 01ef 8C000000 		.4byte	0x8c
+ 421 01f3 12       		.uleb128 0x12
+ 422 01f4 69010000 		.4byte	.LASF24
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 10
+
+
+ 423 01f8 01       		.byte	0x1
+ 424 01f9 08       		.byte	0x8
+ 425 01fa 81000000 		.4byte	0x81
+ 426 01fe 05       		.uleb128 0x5
+ 427 01ff 03       		.byte	0x3
+ 428 0200 00000000 		.4byte	rx_buffer_flag
+ 429 0204 13       		.uleb128 0x13
+ 430 0205 A3000000 		.4byte	0xa3
+ 431 0209 14020000 		.4byte	0x214
+ 432 020d 14       		.uleb128 0x14
+ 433 020e CB000000 		.4byte	0xcb
+ 434 0212 FF       		.byte	0xff
+ 435 0213 00       		.byte	0
+ 436 0214 12       		.uleb128 0x12
+ 437 0215 2A000000 		.4byte	.LASF25
+ 438 0219 01       		.byte	0x1
+ 439 021a 09       		.byte	0x9
+ 440 021b 04020000 		.4byte	0x204
+ 441 021f 05       		.uleb128 0x5
+ 442 0220 03       		.byte	0x3
+ 443 0221 00000000 		.4byte	tx_buffer
+ 444 0225 15       		.uleb128 0x15
+ 445 0226 EE000000 		.4byte	.LASF26
+ 446 022a EE000000 		.4byte	.LASF26
+ 447 022e 06       		.byte	0x6
+ 448 022f 3F       		.byte	0x3f
+ 449 0230 15       		.uleb128 0x15
+ 450 0231 3B010000 		.4byte	.LASF27
+ 451 0235 3B010000 		.4byte	.LASF27
+ 452 0239 06       		.byte	0x6
+ 453 023a 42       		.byte	0x42
+ 454 023b 15       		.uleb128 0x15
+ 455 023c 15010000 		.4byte	.LASF28
+ 456 0240 15010000 		.4byte	.LASF28
+ 457 0244 07       		.byte	0x7
+ 458 0245 54       		.byte	0x54
+ 459 0246 15       		.uleb128 0x15
+ 460 0247 7E020000 		.4byte	.LASF29
+ 461 024b 7E020000 		.4byte	.LASF29
+ 462 024f 08       		.byte	0x8
+ 463 0250 67       		.byte	0x67
+ 464 0251 15       		.uleb128 0x15
+ 465 0252 35020000 		.4byte	.LASF30
+ 466 0256 35020000 		.4byte	.LASF30
+ 467 025a 06       		.byte	0x6
+ 468 025b 3A       		.byte	0x3a
+ 469 025c 15       		.uleb128 0x15
+ 470 025d DD000000 		.4byte	.LASF31
+ 471 0261 DD000000 		.4byte	.LASF31
+ 472 0265 06       		.byte	0x6
+ 473 0266 3D       		.byte	0x3d
+ 474 0267 15       		.uleb128 0x15
+ 475 0268 6A020000 		.4byte	.LASF32
+ 476 026c 6A020000 		.4byte	.LASF32
+ 477 0270 09       		.byte	0x9
+ 478 0271 18       		.byte	0x18
+ 479 0272 15       		.uleb128 0x15
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 11
+
+
+ 480 0273 20010000 		.4byte	.LASF33
+ 481 0277 20010000 		.4byte	.LASF33
+ 482 027b 07       		.byte	0x7
+ 483 027c 8C       		.byte	0x8c
+ 484 027d 15       		.uleb128 0x15
+ 485 027e BD020000 		.4byte	.LASF34
+ 486 0282 BD020000 		.4byte	.LASF34
+ 487 0286 0A       		.byte	0xa
+ 488 0287 76       		.byte	0x76
+ 489 0288 00       		.byte	0
+ 490              		.section	.debug_abbrev,"",%progbits
+ 491              	.Ldebug_abbrev0:
+ 492 0000 01       		.uleb128 0x1
+ 493 0001 11       		.uleb128 0x11
+ 494 0002 01       		.byte	0x1
+ 495 0003 25       		.uleb128 0x25
+ 496 0004 0E       		.uleb128 0xe
+ 497 0005 13       		.uleb128 0x13
+ 498 0006 0B       		.uleb128 0xb
+ 499 0007 03       		.uleb128 0x3
+ 500 0008 0E       		.uleb128 0xe
+ 501 0009 1B       		.uleb128 0x1b
+ 502 000a 0E       		.uleb128 0xe
+ 503 000b 55       		.uleb128 0x55
+ 504 000c 17       		.uleb128 0x17
+ 505 000d 11       		.uleb128 0x11
+ 506 000e 01       		.uleb128 0x1
+ 507 000f 10       		.uleb128 0x10
+ 508 0010 17       		.uleb128 0x17
+ 509 0011 00       		.byte	0
+ 510 0012 00       		.byte	0
+ 511 0013 02       		.uleb128 0x2
+ 512 0014 24       		.uleb128 0x24
+ 513 0015 00       		.byte	0
+ 514 0016 0B       		.uleb128 0xb
+ 515 0017 0B       		.uleb128 0xb
+ 516 0018 3E       		.uleb128 0x3e
+ 517 0019 0B       		.uleb128 0xb
+ 518 001a 03       		.uleb128 0x3
+ 519 001b 0E       		.uleb128 0xe
+ 520 001c 00       		.byte	0
+ 521 001d 00       		.byte	0
+ 522 001e 03       		.uleb128 0x3
+ 523 001f 16       		.uleb128 0x16
+ 524 0020 00       		.byte	0
+ 525 0021 03       		.uleb128 0x3
+ 526 0022 0E       		.uleb128 0xe
+ 527 0023 3A       		.uleb128 0x3a
+ 528 0024 0B       		.uleb128 0xb
+ 529 0025 3B       		.uleb128 0x3b
+ 530 0026 0B       		.uleb128 0xb
+ 531 0027 49       		.uleb128 0x49
+ 532 0028 13       		.uleb128 0x13
+ 533 0029 00       		.byte	0
+ 534 002a 00       		.byte	0
+ 535 002b 04       		.uleb128 0x4
+ 536 002c 24       		.uleb128 0x24
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 12
+
+
+ 537 002d 00       		.byte	0
+ 538 002e 0B       		.uleb128 0xb
+ 539 002f 0B       		.uleb128 0xb
+ 540 0030 3E       		.uleb128 0x3e
+ 541 0031 0B       		.uleb128 0xb
+ 542 0032 03       		.uleb128 0x3
+ 543 0033 08       		.uleb128 0x8
+ 544 0034 00       		.byte	0
+ 545 0035 00       		.byte	0
+ 546 0036 05       		.uleb128 0x5
+ 547 0037 16       		.uleb128 0x16
+ 548 0038 00       		.byte	0
+ 549 0039 03       		.uleb128 0x3
+ 550 003a 0E       		.uleb128 0xe
+ 551 003b 3A       		.uleb128 0x3a
+ 552 003c 0B       		.uleb128 0xb
+ 553 003d 3B       		.uleb128 0x3b
+ 554 003e 05       		.uleb128 0x5
+ 555 003f 49       		.uleb128 0x49
+ 556 0040 13       		.uleb128 0x13
+ 557 0041 00       		.byte	0
+ 558 0042 00       		.byte	0
+ 559 0043 06       		.uleb128 0x6
+ 560 0044 2E       		.uleb128 0x2e
+ 561 0045 00       		.byte	0
+ 562 0046 3F       		.uleb128 0x3f
+ 563 0047 19       		.uleb128 0x19
+ 564 0048 03       		.uleb128 0x3
+ 565 0049 0E       		.uleb128 0xe
+ 566 004a 3A       		.uleb128 0x3a
+ 567 004b 0B       		.uleb128 0xb
+ 568 004c 3B       		.uleb128 0x3b
+ 569 004d 0B       		.uleb128 0xb
+ 570 004e 27       		.uleb128 0x27
+ 571 004f 19       		.uleb128 0x19
+ 572 0050 11       		.uleb128 0x11
+ 573 0051 01       		.uleb128 0x1
+ 574 0052 12       		.uleb128 0x12
+ 575 0053 06       		.uleb128 0x6
+ 576 0054 40       		.uleb128 0x40
+ 577 0055 18       		.uleb128 0x18
+ 578 0056 9742     		.uleb128 0x2117
+ 579 0058 19       		.uleb128 0x19
+ 580 0059 00       		.byte	0
+ 581 005a 00       		.byte	0
+ 582 005b 07       		.uleb128 0x7
+ 583 005c 2E       		.uleb128 0x2e
+ 584 005d 01       		.byte	0x1
+ 585 005e 3F       		.uleb128 0x3f
+ 586 005f 19       		.uleb128 0x19
+ 587 0060 03       		.uleb128 0x3
+ 588 0061 0E       		.uleb128 0xe
+ 589 0062 3A       		.uleb128 0x3a
+ 590 0063 0B       		.uleb128 0xb
+ 591 0064 3B       		.uleb128 0x3b
+ 592 0065 0B       		.uleb128 0xb
+ 593 0066 27       		.uleb128 0x27
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 13
+
+
+ 594 0067 19       		.uleb128 0x19
+ 595 0068 49       		.uleb128 0x49
+ 596 0069 13       		.uleb128 0x13
+ 597 006a 8701     		.uleb128 0x87
+ 598 006c 19       		.uleb128 0x19
+ 599 006d 11       		.uleb128 0x11
+ 600 006e 01       		.uleb128 0x1
+ 601 006f 12       		.uleb128 0x12
+ 602 0070 06       		.uleb128 0x6
+ 603 0071 40       		.uleb128 0x40
+ 604 0072 18       		.uleb128 0x18
+ 605 0073 9742     		.uleb128 0x2117
+ 606 0075 19       		.uleb128 0x19
+ 607 0076 01       		.uleb128 0x1
+ 608 0077 13       		.uleb128 0x13
+ 609 0078 00       		.byte	0
+ 610 0079 00       		.byte	0
+ 611 007a 08       		.uleb128 0x8
+ 612 007b 34       		.uleb128 0x34
+ 613 007c 00       		.byte	0
+ 614 007d 03       		.uleb128 0x3
+ 615 007e 0E       		.uleb128 0xe
+ 616 007f 3A       		.uleb128 0x3a
+ 617 0080 0B       		.uleb128 0xb
+ 618 0081 3B       		.uleb128 0x3b
+ 619 0082 0B       		.uleb128 0xb
+ 620 0083 49       		.uleb128 0x49
+ 621 0084 13       		.uleb128 0x13
+ 622 0085 00       		.byte	0
+ 623 0086 00       		.byte	0
+ 624 0087 09       		.uleb128 0x9
+ 625 0088 34       		.uleb128 0x34
+ 626 0089 00       		.byte	0
+ 627 008a 03       		.uleb128 0x3
+ 628 008b 0E       		.uleb128 0xe
+ 629 008c 3A       		.uleb128 0x3a
+ 630 008d 0B       		.uleb128 0xb
+ 631 008e 3B       		.uleb128 0x3b
+ 632 008f 0B       		.uleb128 0xb
+ 633 0090 49       		.uleb128 0x49
+ 634 0091 13       		.uleb128 0x13
+ 635 0092 02       		.uleb128 0x2
+ 636 0093 17       		.uleb128 0x17
+ 637 0094 00       		.byte	0
+ 638 0095 00       		.byte	0
+ 639 0096 0A       		.uleb128 0xa
+ 640 0097 0B       		.uleb128 0xb
+ 641 0098 01       		.byte	0x1
+ 642 0099 55       		.uleb128 0x55
+ 643 009a 17       		.uleb128 0x17
+ 644 009b 01       		.uleb128 0x1
+ 645 009c 13       		.uleb128 0x13
+ 646 009d 00       		.byte	0
+ 647 009e 00       		.byte	0
+ 648 009f 0B       		.uleb128 0xb
+ 649 00a0 34       		.uleb128 0x34
+ 650 00a1 00       		.byte	0
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 14
+
+
+ 651 00a2 03       		.uleb128 0x3
+ 652 00a3 08       		.uleb128 0x8
+ 653 00a4 3A       		.uleb128 0x3a
+ 654 00a5 0B       		.uleb128 0xb
+ 655 00a6 3B       		.uleb128 0x3b
+ 656 00a7 0B       		.uleb128 0xb
+ 657 00a8 49       		.uleb128 0x49
+ 658 00a9 13       		.uleb128 0x13
+ 659 00aa 02       		.uleb128 0x2
+ 660 00ab 17       		.uleb128 0x17
+ 661 00ac 00       		.byte	0
+ 662 00ad 00       		.byte	0
+ 663 00ae 0C       		.uleb128 0xc
+ 664 00af 898201   		.uleb128 0x4109
+ 665 00b2 01       		.byte	0x1
+ 666 00b3 11       		.uleb128 0x11
+ 667 00b4 01       		.uleb128 0x1
+ 668 00b5 31       		.uleb128 0x31
+ 669 00b6 13       		.uleb128 0x13
+ 670 00b7 01       		.uleb128 0x1
+ 671 00b8 13       		.uleb128 0x13
+ 672 00b9 00       		.byte	0
+ 673 00ba 00       		.byte	0
+ 674 00bb 0D       		.uleb128 0xd
+ 675 00bc 8A8201   		.uleb128 0x410a
+ 676 00bf 00       		.byte	0
+ 677 00c0 02       		.uleb128 0x2
+ 678 00c1 18       		.uleb128 0x18
+ 679 00c2 9142     		.uleb128 0x2111
+ 680 00c4 18       		.uleb128 0x18
+ 681 00c5 00       		.byte	0
+ 682 00c6 00       		.byte	0
+ 683 00c7 0E       		.uleb128 0xe
+ 684 00c8 898201   		.uleb128 0x4109
+ 685 00cb 00       		.byte	0
+ 686 00cc 11       		.uleb128 0x11
+ 687 00cd 01       		.uleb128 0x1
+ 688 00ce 31       		.uleb128 0x31
+ 689 00cf 13       		.uleb128 0x13
+ 690 00d0 00       		.byte	0
+ 691 00d1 00       		.byte	0
+ 692 00d2 0F       		.uleb128 0xf
+ 693 00d3 898201   		.uleb128 0x4109
+ 694 00d6 01       		.byte	0x1
+ 695 00d7 11       		.uleb128 0x11
+ 696 00d8 01       		.uleb128 0x1
+ 697 00d9 31       		.uleb128 0x31
+ 698 00da 13       		.uleb128 0x13
+ 699 00db 00       		.byte	0
+ 700 00dc 00       		.byte	0
+ 701 00dd 10       		.uleb128 0x10
+ 702 00de 34       		.uleb128 0x34
+ 703 00df 00       		.byte	0
+ 704 00e0 03       		.uleb128 0x3
+ 705 00e1 0E       		.uleb128 0xe
+ 706 00e2 3A       		.uleb128 0x3a
+ 707 00e3 0B       		.uleb128 0xb
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 15
+
+
+ 708 00e4 3B       		.uleb128 0x3b
+ 709 00e5 05       		.uleb128 0x5
+ 710 00e6 49       		.uleb128 0x49
+ 711 00e7 13       		.uleb128 0x13
+ 712 00e8 3F       		.uleb128 0x3f
+ 713 00e9 19       		.uleb128 0x19
+ 714 00ea 3C       		.uleb128 0x3c
+ 715 00eb 19       		.uleb128 0x19
+ 716 00ec 00       		.byte	0
+ 717 00ed 00       		.byte	0
+ 718 00ee 11       		.uleb128 0x11
+ 719 00ef 35       		.uleb128 0x35
+ 720 00f0 00       		.byte	0
+ 721 00f1 49       		.uleb128 0x49
+ 722 00f2 13       		.uleb128 0x13
+ 723 00f3 00       		.byte	0
+ 724 00f4 00       		.byte	0
+ 725 00f5 12       		.uleb128 0x12
+ 726 00f6 34       		.uleb128 0x34
+ 727 00f7 00       		.byte	0
+ 728 00f8 03       		.uleb128 0x3
+ 729 00f9 0E       		.uleb128 0xe
+ 730 00fa 3A       		.uleb128 0x3a
+ 731 00fb 0B       		.uleb128 0xb
+ 732 00fc 3B       		.uleb128 0x3b
+ 733 00fd 0B       		.uleb128 0xb
+ 734 00fe 49       		.uleb128 0x49
+ 735 00ff 13       		.uleb128 0x13
+ 736 0100 3F       		.uleb128 0x3f
+ 737 0101 19       		.uleb128 0x19
+ 738 0102 02       		.uleb128 0x2
+ 739 0103 18       		.uleb128 0x18
+ 740 0104 00       		.byte	0
+ 741 0105 00       		.byte	0
+ 742 0106 13       		.uleb128 0x13
+ 743 0107 01       		.uleb128 0x1
+ 744 0108 01       		.byte	0x1
+ 745 0109 49       		.uleb128 0x49
+ 746 010a 13       		.uleb128 0x13
+ 747 010b 01       		.uleb128 0x1
+ 748 010c 13       		.uleb128 0x13
+ 749 010d 00       		.byte	0
+ 750 010e 00       		.byte	0
+ 751 010f 14       		.uleb128 0x14
+ 752 0110 21       		.uleb128 0x21
+ 753 0111 00       		.byte	0
+ 754 0112 49       		.uleb128 0x49
+ 755 0113 13       		.uleb128 0x13
+ 756 0114 2F       		.uleb128 0x2f
+ 757 0115 0B       		.uleb128 0xb
+ 758 0116 00       		.byte	0
+ 759 0117 00       		.byte	0
+ 760 0118 15       		.uleb128 0x15
+ 761 0119 2E       		.uleb128 0x2e
+ 762 011a 00       		.byte	0
+ 763 011b 3F       		.uleb128 0x3f
+ 764 011c 19       		.uleb128 0x19
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 16
+
+
+ 765 011d 3C       		.uleb128 0x3c
+ 766 011e 19       		.uleb128 0x19
+ 767 011f 6E       		.uleb128 0x6e
+ 768 0120 0E       		.uleb128 0xe
+ 769 0121 03       		.uleb128 0x3
+ 770 0122 0E       		.uleb128 0xe
+ 771 0123 3A       		.uleb128 0x3a
+ 772 0124 0B       		.uleb128 0xb
+ 773 0125 3B       		.uleb128 0x3b
+ 774 0126 0B       		.uleb128 0xb
+ 775 0127 00       		.byte	0
+ 776 0128 00       		.byte	0
+ 777 0129 00       		.byte	0
+ 778              		.section	.debug_loc,"",%progbits
+ 779              	.Ldebug_loc0:
+ 780              	.LLST0:
+ 781 0000 14000000 		.4byte	.LVL3
+ 782 0004 1C000000 		.4byte	.LVL5
+ 783 0008 0200     		.2byte	0x2
+ 784 000a 30       		.byte	0x30
+ 785 000b 9F       		.byte	0x9f
+ 786 000c 1C000000 		.4byte	.LVL5
+ 787 0010 30000000 		.4byte	.LVL6
+ 788 0014 0100     		.2byte	0x1
+ 789 0016 54       		.byte	0x54
+ 790 0017 30000000 		.4byte	.LVL6
+ 791 001b 36000000 		.4byte	.LVL7
+ 792 001f 0200     		.2byte	0x2
+ 793 0021 30       		.byte	0x30
+ 794 0022 9F       		.byte	0x9f
+ 795 0023 36000000 		.4byte	.LVL7
+ 796 0027 40000000 		.4byte	.LVL8
+ 797 002b 0100     		.2byte	0x1
+ 798 002d 54       		.byte	0x54
+ 799 002e 54000000 		.4byte	.LVL12
+ 800 0032 56000000 		.4byte	.LVL13
+ 801 0036 0100     		.2byte	0x1
+ 802 0038 54       		.byte	0x54
+ 803 0039 5C000000 		.4byte	.LVL14
+ 804 003d 80000000 		.4byte	.LFE65
+ 805 0041 0100     		.2byte	0x1
+ 806 0043 54       		.byte	0x54
+ 807 0044 00000000 		.4byte	0
+ 808 0048 00000000 		.4byte	0
+ 809              	.LLST1:
+ 810 004c 40000000 		.4byte	.LVL8
+ 811 0050 54000000 		.4byte	.LVL12
+ 812 0054 0100     		.2byte	0x1
+ 813 0056 54       		.byte	0x54
+ 814 0057 56000000 		.4byte	.LVL13
+ 815 005b 5C000000 		.4byte	.LVL14
+ 816 005f 0100     		.2byte	0x1
+ 817 0061 54       		.byte	0x54
+ 818 0062 00000000 		.4byte	0
+ 819 0066 00000000 		.4byte	0
+ 820              		.section	.debug_aranges,"",%progbits
+ 821 0000 24000000 		.4byte	0x24
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 17
+
+
+ 822 0004 0200     		.2byte	0x2
+ 823 0006 00000000 		.4byte	.Ldebug_info0
+ 824 000a 04       		.byte	0x4
+ 825 000b 00       		.byte	0
+ 826 000c 0000     		.2byte	0
+ 827 000e 0000     		.2byte	0
+ 828 0010 00000000 		.4byte	.LFB64
+ 829 0014 0C000000 		.4byte	.LFE64-.LFB64
+ 830 0018 00000000 		.4byte	.LFB65
+ 831 001c 80000000 		.4byte	.LFE65-.LFB65
+ 832 0020 00000000 		.4byte	0
+ 833 0024 00000000 		.4byte	0
+ 834              		.section	.debug_ranges,"",%progbits
+ 835              	.Ldebug_ranges0:
+ 836 0000 40000000 		.4byte	.LBB2
+ 837 0004 54000000 		.4byte	.LBE2
+ 838 0008 56000000 		.4byte	.LBB3
+ 839 000c 5A000000 		.4byte	.LBE3
+ 840 0010 00000000 		.4byte	0
+ 841 0014 00000000 		.4byte	0
+ 842 0018 00000000 		.4byte	.LFB64
+ 843 001c 0C000000 		.4byte	.LFE64
+ 844 0020 00000000 		.4byte	.LFB65
+ 845 0024 80000000 		.4byte	.LFE65
+ 846 0028 00000000 		.4byte	0
+ 847 002c 00000000 		.4byte	0
+ 848              		.section	.debug_line,"",%progbits
+ 849              	.Ldebug_line0:
+ 850 0000 DF010000 		.section	.debug_str,"MS",%progbits,1
+ 850      02008801 
+ 850      00000201 
+ 850      FB0E0D00 
+ 850      01010101 
+ 851              	.LASF4:
+ 852 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 852      6E74385F 
+ 852      7400
+ 853              	.LASF38:
+ 854 000a 4953525F 		.ascii	"ISR_UART_Rx\000"
+ 854      55415254 
+ 854      5F527800 
+ 855              	.LASF5:
+ 856 0016 5F5F696E 		.ascii	"__int32_t\000"
+ 856      7433325F 
+ 856      7400
+ 857              	.LASF21:
+ 858 0020 6164635F 		.ascii	"adc_to_vg\000"
+ 858      746F5F76 
+ 858      6700
+ 859              	.LASF25:
+ 860 002a 74785F62 		.ascii	"tx_buffer\000"
+ 860      75666665 
+ 860      7200
+ 861              	.LASF16:
+ 862 0034 646F7562 		.ascii	"double\000"
+ 862      6C6500
+ 863              	.LASF15:
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 18
+
+
+ 864 003b 666C6F61 		.ascii	"float\000"
+ 864      7400
+ 865              	.LASF1:
+ 866 0041 756E7369 		.ascii	"unsigned char\000"
+ 866      676E6564 
+ 866      20636861 
+ 866      7200
+ 867              	.LASF35:
+ 868 004f 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 868      43313120 
+ 868      352E342E 
+ 868      31203230 
+ 868      31363036 
+ 869 0082 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 869      20726576 
+ 869      6973696F 
+ 869      6E203233 
+ 869      37373135 
+ 870 00b5 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 870      66756E63 
+ 870      74696F6E 
+ 870      2D736563 
+ 870      74696F6E 
+ 871              	.LASF31:
+ 872 00dd 4144435F 		.ascii	"ADC_StartConvert\000"
+ 872      53746172 
+ 872      74436F6E 
+ 872      76657274 
+ 872      00
+ 873              	.LASF26:
+ 874 00ee 4144435F 		.ascii	"ADC_IsEndConversion\000"
+ 874      4973456E 
+ 874      64436F6E 
+ 874      76657273 
+ 874      696F6E00 
+ 875              	.LASF3:
+ 876 0102 73686F72 		.ascii	"short unsigned int\000"
+ 876      7420756E 
+ 876      7369676E 
+ 876      65642069 
+ 876      6E7400
+ 877              	.LASF28:
+ 878 0115 55415254 		.ascii	"UART_Start\000"
+ 878      5F537461 
+ 878      727400
+ 879              	.LASF33:
+ 880 0120 55415254 		.ascii	"UART_PutArray\000"
+ 880      5F507574 
+ 880      41727261 
+ 880      7900
+ 881              	.LASF23:
+ 882 012e 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 882      52784275 
+ 882      66666572 
+ 882      00
+ 883              	.LASF27:
+ 884 013b 4144435F 		.ascii	"ADC_GetResult32\000"
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 19
+
+
+ 884      47657452 
+ 884      6573756C 
+ 884      74333200 
+ 885              	.LASF7:
+ 886 014b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 886      20756E73 
+ 886      69676E65 
+ 886      6420696E 
+ 886      7400
+ 887              	.LASF14:
+ 888 015d 75696E74 		.ascii	"uint16\000"
+ 888      313600
+ 889              	.LASF39:
+ 890 0164 6D61696E 		.ascii	"main\000"
+ 890      00
+ 891              	.LASF24:
+ 892 0169 72785F62 		.ascii	"rx_buffer_flag\000"
+ 892      75666665 
+ 892      725F666C 
+ 892      616700
+ 893              	.LASF37:
+ 894 0178 443A5C68 		.ascii	"D:\\h_da\\Lecturs\\SS-20-Systytem Driven Hardware D"
+ 894      5F64615C 
+ 894      4C656374 
+ 894      7572735C 
+ 894      53532D32 
+ 895 01a8 65736967 		.ascii	"esign\\freeSoC2\\Workspace01\\14_DAC_ADC_UART_MATLA"
+ 895      6E5C6672 
+ 895      6565536F 
+ 895      43325C57 
+ 895      6F726B73 
+ 896 01d8 425F6461 		.ascii	"B_data_transfer_Copy_01.cydsn\000"
+ 896      74615F74 
+ 896      72616E73 
+ 896      6665725F 
+ 896      436F7079 
+ 897              	.LASF22:
+ 898 01f6 6164635F 		.ascii	"adc_to_tx_buf_flag\000"
+ 898      746F5F74 
+ 898      785F6275 
+ 898      665F666C 
+ 898      616700
+ 899              	.LASF10:
+ 900 0209 756E7369 		.ascii	"unsigned int\000"
+ 900      676E6564 
+ 900      20696E74 
+ 900      00
+ 901              	.LASF9:
+ 902 0216 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 902      206C6F6E 
+ 902      6720756E 
+ 902      7369676E 
+ 902      65642069 
+ 903              	.LASF11:
+ 904 022d 75696E74 		.ascii	"uint8_t\000"
+ 904      385F7400 
+ 905              	.LASF30:
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 20
+
+
+ 906 0235 4144435F 		.ascii	"ADC_Start\000"
+ 906      53746172 
+ 906      7400
+ 907              	.LASF12:
+ 908 023f 696E7433 		.ascii	"int32_t\000"
+ 908      325F7400 
+ 909              	.LASF19:
+ 910 0247 73697A65 		.ascii	"sizetype\000"
+ 910      74797065 
+ 910      00
+ 911              	.LASF8:
+ 912 0250 6C6F6E67 		.ascii	"long long int\000"
+ 912      206C6F6E 
+ 912      6720696E 
+ 912      7400
+ 913              	.LASF36:
+ 914 025e 6D61696E 		.ascii	"main.c\000"
+ 914      2E6300
+ 915              	.LASF17:
+ 916 0265 63686172 		.ascii	"char\000"
+ 916      00
+ 917              	.LASF32:
+ 918 026a 4953525F 		.ascii	"ISR_UART_Rx_StartEx\000"
+ 918      55415254 
+ 918      5F52785F 
+ 918      53746172 
+ 918      74457800 
+ 919              	.LASF29:
+ 920 027e 57617665 		.ascii	"WaveDAC_Start\000"
+ 920      4441435F 
+ 920      53746172 
+ 920      7400
+ 921              	.LASF2:
+ 922 028c 73686F72 		.ascii	"short int\000"
+ 922      7420696E 
+ 922      7400
+ 923              	.LASF13:
+ 924 0296 75696E74 		.ascii	"uint8\000"
+ 924      3800
+ 925              	.LASF6:
+ 926 029c 6C6F6E67 		.ascii	"long int\000"
+ 926      20696E74 
+ 926      00
+ 927              	.LASF18:
+ 928 02a5 6C6F6E67 		.ascii	"long double\000"
+ 928      20646F75 
+ 928      626C6500 
+ 929              	.LASF0:
+ 930 02b1 7369676E 		.ascii	"signed char\000"
+ 930      65642063 
+ 930      68617200 
+ 931              	.LASF34:
+ 932 02bd 43794465 		.ascii	"CyDelay\000"
+ 932      6C617900 
+ 933              	.LASF20:
+ 934 02c5 6164635F 		.ascii	"adc_result\000"
+ 934      72657375 
+ARM GAS  C:\Users\swaga\AppData\Local\Temp\cc1JF8fR.s 			page 21
+
+
+ 934      6C7400
+ 935              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

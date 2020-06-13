@@ -1,0 +1,6 @@
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|79265659-137c-4cda-87f3-7e37e9ef0fc0
+C:\Users\swaga\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|a9a3e61e-de50-40a5-9891-c97b8a06b768
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|3be06186-a3f2-497e-8a55-da01eb3bd137
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|3f769e16-6c60-4040-b283-2aaf114718a6
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|9758c34e-d204-4e24-a96d-457cae41f652
+D:\h_da\Lecturs\SS-20-Systytem Driven Hardware Design\freeSoC2\Workspace01\14_DAC_ADC_UART_MATLAB_data_transfer_Copy_01.cydsn\14_DAC_ADC_UART_MATLAB_data_transfer_Copy_01.cyprj|3be5be0b-d14d-4594-befc-a2f3afb71002
